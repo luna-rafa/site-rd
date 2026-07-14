@@ -1,0 +1,83 @@
+:root {
+  /* ===========================
+     CORES DA MARCA
+  =========================== */
+
+  --color-primary: #062b38;
+  --color-primary-hover: #0d3b4c;
+  --color-primary-soft: #eaf0f2;
+
+  --color-gold: #d4af37;
+  --color-gold-hover: #b89227;
+  --color-gold-soft: #f8f1d9;
+
+  --color-white: #ffffff;
+  --color-off-white: #fbfaf7;
+  --color-light: #f4f6f8;
+
+  --color-text: #1f2933;
+  --color-text-light: #667085;
+
+  --color-border: #e4e7ec;
+  --color-error: #b42318;
+  --color-success: #027a48;
+
+  /* ===========================
+     TIPOGRAFIA
+  =========================== */
+
+  --font-primary: "Poppins", sans-serif;
+  --font-title: "Montserrat", sans-serif;
+
+  /* ===========================
+     LARGURAS
+  =========================== */
+
+  --container: 1200px;
+  --container-small: 820px;
+
+  /* ===========================
+     ESPAÇAMENTOS
+  =========================== */
+
+  --section-spacing: 112px;
+  --section-spacing-mobile: 72px;
+
+  /* ===========================
+     BORDAS
+  =========================== */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-xl: 38px;
+  --radius-pill: 999px;
+
+  /* ===========================
+     SOMBRAS
+  =========================== */
+
+  --shadow-soft:
+    0 10px 30px rgba(6, 43, 56, 0.06),
+    0 2px 8px rgba(6, 43, 56, 0.03);
+
+  --shadow-card:
+    0 26px 65px rgba(6, 43, 56, 0.1),
+    0 8px 22px rgba(6, 43, 56, 0.05);
+
+  --shadow-button:
+    0 12px 26px rgba(6, 43, 56, 0.14),
+    0 3px 8px rgba(6, 43, 56, 0.06);
+
+  --shadow-navbar:
+    0 12px 38px rgba(6, 43, 56, 0.055),
+    0 2px 8px rgba(6, 43, 56, 0.025);
+
+  /* ===========================
+     TRANSIÇÕES
+  =========================== */
+
+  --transition-fast: 0.2s ease;
+  --transition: 0.35s ease;
+  --transition-slow: 0.55s ease;
+}
