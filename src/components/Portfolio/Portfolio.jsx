@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowRight,
   FaCheck,
@@ -12,38 +14,46 @@ import rafaelaPortfolioImage from "../../assets/images/portfolio/rafaela-portfol
 
 import "./Portfolio.css";
 
-const projects = [
-  {
-    number: "01",
-    category: "Landing Page",
-    title: "Marcela Braga — Logística e Negócios",
-    description:
-      "Landing page desenvolvida para apresentar a trajetória, os serviços e o posicionamento profissional de Marcela Braga, com foco em autoridade, clareza e geração de oportunidades.",
-    image: marcelaBragaImage,
-    imageAlt:
-      "Landing page de Marcela Braga, especialista em logística, transporte e desenvolvimento de negócios",
-    icon: <FaLayerGroup />,
-    tags: ["React", "Responsivo", "Estratégia", "Posicionamento"],
-    url: "https://braga-marcela.com.br/",
-    theme: "portfolio__showcase--marcela",
-  },
-  {
-    number: "02",
-    category: "Portfólio Profissional",
-    title: "Rafaela Rodrigues — Tecnologia da Informação",
-    description:
-      "Portfólio profissional criado para destacar experiência em suporte, infraestrutura, nuvem e tecnologia, reunindo trajetória, competências e formas de contato em uma apresentação moderna.",
-    image: rafaelaPortfolioImage,
-    imageAlt:
-      "Portfólio profissional de Rafaela Rodrigues na área de Tecnologia da Informação",
-    icon: <FaUserTie />,
-    tags: ["React", "Marca pessoal", "Tecnologia", "Responsivo"],
-    url: "https://rafaelarodrigues.vercel.app/",
-    theme: "portfolio__showcase--rafaela",
-  },
-];
-
 function Portfolio() {
+  const { t } = useTranslation();
+
+  const projects = [
+    {
+      number: "01",
+      category: t("portfolio.projects.marcela.category"),
+      title: t("portfolio.projects.marcela.title"),
+      description: t("portfolio.projects.marcela.description"),
+      image: marcelaBragaImage,
+      imageAlt: t("portfolio.projects.marcela.imageAlt"),
+      icon: <FaLayerGroup />,
+      tags: [
+        t("portfolio.tags.react"),
+        t("portfolio.tags.responsive"),
+        t("portfolio.tags.strategy"),
+        t("portfolio.tags.positioning"),
+      ],
+      url: "https://braga-marcela.com.br/",
+      theme: "portfolio__showcase--marcela",
+    },
+    {
+      number: "02",
+      category: t("portfolio.projects.rafaela.category"),
+      title: t("portfolio.projects.rafaela.title"),
+      description: t("portfolio.projects.rafaela.description"),
+      image: rafaelaPortfolioImage,
+      imageAlt: t("portfolio.projects.rafaela.imageAlt"),
+      icon: <FaUserTie />,
+      tags: [
+        t("portfolio.tags.react"),
+        t("portfolio.tags.personalBrand"),
+        t("portfolio.tags.technology"),
+        t("portfolio.tags.responsive"),
+      ],
+      url: "https://rafaelarodrigues.vercel.app/",
+      theme: "portfolio__showcase--rafaela",
+    },
+  ];
+
   return (
     <section className="portfolio">
       <div
@@ -60,40 +70,35 @@ function Portfolio() {
         <div className="portfolio__header">
           <div className="portfolio__heading">
             <span className="portfolio__eyebrow">
-              Projetos em destaque
+              {t("portfolio.eyebrow")}
             </span>
 
             <h2 className="portfolio__title">
-              Presenças digitais criadas para{" "}
-              <span>representar, posicionar e conectar.</span>
+              {t("portfolio.title.first")}{" "}
+              <span>{t("portfolio.title.highlight")}</span>
             </h2>
           </div>
 
           <div className="portfolio__introduction">
-            <p>
-              Cada projeto nasce de uma necessidade diferente e é desenvolvido
-              para refletir a identidade, os objetivos e o momento de cada
-              cliente.
-            </p>
+            <p>{t("portfolio.introduction.first")}</p>
 
-            <p>
-              Mais do que páginas visualmente bonitas, são soluções pensadas
-              para transmitir credibilidade, organizar informações e gerar
-              novas oportunidades.
-            </p>
+            <p>{t("portfolio.introduction.second")}</p>
           </div>
         </div>
 
         <div className="portfolio__projects">
           {projects.map((project, index) => (
             <article
-              key={project.title}
+              key={project.number}
               className={`portfolio__showcase ${project.theme} ${
                 index % 2 !== 0 ? "portfolio__showcase--reverse" : ""
               }`}
             >
               <div className="portfolio__visual">
-                <div className="portfolio__visual-glow" aria-hidden="true" />
+                <div
+                  className="portfolio__visual-glow"
+                  aria-hidden="true"
+                />
 
                 <span
                   className="portfolio__project-number"
@@ -114,11 +119,16 @@ function Portfolio() {
                     </div>
 
                     <div className="portfolio__browser-address">
-                      <span className="portfolio__browser-lock">
+                      <span
+                        className="portfolio__browser-lock"
+                        aria-hidden="true"
+                      >
                         <FaCheck />
                       </span>
 
-                      <span>{project.url.replace("https://", "")}</span>
+                      <span>
+                        {project.url.replace("https://", "")}
+                      </span>
                     </div>
 
                     <a
@@ -126,7 +136,9 @@ function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="portfolio__browser-open"
-                      aria-label={`Abrir o projeto ${project.title} em uma nova aba`}
+                      aria-label={t("portfolio.openProject", {
+                        project: project.title,
+                      })}
                     >
                       <FaExternalLinkAlt aria-hidden="true" />
                     </a>
@@ -137,7 +149,9 @@ function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="portfolio__image-link"
-                    aria-label={`Acessar o projeto ${project.title}`}
+                    aria-label={t("portfolio.accessProject", {
+                      project: project.title,
+                    })}
                   >
                     <div className="portfolio__image-viewport">
                       <img
@@ -148,20 +162,25 @@ function Portfolio() {
                     </div>
 
                     <span className="portfolio__image-overlay">
-                      <span>Acessar projeto</span>
+                      <span>{t("portfolio.access")}</span>
+
                       <FaExternalLinkAlt aria-hidden="true" />
                     </span>
                   </a>
                 </div>
 
                 <div className="portfolio__published-badge">
-                  <span className="portfolio__published-icon">
+                  <span
+                    className="portfolio__published-icon"
+                    aria-hidden="true"
+                  >
                     <FaCheck />
                   </span>
 
                   <div>
-                    <strong>Projeto publicado</strong>
-                    <span>Disponível para acesso</span>
+                    <strong>{t("portfolio.published")}</strong>
+
+                    <span>{t("portfolio.available")}</span>
                   </div>
                 </div>
               </div>
@@ -194,14 +213,22 @@ function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="portfolio__access-button"
+                    aria-label={t("portfolio.accessProject", {
+                      project: project.title,
+                    })}
                   >
-                    <span>Acessar projeto</span>
+                    <span>{t("portfolio.access")}</span>
+
                     <FaExternalLinkAlt aria-hidden="true" />
                   </a>
 
                   <span className="portfolio__live-status">
-                    <span className="portfolio__live-dot" />
-                    Projeto online
+                    <span
+                      className="portfolio__live-dot"
+                      aria-hidden="true"
+                    />
+
+                    {t("portfolio.online")}
                   </span>
                 </div>
               </div>
@@ -211,20 +238,17 @@ function Portfolio() {
 
         <div className="portfolio__footer">
           <div className="portfolio__footer-text">
-            <strong>Novos projetos estão em desenvolvimento.</strong>
+            <strong>{t("portfolio.footer.title")}</strong>
 
-            <p>
-              A Rodrigues Digital continua construindo soluções para empresas e
-              profissionais que desejam fortalecer sua presença digital com
-              estratégia, identidade e propósito.
-            </p>
+            <p>{t("portfolio.footer.description")}</p>
           </div>
 
           <Link
             to="/portfolio"
             className="portfolio__button"
           >
-            Conhecer todos os projetos
+            {t("portfolio.footer.button")}
+
             <FaArrowRight aria-hidden="true" />
           </Link>
         </div>

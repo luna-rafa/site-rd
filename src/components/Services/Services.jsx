@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowRight,
   FaBullseye,
@@ -11,54 +13,57 @@ import {
 } from "react-icons/fa";
 
 import siteConfig from "../../config/site";
+
 import "./Services.css";
 
-const services = [
-  {
-    number: "01",
-    icon: <FaGlobe />,
-    title: "Site Institucional",
-    text: "Apresente sua empresa com credibilidade, fortaleça sua marca e facilite o contato com seus clientes.",
-    benefit: "Credibilidade e presença profissional",
-  },
-  {
-    number: "02",
-    icon: <FaBullseye />,
-    title: "Landing Page",
-    text: "Páginas desenvolvidas para campanhas, lançamentos, eventos e geração de novos clientes.",
-    benefit: "Foco em conversão e resultados",
-  },
-  {
-    number: "03",
-    icon: <FaUserTie />,
-    title: "Portfólio Profissional",
-    text: "Valorize sua trajetória, seus projetos e suas competências com uma apresentação moderna e estratégica.",
-    benefit: "Destaque para sua experiência",
-  },
-  {
-    number: "04",
-    icon: <FaFileAlt />,
-    title: "Mídia Kit",
-    text: "Apresente sua autoridade e aumente suas oportunidades de parcerias, patrocínios e negócios.",
-    benefit: "Mais oportunidades comerciais",
-  },
-  {
-    number: "05",
-    icon: <FaChartLine />,
-    title: "SEO Inicial",
-    text: "Prepare seu site para os mecanismos de busca e aumente as chances de ser encontrado no Google.",
-    benefit: "Visibilidade desde o início",
-  },
-  {
-    number: "06",
-    icon: <FaShieldAlt />,
-    title: "Manutenção de Sites",
-    text: "Atualizações, backups, monitoramento e suporte contínuo para manter seu site seguro e funcionando.",
-    benefit: "Segurança e acompanhamento",
-  },
-];
-
 function Services() {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      number: "01",
+      icon: <FaGlobe />,
+      title: t("services.items.institutional.title"),
+      text: t("services.items.institutional.text"),
+      benefit: t("services.items.institutional.benefit"),
+    },
+    {
+      number: "02",
+      icon: <FaBullseye />,
+      title: t("services.items.landing.title"),
+      text: t("services.items.landing.text"),
+      benefit: t("services.items.landing.benefit"),
+    },
+    {
+      number: "03",
+      icon: <FaUserTie />,
+      title: t("services.items.portfolio.title"),
+      text: t("services.items.portfolio.text"),
+      benefit: t("services.items.portfolio.benefit"),
+    },
+    {
+      number: "04",
+      icon: <FaFileAlt />,
+      title: t("services.items.mediaKit.title"),
+      text: t("services.items.mediaKit.text"),
+      benefit: t("services.items.mediaKit.benefit"),
+    },
+    {
+      number: "05",
+      icon: <FaChartLine />,
+      title: t("services.items.seo.title"),
+      text: t("services.items.seo.text"),
+      benefit: t("services.items.seo.benefit"),
+    },
+    {
+      number: "06",
+      icon: <FaShieldAlt />,
+      title: t("services.items.maintenance.title"),
+      text: t("services.items.maintenance.text"),
+      benefit: t("services.items.maintenance.benefit"),
+    },
+  ];
+
   return (
     <section className="services">
       <div
@@ -80,33 +85,26 @@ function Services() {
         <div className="services__header">
           <div className="services__heading">
             <span className="services__eyebrow">
-              Soluções digitais
+              {t("services.eyebrow")}
             </span>
 
             <h2 className="services__title">
-              Soluções desenvolvidas para fortalecer sua{" "}
-              <span>presença digital.</span>
+              {t("services.title.first")}{" "}
+              <span>{t("services.title.highlight")}</span>
             </h2>
           </div>
 
           <div className="services__introduction">
-            <p>
-              Cada empresa possui uma necessidade diferente. Por isso,
-              desenvolvo soluções personalizadas que unem estratégia,
-              identidade visual, tecnologia e experiência.
-            </p>
+            <p>{t("services.introduction.first")}</p>
 
-            <p>
-              O objetivo é transmitir credibilidade, gerar oportunidades e
-              representar a qualidade do seu negócio em cada detalhe.
-            </p>
+            <p>{t("services.introduction.second")}</p>
           </div>
         </div>
 
         <div className="services__grid">
           {services.map((service) => (
             <article
-              key={service.title}
+              key={service.number}
               className="services__card"
             >
               <div className="services__card-top">
@@ -137,7 +135,9 @@ function Services() {
                 <Link
                   to="/solucoes"
                   className="services__card-link"
-                  aria-label={`Conhecer mais sobre ${service.title}`}
+                  aria-label={t("services.cardAria", {
+                    service: service.title,
+                  })}
                 >
                   <FaArrowRight aria-hidden="true" />
                 </Link>
@@ -147,18 +147,17 @@ function Services() {
         </div>
 
         <div className="services__footer">
-          <div className="services__footer-icon" aria-hidden="true">
+          <div
+            className="services__footer-icon"
+            aria-hidden="true"
+          >
             <FaBullseye />
           </div>
 
           <div className="services__footer-text">
-            <strong>Precisa de um projeto personalizado?</strong>
+            <strong>{t("services.footer.title")}</strong>
 
-            <p>
-              Nem toda necessidade se encaixa em um modelo pronto. Vamos
-              conversar sobre os objetivos do seu negócio e desenvolver uma
-              presença digital pensada para gerar resultados.
-            </p>
+            <p>{t("services.footer.description")}</p>
           </div>
 
           <a
@@ -166,10 +165,11 @@ function Services() {
             target="_blank"
             rel="noopener noreferrer"
             className="services__button"
+            aria-label={t("services.footer.buttonAria")}
           >
             <FaWhatsapp aria-hidden="true" />
 
-            <span>Solicitar reunião</span>
+            <span>{t("services.footer.button")}</span>
 
             <FaArrowRight
               className="services__button-arrow"

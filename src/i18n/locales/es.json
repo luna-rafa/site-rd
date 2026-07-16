@@ -1,0 +1,266 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "solutions": "Soluciones",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "meeting": "Solicitar reunión",
+    "homeAria": "Ir a la página de inicio",
+    "navigationAria": "Navegación principal",
+    "languageSelector": "Seleccionar idioma",
+    "languages": {
+      "pt": "Cambiar idioma a portugués",
+      "en": "Cambiar idioma a inglés",
+      "es": "Cambiar idioma a español"
+    }
+  },
+  "hero": {
+    "eyebrow": "Tecnología • Estrategia • Presencia Digital",
+    "title": {
+      "firstLine": "Transformo ideas",
+      "secondLinePrefix": "en",
+      "highlight": "presencias digitales",
+      "lastLine": "profesionales."
+    },
+    "description": "Cada proyecto se desarrolla para representar la esencia de su marca, transmitir credibilidad y generar resultados reales.",
+    "actions": {
+      "meeting": "Solicitar reunión",
+      "projects": "Conocer proyectos",
+      "meetingAria": "Solicitar una reunión por WhatsApp"
+    },
+    "imageAlt": "Rafaela Rodrigues, fundadora de Rodrigues Digital",
+    "founder": {
+      "name": "Rafaela Rodrigues",
+      "role": "Fundadora de Rodrigues Digital"
+    },
+    "highlights": {
+      "experience": {
+        "title": "años en Tecnología",
+        "description": "Experiencia aplicada a la creación de soluciones digitales eficientes."
+      },
+      "custom": {
+        "title": "proyectos personalizados",
+        "description": "Soluciones desarrolladas de acuerdo con cada negocio y objetivo."
+      },
+      "languages": {
+        "title": "sitios web multilingües",
+        "description": "Su negocio preparado para llegar a personas en diferentes idiomas."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Quién está detrás de Rodrigues Digital",
+    "title": {
+      "first": "Cada proyecto comienza",
+      "highlight": "mucho antes del código."
+    },
+    "text1": "Después de más de una década trabajando en Tecnología de la Información, aprendí que una buena solución comienza comprendiendo el problema. Hoy aplico ese mismo enfoque para desarrollar presencias digitales que representan empresas, profesionales y proyectos con estrategia, identidad y propósito.",
+    "text2": "Cada cliente tiene una historia única. Por eso, ningún proyecto se desarrolla a partir de plantillas listas. Mi trabajo consiste en comprender la esencia de la marca y transformarla en una presencia digital profesional que inspire confianza y genere oportunidades.",
+    "button": "Conoce mi historia",
+    "imageAlt": "Rafaela Rodrigues, fundadora de Rodrigues Digital",
+    "quote": "Estrategia, tecnología y atención a los detalles en cada etapa.",
+    "pillars": {
+      "technical": {
+        "title": "Experiencia técnica",
+        "description": "Más de 10 años en Tecnología de la Información aplicados a soluciones digitales."
+      },
+      "strategy": {
+        "title": "Visión estratégica",
+        "description": "Cada decisión está alineada con la identidad, el público y los objetivos del negocio."
+      },
+      "support": {
+        "title": "Acompañamiento cercano",
+        "description": "Comunicación transparente desde la planificación hasta la publicación del proyecto."
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Soluciones digitales",
+    "title": {
+      "first": "Soluciones desarrolladas para fortalecer su",
+      "highlight": "presencia digital."
+    },
+    "introduction": {
+      "first": "Cada empresa tiene una necesidad diferente. Por eso, desarrollo soluciones personalizadas que combinan estrategia, identidad visual, tecnología y experiencia.",
+      "second": "El objetivo es transmitir credibilidad, generar oportunidades y representar la calidad de su negocio en cada detalle."
+    },
+    "cardAria": "Conocer más sobre {{service}}",
+    "items": {
+      "institutional": {
+        "title": "Sitio Institucional",
+        "text": "Presente su empresa con credibilidad, fortalezca su marca y facilite el contacto con sus clientes.",
+        "benefit": "Credibilidad y presencia profesional"
+      },
+      "landing": {
+        "title": "Landing Page",
+        "text": "Páginas desarrolladas para campañas, lanzamientos, eventos y generación de nuevos clientes.",
+        "benefit": "Enfoque en conversión y resultados"
+      },
+      "portfolio": {
+        "title": "Portafolio Profesional",
+        "text": "Valorice su trayectoria, sus proyectos y sus habilidades con una presentación moderna y estratégica.",
+        "benefit": "Destaque para su experiencia"
+      },
+      "mediaKit": {
+        "title": "Media Kit",
+        "text": "Presente su autoridad y aumente sus oportunidades de alianzas, patrocinios y negocios.",
+        "benefit": "Más oportunidades comerciales"
+      },
+      "seo": {
+        "title": "SEO Inicial",
+        "text": "Prepare su sitio para los motores de búsqueda y aumente las posibilidades de ser encontrado en Google.",
+        "benefit": "Visibilidad desde el inicio"
+      },
+      "maintenance": {
+        "title": "Mantenimiento de Sitios",
+        "text": "Actualizaciones, copias de seguridad, monitoreo y soporte continuo para mantener su sitio seguro y funcionando.",
+        "benefit": "Seguridad y acompañamiento"
+      }
+    },
+    "footer": {
+      "title": "¿Necesita un proyecto personalizado?",
+      "description": "No todas las necesidades encajan en un modelo listo. Conversemos sobre los objetivos de su negocio y desarrollemos una presencia digital pensada para generar resultados.",
+      "button": "Solicitar reunión",
+      "buttonAria": "Solicitar una reunión por WhatsApp"
+    }
+  },
+
+  "portfolio": {
+  "eyebrow": "Proyectos destacados",
+
+  "title": {
+    "first": "Presencias digitales creadas para",
+    "highlight": "representar, posicionar y conectar."
+  },
+
+  "introduction": {
+    "first": "Cada proyecto nace de una necesidad diferente y se desarrolla para reflejar la identidad, los objetivos y el momento de cada cliente.",
+    "second": "Más que páginas visualmente atractivas, son soluciones pensadas para transmitir credibilidad, organizar información y generar nuevas oportunidades."
+  },
+
+  "openProject": "Abrir el proyecto {{project}} en una nueva pestaña",
+
+  "accessProject": "Acceder al proyecto {{project}}",
+
+  "access": "Acceder al proyecto",
+
+  "published": "Proyecto publicado",
+
+  "available": "Disponible para acceso",
+
+  "online": "Proyecto en línea",
+
+  "tags": {
+    "react": "React",
+    "responsive": "Responsivo",
+    "strategy": "Estrategia",
+    "positioning": "Posicionamiento",
+    "personalBrand": "Marca personal",
+    "technology": "Tecnología"
+  },
+
+  "projects": {
+    "marcela": {
+      "category": "Landing Page",
+      "title": "Marcela Braga — Logística y Negocios",
+      "description": "Landing page desarrollada para presentar la trayectoria, los servicios y el posicionamiento profesional de Marcela Braga, enfocándose en autoridad, claridad y nuevas oportunidades de negocio.",
+      "imageAlt": "Landing page de Marcela Braga, especialista en logística, transporte y desarrollo de negocios"
+    },
+
+    "rafaela": {
+      "category": "Portafolio Profesional",
+      "title": "Rafaela Rodrigues — Tecnología de la Información",
+      "description": "Portafolio profesional desarrollado para destacar la experiencia en soporte, infraestructura, nube y tecnología mediante una presentación moderna y estratégica.",
+      "imageAlt": "Portafolio profesional de Rafaela Rodrigues en Tecnología de la Información"
+    }
+  },
+
+  "footer": {
+    "title": "Nuevos proyectos ya están en desarrollo.",
+
+    "description": "Rodrigues Digital continúa desarrollando soluciones digitales para empresas y profesionales que desean fortalecer su presencia digital con estrategia, identidad y propósito.",
+
+    "button": "Conocer todos los proyectos"
+  }
+},
+
+"cta": {
+  "eyebrow": "¿Hablamos?",
+
+  "title": {
+    "first": "Su próxima presencia digital puede comenzar",
+    "highlight": "con una buena conversación."
+  },
+
+  "description": "Cuénteme sobre su negocio, sus objetivos y el momento actual de su marca. Juntos podemos desarrollar una solución profesional y estratégica capaz de generar nuevas oportunidades.",
+
+  "benefits": {
+    "first": "Atención cercana y personalizada",
+    "second": "Estrategia antes del desarrollo",
+    "third": "Soluciones alineadas con la identidad de la marca"
+  },
+
+  "buttons": {
+    "meeting": "Solicitar reunión",
+    "meetingAria": "Solicitar una reunión por WhatsApp",
+    "solutions": "Conocer soluciones"
+  },
+
+  "brand": {
+    "title": "Estrategia, identidad y tecnología para fortalecer su marca.",
+    "footer": "Presencia digital profesional"
+  },
+
+  "floating": {
+    "title": "Atención personalizada",
+    "description": "Desde la planificación hasta la publicación"
+  }
+},
+
+"footer": {
+  "description": "Transformando ideas en presencias digitales profesionales.",
+  "rights": "Todos los derechos reservados.",
+  "privacy": "Política de Privacidad",
+  "backTop": "Volver arriba",
+
+  "homeAria": "Ir a la página inicial",
+  "whatsappAria": "Hablar por WhatsApp",
+  "instagramAria": "Abrir Instagram",
+  "emailAria": "Enviar correo",
+
+  "navigation": {
+    "title": "Navegación",
+    "home": "Inicio",
+    "about": "Sobre",
+    "solutions": "Soluciones",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+
+  "solutions": {
+    "title": "Soluciones",
+    "website": "Sitio Institucional",
+    "landing": "Landing Page",
+    "portfolio": "Portafolio Profesional",
+    "mediaKit": "Media Kit",
+    "seo": "SEO Inicial",
+    "maintenance": "Mantenimiento de Sitios"
+  },
+
+  "contact": {
+    "title": "Contacto",
+    "email": "Correo",
+    "service": "Atención"
+  }
+},
+
+"seo": {
+  "home": {
+    "title": "Rodrigues Digital | Presencias digitales profesionales",
+    "description": "Sitios institucionales, landing pages, portafolios profesionales y soluciones digitales desarrollados con estrategia, tecnología e identidad para fortalecer marcas y generar oportunidades."
+  }
+}
+}

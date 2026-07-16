@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowRight,
   FaChartLine,
@@ -7,99 +9,100 @@ import {
 } from "react-icons/fa6";
 
 import aboutImage from "../../assets/images/about/rafaela-about.png";
+
 import "./About.css";
 
 function About() {
+  const { t } = useTranslation();
+
+  const pillars = [
+    {
+      icon: <FaCode />,
+      title: t("about.pillars.technical.title"),
+      text: t("about.pillars.technical.description"),
+    },
+    {
+      icon: <FaChartLine />,
+      title: t("about.pillars.strategy.title"),
+      text: t("about.pillars.strategy.description"),
+    },
+    {
+      icon: <FaHandshake />,
+      title: t("about.pillars.support.title"),
+      text: t("about.pillars.support.description"),
+    },
+  ];
+
   return (
     <section className="about">
       <div className="container about__container">
         <div className="about__content">
           <span className="about__eyebrow">
-            Quem está por trás da Rodrigues Digital
+            {t("about.eyebrow")}
           </span>
 
           <h2 className="about__title">
-            Cada projeto começa{" "}
+            {t("about.title.first")}
+
             <span className="about__title-highlight">
-              muito antes do código.
+              {" "}
+              {t("about.title.highlight")}
             </span>
           </h2>
 
           <div className="about__texts">
-            <p>
-              Durante mais de uma década atuando em Tecnologia da Informação,
-              aprendi que uma boa solução começa pela compreensão do problema.
-              Hoje, aplico esse mesmo pensamento para desenvolver presenças
-              digitais que representam empresas, profissionais e projetos com
-              estratégia, identidade e propósito.
-            </p>
+            <p>{t("about.text1")}</p>
 
-            <p>
-              Cada cliente possui uma história única. Por isso, nenhum projeto é
-              desenvolvido a partir de modelos prontos. Meu trabalho é
-              compreender a essência da marca e transformá-la em uma presença
-              digital profissional que inspire confiança e gere oportunidades.
-            </p>
+            <p>{t("about.text2")}</p>
           </div>
 
           <div className="about__pillars">
-            <article className="about__pillar">
-              <div className="about__pillar-icon" aria-hidden="true">
-                <FaCode />
-              </div>
+            {pillars.map((pillar) => (
+              <article
+                key={pillar.title}
+                className="about__pillar"
+              >
+                <div
+                  className="about__pillar-icon"
+                  aria-hidden="true"
+                >
+                  {pillar.icon}
+                </div>
 
-              <div>
-                <strong>Experiência técnica</strong>
-                <span>
-                  Mais de 10 anos em Tecnologia da Informação aplicados a
-                  soluções digitais.
-                </span>
-              </div>
-            </article>
+                <div>
+                  <strong>{pillar.title}</strong>
 
-            <article className="about__pillar">
-              <div className="about__pillar-icon" aria-hidden="true">
-                <FaChartLine />
-              </div>
-
-              <div>
-                <strong>Visão estratégica</strong>
-                <span>
-                  Cada decisão é alinhada à identidade, ao público e aos
-                  objetivos do negócio.
-                </span>
-              </div>
-            </article>
-
-            <article className="about__pillar">
-              <div className="about__pillar-icon" aria-hidden="true">
-                <FaHandshake />
-              </div>
-
-              <div>
-                <strong>Acompanhamento próximo</strong>
-                <span>
-                  Comunicação transparente do planejamento à publicação do
-                  projeto.
-                </span>
-              </div>
-            </article>
+                  <span>{pillar.text}</span>
+                </div>
+              </article>
+            ))}
           </div>
 
-          <Link to="/sobre" className="button button--primary about__button">
-            Conheça minha história
+          <Link
+            to="/sobre"
+            className="button button--primary about__button"
+          >
+            {t("about.button")}
+
             <FaArrowRight aria-hidden="true" />
           </Link>
         </div>
 
         <div className="about__visual">
-          <div className="about__gold-orb" aria-hidden="true" />
-          <div className="about__line" aria-hidden="true" />
+          <div
+            className="about__gold-orb"
+            aria-hidden="true"
+          />
+
+          <div
+            className="about__line"
+            aria-hidden="true"
+          />
 
           <div className="about__image-frame">
             <img
               src={aboutImage}
-              alt="Rafaela Rodrigues, fundadora da Rodrigues Digital"
+              alt={t("about.imageAlt")}
               className="about__image"
             />
           </div>
@@ -108,7 +111,7 @@ function About() {
             <span>Rodrigues Digital</span>
 
             <strong>
-              Estratégia, tecnologia e atenção aos detalhes em cada etapa.
+              {t("about.quote")}
             </strong>
           </div>
         </div>

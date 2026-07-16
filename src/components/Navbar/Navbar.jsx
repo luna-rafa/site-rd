@@ -1,17 +1,99 @@
-import { NavLink } from "react-router-dom";
+import {
+  NavLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+
+import { useTranslation } from "react-i18next";
+
 import logoRd from "../../assets/logos/logo-rd.png";
 import siteConfig from "../../config/site";
+
 import "./Navbar.css";
 
+const languages = [
+  { code: "pt", label: "PT" },
+  { code: "en", label: "EN" },
+  { code: "es", label: "ES" },
+];
+
 function Navbar() {
+  const { t, i18n } = useTranslation();
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const currentLanguage = (
+    i18n.resolvedLanguage ||
+    i18n.language ||
+    "pt"
+  ).slice(0, 2);
+
+  function removeLanguagePrefix(pathname) {
+    const cleanPath = pathname
+      .replace(/^\/en(?=\/|$)/, "")
+      .replace(/^\/es(?=\/|$)/, "");
+
+    return cleanPath || "/";
+  }
+
+  function getLocalizedPath(path) {
+    const cleanPath = removeLanguagePrefix(path);
+
+    if (currentLanguage === "en") {
+      return cleanPath === "/" ? "/en" : `/en${cleanPath}`;
+    }
+
+    if (currentLanguage === "es") {
+      return cleanPath === "/" ? "/es" : `/es${cleanPath}`;
+    }
+
+    return cleanPath;
+  }
+
+  async function handleLanguageChange(language) {
+    await i18n.changeLanguage(language);
+
+    localStorage.setItem("rd-language", language);
+
+    document.documentElement.lang =
+      language === "pt"
+        ? "pt-BR"
+        : language === "en"
+          ? "en"
+          : "es";
+
+    const cleanPath = removeLanguagePrefix(location.pathname);
+
+    let localizedPath = cleanPath;
+
+    if (language === "en") {
+      localizedPath =
+        cleanPath === "/" ? "/en" : `/en${cleanPath}`;
+    }
+
+    if (language === "es") {
+      localizedPath =
+        cleanPath === "/" ? "/es" : `/es${cleanPath}`;
+    }
+
+    navigate(`${localizedPath}${location.search}${location.hash}`);
+  }
+
+  function getLinkClass({ isActive }) {
+    return `navbar__link ${
+      isActive ? "navbar__link--active" : ""
+    }`;
+  }
+
   return (
     <header className="navbar">
       <div className="container navbar__container">
-        {/* Logo */}
         <NavLink
-          to="/"
+          to={getLocalizedPath("/")}
+          end
           className="navbar__brand"
-          aria-label="Ir para a página inicial"
+          aria-label={t("navbar.homeAria")}
         >
           <img
             src={logoRd}
@@ -20,84 +102,92 @@ function Navbar() {
           />
         </NavLink>
 
-        {/* Menu */}
-        <nav className="navbar__menu" aria-label="Navegação principal">
+        <nav
+          className="navbar__menu"
+          aria-label={t("navbar.navigationAria")}
+        >
           <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `navbar__link ${isActive ? "navbar__link--active" : ""}`
-            }
+            to={getLocalizedPath("/")}
+            end
+            className={getLinkClass}
           >
-            Início
+            {t("navbar.home")}
           </NavLink>
 
           <NavLink
-            to="/sobre"
-            className={({ isActive }) =>
-              `navbar__link ${isActive ? "navbar__link--active" : ""}`
-            }
+            to={getLocalizedPath("/sobre")}
+            className={getLinkClass}
           >
-            Sobre
+            {t("navbar.about")}
           </NavLink>
 
           <NavLink
-            to="/solucoes"
-            className={({ isActive }) =>
-              `navbar__link ${isActive ? "navbar__link--active" : ""}`
-            }
+            to={getLocalizedPath("/solucoes")}
+            className={getLinkClass}
           >
-            Soluções
+            {t("navbar.solutions")}
           </NavLink>
 
           <NavLink
-            to="/portfolio"
-            className={({ isActive }) =>
-              `navbar__link ${isActive ? "navbar__link--active" : ""}`
-            }
+            to={getLocalizedPath("/portfolio")}
+            className={getLinkClass}
           >
-            Projetos
+            {t("navbar.projects")}
           </NavLink>
 
           <NavLink
-            to="/blog"
-            className={({ isActive }) =>
-              `navbar__link ${isActive ? "navbar__link--active" : ""}`
-            }
+            to={getLocalizedPath("/blog")}
+            className={getLinkClass}
           >
-            Blog
+            {t("navbar.blog")}
           </NavLink>
 
           <NavLink
-            to="/contato"
-            className={({ isActive }) =>
-              `navbar__link ${isActive ? "navbar__link--active" : ""}`
-            }
+            to={getLocalizedPath("/contato")}
+            className={getLinkClass}
           >
-            Contato
+            {t("navbar.contact")}
           </NavLink>
         </nav>
 
-        {/* Ações */}
         <div className="navbar__actions">
-          <div className="navbar__languages">
-            <button
-              type="button"
-              className="navbar__language navbar__language--active"
-            >
-              PT
-            </button>
+          <div
+            className="navbar__languages"
+            aria-label={t("navbar.languageSelector")}
+          >
+            {languages.map((language, index) => {
+              const isActive =
+                currentLanguage === language.code;
 
-            <span>/</span>
+              return (
+                <div
+                  key={language.code}
+                  className="navbar__language-group"
+                >
+                  <button
+                    type="button"
+                    className={`navbar__language ${
+                      isActive
+                        ? "navbar__language--active"
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handleLanguageChange(language.code)
+                    }
+                    aria-pressed={isActive}
+                    aria-label={t(
+                      `navbar.languages.${language.code}`,
+                    )}
+                  >
+                    {language.label}
+                  </button>
 
-            <button type="button" className="navbar__language">
-              EN
-            </button>
-
-            <span>/</span>
-
-            <button type="button" className="navbar__language">
-              ES
-            </button>
+                  {index < languages.length - 1 && (
+                    <span aria-hidden="true">/</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           <a
@@ -106,7 +196,7 @@ function Navbar() {
             rel="noopener noreferrer"
             className="navbar__cta"
           >
-            Solicitar reunião
+            {t("navbar.meeting")}
           </a>
         </div>
       </div>

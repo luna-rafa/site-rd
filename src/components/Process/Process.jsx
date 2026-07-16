@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowRight,
   FaCheck,
@@ -12,52 +14,48 @@ import processImage from "../../assets/images/process/rafaela-processo.png";
 
 import "./Process.css";
 
-const processSteps = [
-  {
-    number: "01",
-    icon: <FaComments />,
-    title: "Reunião inicial",
-    description:
-      "Conheço sua história, seus objetivos, suas necessidades e o momento atual do seu negócio.",
-  },
-  {
-    number: "02",
-    icon: <FaLightbulb />,
-    title: "Planejamento",
-    description:
-      "Definimos a estrutura, o conteúdo, a estratégia e a direção visual que orientarão o projeto.",
-  },
-  {
-    number: "03",
-    icon: <FaCode />,
-    title: "Desenvolvimento",
-    description:
-      "A solução começa a ganhar forma com tecnologia, identidade e atenção a cada detalhe.",
-  },
-  {
-    number: "04",
-    icon: <FaCheck />,
-    title: "Ajustes",
-    description:
-      "Você acompanha o projeto, avalia o resultado e solicita os ajustes previstos no planejamento.",
-  },
-  {
-    number: "05",
-    icon: <FaRocket />,
-    title: "Publicação",
-    description:
-      "Realizo os testes finais, as configurações necessárias e a publicação da sua presença digital.",
-  },
-  {
-    number: "06",
-    icon: <FaHeadset />,
-    title: "Suporte",
-    description:
-      "Após a entrega, você recebe orientações e acompanhamento para utilizar sua nova solução.",
-  },
-];
-
 function Process() {
+  const { t } = useTranslation();
+
+  const processSteps = [
+    {
+      number: "01",
+      icon: <FaComments />,
+      title: t("process.steps.meeting.title"),
+      description: t("process.steps.meeting.description"),
+    },
+    {
+      number: "02",
+      icon: <FaLightbulb />,
+      title: t("process.steps.planning.title"),
+      description: t("process.steps.planning.description"),
+    },
+    {
+      number: "03",
+      icon: <FaCode />,
+      title: t("process.steps.development.title"),
+      description: t("process.steps.development.description"),
+    },
+    {
+      number: "04",
+      icon: <FaCheck />,
+      title: t("process.steps.adjustments.title"),
+      description: t("process.steps.adjustments.description"),
+    },
+    {
+      number: "05",
+      icon: <FaRocket />,
+      title: t("process.steps.publication.title"),
+      description: t("process.steps.publication.description"),
+    },
+    {
+      number: "06",
+      icon: <FaHeadset />,
+      title: t("process.steps.support.title"),
+      description: t("process.steps.support.description"),
+    },
+  ];
+
   return (
     <section className="process">
       <div
@@ -74,25 +72,18 @@ function Process() {
         <div className="process__presentation">
           <div className="process__content">
             <span className="process__eyebrow">
-              Como o projeto acontece
+              {t("process.eyebrow")}
             </span>
 
             <h2 className="process__title">
-              Um processo claro, próximo e{" "}
-              <span>bem estruturado.</span>
+              {t("process.title.first")}{" "}
+              <span>{t("process.title.highlight")}</span>
             </h2>
 
             <div className="process__introduction">
-              <p>
-                Você acompanha cada etapa e sabe exatamente como o projeto está
-                evoluindo.
-              </p>
+              <p>{t("process.introduction.first")}</p>
 
-              <p>
-                Da primeira conversa à publicação, todas as decisões são
-                tomadas com transparência, estratégia e atenção aos seus
-                objetivos.
-              </p>
+              <p>{t("process.introduction.second")}</p>
             </div>
 
             <div className="process__promise">
@@ -104,11 +95,9 @@ function Process() {
               </div>
 
               <div>
-                <strong>Atendimento próximo e consultivo</strong>
+                <strong>{t("process.promise.title")}</strong>
 
-                <span>
-                  Cada projeto começa com escuta, compreensão e planejamento.
-                </span>
+                <span>{t("process.promise.description")}</span>
               </div>
             </div>
           </div>
@@ -127,7 +116,7 @@ function Process() {
             <div className="process__image-frame">
               <img
                 src={processImage}
-                alt="Rafaela Rodrigues atendendo um cliente e acompanhando um projeto pelo tablet"
+                alt={t("process.imageAlt")}
                 className="process__image"
               />
             </div>
@@ -135,9 +124,7 @@ function Process() {
             <div className="process__image-card">
               <span>Rodrigues Digital</span>
 
-              <strong>
-                Comunicação transparente em todas as etapas.
-              </strong>
+              <strong>{t("process.imageCard")}</strong>
             </div>
           </div>
         </div>
@@ -190,17 +177,12 @@ function Process() {
 
           <div className="process__message-content">
             <span className="process__message-label">
-              Acompanhamento em cada etapa
+              {t("process.message.label")}
             </span>
 
-            <strong>
-              Você não recebe apenas um projeto pronto no final.
-            </strong>
+            <strong>{t("process.message.title")}</strong>
 
-            <p>
-              Participa das decisões, acompanha a evolução e entende como cada
-              escolha contribui para o resultado.
-            </p>
+            <p>{t("process.message.description")}</p>
           </div>
         </div>
       </div>

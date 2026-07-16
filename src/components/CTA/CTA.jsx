@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowRight,
   FaCheck,
@@ -6,15 +8,18 @@ import {
 } from "react-icons/fa6";
 
 import siteConfig from "../../config/site";
+
 import "./CTA.css";
 
-const benefits = [
-  "Atendimento próximo e personalizado",
-  "Estratégia antes do desenvolvimento",
-  "Soluções alinhadas à identidade da marca",
-];
-
 function CTA() {
+  const { t } = useTranslation();
+
+  const benefits = [
+    t("cta.benefits.first"),
+    t("cta.benefits.second"),
+    t("cta.benefits.third"),
+  ];
+
   return (
     <section className="cta">
       <div
@@ -30,18 +35,16 @@ function CTA() {
       <div className="container cta__container">
         <div className="cta__content">
           <span className="cta__eyebrow">
-            Vamos conversar?
+            {t("cta.eyebrow")}
           </span>
 
           <h2 className="cta__title">
-            Sua próxima presença digital pode começar{" "}
-            <span>com uma boa conversa.</span>
+            {t("cta.title.first")}{" "}
+            <span>{t("cta.title.highlight")}</span>
           </h2>
 
           <p className="cta__description">
-            Conte-me sobre seu negócio, seus objetivos e o momento atual da sua
-            marca. Juntos, podemos construir uma solução profissional,
-            estratégica e capaz de gerar novas oportunidades.
+            {t("cta.description")}
           </p>
 
           <div className="cta__benefits">
@@ -68,10 +71,11 @@ function CTA() {
               target="_blank"
               rel="noopener noreferrer"
               className="cta__button cta__button--primary"
+              aria-label={t("cta.buttons.meetingAria")}
             >
               <FaWhatsapp aria-hidden="true" />
 
-              <span>Solicitar reunião</span>
+              <span>{t("cta.buttons.meeting")}</span>
 
               <FaArrowRight
                 className="cta__button-arrow"
@@ -83,7 +87,7 @@ function CTA() {
               to="/solucoes"
               className="cta__button cta__button--secondary"
             >
-              <span>Conhecer soluções</span>
+              <span>{t("cta.buttons.solutions")}</span>
 
               <FaArrowRight aria-hidden="true" />
             </Link>
@@ -107,7 +111,7 @@ function CTA() {
             </span>
 
             <strong>
-              Estratégia, identidade e tecnologia para fortalecer sua marca.
+              {t("cta.brand.title")}
             </strong>
 
             <div className="cta__brand-line">
@@ -115,18 +119,28 @@ function CTA() {
             </div>
 
             <div className="cta__brand-footer">
-              <span>Presença digital profissional</span>
+              <span>
+                {t("cta.brand.footer")}
+              </span>
 
               <FaArrowRight aria-hidden="true" />
             </div>
           </div>
 
           <div className="cta__floating-card">
-            <span className="cta__floating-dot" />
+            <span
+              className="cta__floating-dot"
+              aria-hidden="true"
+            />
 
             <div>
-              <strong>Atendimento personalizado</strong>
-              <span>Do planejamento à publicação</span>
+              <strong>
+                {t("cta.floating.title")}
+              </strong>
+
+              <span>
+                {t("cta.floating.description")}
+              </span>
             </div>
           </div>
         </div>

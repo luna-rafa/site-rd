@@ -402,4 +402,50 @@
   .navbar__cta::before {
     transition: none;
   }
+  .navbar__languages {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar__language-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar__language {
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+  color: var(--color-text-light);
+
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+
+.navbar__language:hover {
+  color: var(--color-gold-hover);
+  transform: translateY(-1px);
+}
+
+.navbar__language--active {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.navbar__language:focus-visible {
+  outline: 2px solid rgba(212, 175, 55, 0.4);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
 }

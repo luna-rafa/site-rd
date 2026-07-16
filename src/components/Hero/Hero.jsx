@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowRight,
   FaBriefcase,
@@ -6,6 +8,7 @@ import {
   FaUser,
   FaWhatsapp,
 } from "react-icons/fa6";
+
 import { FaRegStar } from "react-icons/fa";
 
 import heroImage from "../../assets/images/hero/rafaela-hero.png";
@@ -13,31 +16,30 @@ import siteConfig from "../../config/site";
 
 import "./Hero.css";
 
-const highlights = [
-  {
-    icon: <FaBriefcase />,
-    value: "10+",
-    title: "anos em Tecnologia",
-    description:
-      "Experiência aplicada à criação de soluções digitais eficientes.",
-  },
-  {
-    icon: <FaRegStar />,
-    value: "100%",
-    title: "projetos personalizados",
-    description:
-      "Soluções desenvolvidas de acordo com cada negócio e objetivo.",
-  },
-  {
-    icon: <FaGlobe />,
-    value: "PT • EN • ES",
-    title: "sites multilíngues",
-    description:
-      "Seu negócio preparado para alcançar pessoas em diferentes idiomas.",
-  },
-];
-
 function Hero() {
+  const { t } = useTranslation();
+
+  const highlights = [
+    {
+      icon: <FaBriefcase />,
+      value: "10+",
+      title: t("hero.highlights.experience.title"),
+      description: t("hero.highlights.experience.description"),
+    },
+    {
+      icon: <FaRegStar />,
+      value: "100%",
+      title: t("hero.highlights.custom.title"),
+      description: t("hero.highlights.custom.description"),
+    },
+    {
+      icon: <FaGlobe />,
+      value: "PT • EN • ES",
+      title: t("hero.highlights.languages.title"),
+      description: t("hero.highlights.languages.description"),
+    },
+  ];
+
   return (
     <section className="hero">
       <div
@@ -53,25 +55,26 @@ function Hero() {
       <div className="container hero__container">
         <div className="hero__content">
           <span className="hero__eyebrow">
-            Tecnologia • Estratégia • Presença Digital
+            {t("hero.eyebrow")}
           </span>
 
           <h1 className="hero__title">
-            Transformo ideias
+            {t("hero.title.firstLine")}
 
             <span className="hero__title-line">
-              em{" "}
+              {t("hero.title.secondLinePrefix")}{" "}
               <strong className="hero__title-highlight">
-                presenças digitais
+                {t("hero.title.highlight")}
               </strong>
             </span>
 
-            <span className="hero__title-line">profissionais.</span>
+            <span className="hero__title-line">
+              {t("hero.title.lastLine")}
+            </span>
           </h1>
 
           <p className="hero__description">
-            Cada projeto é desenvolvido para representar a essência da sua
-            marca, transmitir credibilidade e gerar resultados reais.
+            {t("hero.description")}
           </p>
 
           <div className="hero__actions">
@@ -80,11 +83,11 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="hero__button hero__button--primary"
-              aria-label="Solicitar reunião pelo WhatsApp"
+              aria-label={t("hero.actions.meetingAria")}
             >
               <FaWhatsapp aria-hidden="true" />
 
-              <span>Solicitar reunião</span>
+              <span>{t("hero.actions.meeting")}</span>
 
               <FaArrowRight
                 className="hero__button-arrow"
@@ -96,7 +99,7 @@ function Hero() {
               to="/portfolio"
               className="hero__button hero__button--secondary"
             >
-              <span>Conhecer projetos</span>
+              <span>{t("hero.actions.projects")}</span>
 
               <FaArrowRight aria-hidden="true" />
             </Link>
@@ -117,7 +120,7 @@ function Hero() {
           <div className="hero__image-frame">
             <img
               src={heroImage}
-              alt="Rafaela Rodrigues, fundadora da Rodrigues Digital"
+              alt={t("hero.imageAlt")}
               className="hero__image"
             />
           </div>
@@ -131,9 +134,9 @@ function Hero() {
             </div>
 
             <div className="hero__founder-content">
-              <strong>Rafaela Rodrigues</strong>
+              <strong>{t("hero.founder.name")}</strong>
 
-              <span>Fundadora da Rodrigues Digital</span>
+              <span>{t("hero.founder.role")}</span>
             </div>
           </div>
         </div>

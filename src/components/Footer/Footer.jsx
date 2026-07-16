@@ -1,4 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import {
   FaArrowUp,
   FaEnvelope,
@@ -12,26 +14,28 @@ import siteConfig from "../../config/site";
 
 import "./Footer.css";
 
-const navigationLinks = [
-  { label: "Início", to: "/" },
-  { label: "Sobre", to: "/sobre" },
-  { label: "Soluções", to: "/solucoes" },
-  { label: "Projetos", to: "/portfolio" },
-  { label: "Blog", to: "/blog" },
-  { label: "Contato", to: "/contato" },
-];
-
-const solutionLinks = [
-  "Site Institucional",
-  "Landing Page",
-  "Portfólio Profissional",
-  "Mídia Kit",
-  "SEO Inicial",
-  "Manutenção de Sites",
-];
-
 function Footer() {
+  const { t } = useTranslation();
+
   const currentYear = new Date().getFullYear();
+
+  const navigationLinks = [
+    { label: t("footer.navigation.home"), to: "/" },
+    { label: t("footer.navigation.about"), to: "/sobre" },
+    { label: t("footer.navigation.solutions"), to: "/solucoes" },
+    { label: t("footer.navigation.projects"), to: "/portfolio" },
+    { label: t("footer.navigation.blog"), to: "/blog" },
+    { label: t("footer.navigation.contact"), to: "/contato" },
+  ];
+
+  const solutionLinks = [
+    t("footer.solutions.website"),
+    t("footer.solutions.landing"),
+    t("footer.solutions.portfolio"),
+    t("footer.solutions.mediaKit"),
+    t("footer.solutions.seo"),
+    t("footer.solutions.maintenance"),
+  ];
 
   function scrollToTop() {
     window.scrollTo({
@@ -48,7 +52,7 @@ function Footer() {
             <Link
               to="/"
               className="footer__logo-link"
-              aria-label="Ir para a página inicial"
+              aria-label={t("footer.homeAria")}
             >
               <img
                 src={logoFooter}
@@ -58,7 +62,7 @@ function Footer() {
             </Link>
 
             <p className="footer__description">
-              Transformando ideias em presenças digitais profissionais.
+              {t("footer.description")}
             </p>
 
             <span className="footer__location-label">
@@ -70,36 +74,33 @@ function Footer() {
                 href={siteConfig.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Falar com a Rodrigues Digital pelo WhatsApp"
+                aria-label={t("footer.whatsappAria")}
               >
-                <FaWhatsapp aria-hidden="true" />
+                <FaWhatsapp />
               </a>
 
               <a
                 href={siteConfig.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Acessar o Instagram da Rodrigues Digital"
+                aria-label={t("footer.instagramAria")}
               >
-                <FaInstagram aria-hidden="true" />
+                <FaInstagram />
               </a>
 
               <a
                 href={siteConfig.emailLink}
-                aria-label="Enviar e-mail para a Rodrigues Digital"
+                aria-label={t("footer.emailAria")}
               >
-                <FaEnvelope aria-hidden="true" />
+                <FaEnvelope />
               </a>
             </div>
           </div>
 
           <div className="footer__column">
-            <h2>Navegação</h2>
+            <h2>{t("footer.navigation.title")}</h2>
 
-            <nav
-              className="footer__links"
-              aria-label="Navegação do rodapé"
-            >
+            <nav className="footer__links">
               {navigationLinks.map((link) => (
                 <NavLink
                   key={link.label}
@@ -112,7 +113,7 @@ function Footer() {
           </div>
 
           <div className="footer__column">
-            <h2>Soluções</h2>
+            <h2>{t("footer.solutions.title")}</h2>
 
             <div className="footer__links">
               {solutionLinks.map((solution) => (
@@ -127,7 +128,7 @@ function Footer() {
           </div>
 
           <div className="footer__column footer__column--contact">
-            <h2>Contato</h2>
+            <h2>{t("footer.contact.title")}</h2>
 
             <a
               href={siteConfig.whatsapp}
@@ -136,7 +137,7 @@ function Footer() {
               className="footer__contact-item"
             >
               <span className="footer__contact-icon">
-                <FaWhatsapp aria-hidden="true" />
+                <FaWhatsapp />
               </span>
 
               <span>
@@ -150,22 +151,22 @@ function Footer() {
               className="footer__contact-item"
             >
               <span className="footer__contact-icon">
-                <FaEnvelope aria-hidden="true" />
+                <FaEnvelope />
               </span>
 
               <span>
-                <strong>E-mail</strong>
+                <strong>{t("footer.contact.email")}</strong>
                 <small>{siteConfig.email}</small>
               </span>
             </a>
 
             <div className="footer__contact-item">
               <span className="footer__contact-icon">
-                <FaLocationDot aria-hidden="true" />
+                <FaLocationDot />
               </span>
 
               <span>
-                <strong>Atendimento</strong>
+                <strong>{t("footer.contact.service")}</strong>
                 <small>{siteConfig.location}</small>
               </span>
             </div>
@@ -176,23 +177,23 @@ function Footer() {
 
         <div className="footer__bottom">
           <p>
-            © {currentYear} Rodrigues Digital. Todos os direitos reservados.
+            © {currentYear} Rodrigues Digital. {t("footer.rights")}
           </p>
 
           <div className="footer__legal">
             <Link to="/politica-de-privacidade">
-              Política de privacidade
+              {t("footer.privacy")}
             </Link>
 
-            <span aria-hidden="true">•</span>
+            <span>•</span>
 
             <button
               type="button"
               className="footer__top-button"
               onClick={scrollToTop}
             >
-              Voltar ao topo
-              <FaArrowUp aria-hidden="true" />
+              {t("footer.backTop")}
+              <FaArrowUp />
             </button>
           </div>
         </div>
