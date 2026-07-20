@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import MainLayout from "./layouts/MainLayout";
 
+import About from "./pages/About/About";
 import Blog from "./pages/Blog";
 import Contato from "./pages/Contato";
 import Home from "./pages/Home";
@@ -11,14 +12,15 @@ function App() {
   return (
     <Routes>
       <Route element={<MainLayout />}>
-        {/* Home em português */}
+        {/* Home */}
         <Route path="/" element={<Home />} />
-
-        {/* Home em inglês */}
         <Route path="/en" element={<Home />} />
-
-        {/* Home em espanhol */}
         <Route path="/es" element={<Home />} />
+
+        {/* Sobre */}
+        <Route path="/sobre" element={<About />} />
+        <Route path="/en/about" element={<About />} />
+        <Route path="/es/sobre" element={<About />} />
 
         {/* Blog */}
         <Route path="/blog" element={<Blog />} />

@@ -119,6 +119,7 @@ function Navbar() {
             className={getLinkClass}
           >
             {t("navbar.about")}
+              
           </NavLink>
 
           <NavLink

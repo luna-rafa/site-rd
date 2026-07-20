@@ -1,0 +1,726 @@
+/* =========================================
+   CTA FINAL — PÁGINA SOBRE
+========================================= */
+
+.about-cta-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      115deg,
+      #072837 0%,
+      #0b3448 48%,
+      #10475d 100%
+    );
+}
+
+/* Textura discreta */
+
+.about-cta-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.14;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    );
+  background-size: 55px 55px;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.85) 35%,
+    rgba(0, 0, 0, 0.85)
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.85) 35%,
+    rgba(0, 0, 0, 0.85)
+  );
+}
+
+/* Linha superior dourada */
+
+.about-cta-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(1180px, calc(100% - 48px));
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(213, 170, 70, 0.8),
+    transparent
+  );
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.about-cta-container {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns:
+    minmax(440px, 1fr)
+    minmax(0, 1.08fr);
+  align-items: stretch;
+  gap: 45px;
+  min-height: 680px;
+}
+
+/* =========================================
+   ÁREA DA IMAGEM — LADO ESQUERDO
+========================================= */
+
+.about-cta-image-area {
+  position: relative;
+  z-index: 2;
+  min-height: 680px;
+}
+
+.about-cta-image-frame {
+  position: absolute;
+  inset: 0 -20px 0 calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.about-cta-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 78% center;
+  filter:
+    saturate(0.94)
+    contrast(1.03)
+    brightness(0.96);
+  transform: scale(1);
+}
+
+/*
+  Como a imagem agora está à esquerda,
+  o degradê escurece a borda direita da foto
+  para integrá-la ao conteúdo.
+*/
+
+.about-cta-image-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      270deg,
+      #0b3448 0%,
+      rgba(11, 52, 72, 0.95) 9%,
+      rgba(11, 52, 72, 0.62) 23%,
+      rgba(11, 52, 72, 0.22) 43%,
+      rgba(11, 52, 72, 0.04) 70%,
+      transparent 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 29, 40, 0.42) 0%,
+      transparent 42%
+    );
+}
+
+/* Arco dourado */
+
+.about-cta-image-decoration {
+  position: absolute;
+  z-index: 3;
+  top: 72px;
+  left: -80px;
+  width: 420px;
+  height: 420px;
+  pointer-events: none;
+  border: 1px solid rgba(213, 170, 70, 0.48);
+  border-radius: 50%;
+}
+
+.about-cta-image-decoration::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(213, 170, 70, 0.16);
+  border-radius: inherit;
+}
+
+/* =========================================
+   SELO SOBRE A FOTO
+========================================= */
+
+.about-cta-image-badge {
+  position: absolute;
+  z-index: 5;
+  left: 18px;
+  bottom: 52px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  max-width: 280px;
+  padding: 17px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background: rgba(5, 36, 49, 0.82);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.about-cta-image-badge-dot {
+  position: relative;
+  flex: 0 0 auto;
+  width: 11px;
+  height: 11px;
+  border: 2px solid rgba(213, 170, 70, 0.35);
+  border-radius: 50%;
+  background: #d5aa46;
+  box-shadow: 0 0 0 5px rgba(213, 170, 70, 0.1);
+}
+
+.about-cta-image-badge div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.about-cta-image-badge strong {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.about-cta-image-badge small {
+  color: rgba(255, 255, 255, 0.56);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.65rem;
+  line-height: 1.4;
+}
+
+/* =========================================
+   CONTEÚDO — LADO DIREITO
+========================================= */
+
+.about-cta-content {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  max-width: 690px;
+  padding: 95px 0 95px 10px;
+}
+
+.about-cta-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 22px;
+  color: #d5aa46;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.about-cta-tag::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin-right: 13px;
+  background: #d5aa46;
+}
+
+.about-cta-title {
+  max-width: 680px;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.45rem, 4.2vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.07;
+  letter-spacing: -0.052em;
+}
+
+.about-cta-title strong {
+  display: inline;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.about-cta-line {
+  width: 94px;
+  height: 3px;
+  margin: 30px 0 27px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #ad7714,
+    #d5aa46,
+    #f0d28b
+  );
+}
+
+.about-cta-description {
+  max-width: 625px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.about-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.about-cta-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 56px;
+  padding: 0 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  color: #082b3b;
+  background: linear-gradient(
+    135deg,
+    #d5aa46,
+    #ebca78
+  );
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.22),
+    0 5px 14px rgba(213, 170, 70, 0.15);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-cta-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 75%;
+  height: 100%;
+  transform: skewX(-20deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transition: left 0.65s ease;
+}
+
+.about-cta-primary:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 42px rgba(0, 0, 0, 0.28),
+    0 8px 20px rgba(213, 170, 70, 0.22);
+}
+
+.about-cta-primary:hover::before {
+  left: 145%;
+}
+
+.about-cta-primary span {
+  position: relative;
+  z-index: 2;
+}
+
+.about-cta-button-icon {
+  position: relative;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.about-cta-primary:hover .about-cta-button-icon {
+  transform: translateX(4px);
+}
+
+.about-cta-secondary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-cta-secondary::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: calc(100% - 28px);
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: #d5aa46;
+  transition: transform 0.35s ease;
+}
+
+.about-cta-secondary:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.about-cta-link-icon {
+  width: 20px;
+  height: 20px;
+  color: #d5aa46;
+  transition: transform 0.3s ease;
+}
+
+.about-cta-secondary:hover .about-cta-link-icon {
+  transform: translateX(6px);
+}
+
+/* =========================================
+   ASSINATURA
+========================================= */
+
+.about-cta-signature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 46px;
+}
+
+.about-cta-signature-line {
+  flex: 0 0 auto;
+  width: 37px;
+  height: 1px;
+  background: rgba(213, 170, 70, 0.75);
+}
+
+.about-cta-signature p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+/* =========================================
+   ELEMENTOS DECORATIVOS
+========================================= */
+
+.about-cta-glow {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.about-cta-glow-one {
+  top: -240px;
+  right: 18%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(
+    circle,
+    rgba(213, 170, 70, 0.1),
+    transparent 68%
+  );
+}
+
+.about-cta-glow-two {
+  left: -180px;
+  bottom: -280px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06),
+    transparent 67%
+  );
+}
+
+.about-cta-shape {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  border: 1px solid rgba(213, 170, 70, 0.13);
+}
+
+.about-cta-shape-one {
+  top: -105px;
+  right: -85px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.about-cta-shape-two {
+  left: 5%;
+  bottom: -120px;
+  width: 265px;
+  height: 265px;
+  border-radius: 45% 55% 55% 45%;
+  transform: rotate(-28deg);
+}
+
+/* =========================================
+   TELAS INTERMEDIÁRIAS
+========================================= */
+
+@media (max-width: 1180px) {
+  .about-cta-container {
+    grid-template-columns:
+      minmax(390px, 0.92fr)
+      minmax(0, 1.08fr);
+    gap: 28px;
+  }
+
+  .about-cta-content {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+  .about-cta-image-frame {
+    inset: 0 -20px 0 calc(50% - 50vw);
+  }
+
+  .about-cta-image {
+    object-fit: contain;
+    object-position: left center;
+  }
+}
+
+  .about-cta-image-badge {
+    left: 15px;
+  }
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .about-cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-height: auto;
+  }
+
+  .about-cta-image-area {
+    width: 100%;
+    min-height: 520px;
+  }
+
+  .about-cta-image-frame {
+    inset: 0 calc(50% - 50vw);
+  }
+
+  .about-cta-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  .about-cta-image-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        #0b3448 0%,
+        rgba(11, 52, 72, 0.82) 12%,
+        rgba(11, 52, 72, 0.18) 38%,
+        transparent 68%
+      );
+  }
+}
+
+  .about-cta-image-decoration {
+    top: 48px;
+    left: -80px;
+    width: 360px;
+    height: 360px;
+  }
+
+  .about-cta-image-badge {
+    left: 20px;
+    bottom: 38px;
+  }
+
+  .about-cta-content {
+    max-width: 100%;
+    padding: 68px 0 80px;
+    text-align: center;
+  }
+
+  .about-cta-tag {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-cta-title,
+  .about-cta-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-cta-line {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-cta-actions {
+    justify-content: center;
+  }
+
+  .about-cta-signature {
+    justify-content: center;
+  }
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+  .about-cta-section::after {
+    width: calc(100% - 32px);
+  }
+
+  .about-cta-image-area {
+    min-height: 410px;
+  }
+
+  .about-cta-image {
+    object-position: center center;
+  }
+
+  .about-cta-content {
+    padding: 58px 0 70px;
+    text-align: left;
+  }
+
+  .about-cta-tag {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about-cta-title {
+    margin: 0;
+    font-size: clamp(2.25rem, 11vw, 3.25rem);
+  }
+
+  .about-cta-line {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about-cta-description {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.78;
+  }
+
+  .about-cta-actions {
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 18px;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .about-cta-primary {
+    width: 100%;
+  }
+
+  .about-cta-secondary {
+    width: fit-content;
+  }
+
+  .about-cta-signature {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .about-cta-signature-line {
+    margin-top: 9px;
+  }
+
+  .about-cta-image-badge {
+    left: 14px;
+    bottom: 28px;
+    max-width: 245px;
+    padding: 14px 16px;
+  }
+
+  .about-cta-image-decoration {
+    top: 45px;
+    left: -130px;
+    width: 330px;
+    height: 330px;
+  }
+}
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 400px) {
+  .about-cta-image-area {
+    min-height: 370px;
+  }
+
+  .about-cta-image-badge {
+    left: 10px;
+    bottom: 22px;
+    max-width: 220px;
+  }
+
+  .about-cta-image-badge strong {
+    font-size: 0.7rem;
+  }
+
+  .about-cta-image-badge small {
+    font-size: 0.6rem;
+  }
+}
