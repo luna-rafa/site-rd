@@ -1,0 +1,59 @@
+.solutions-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.solutions-placeholder {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  padding: 140px 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(212, 175, 55, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(11, 52, 72, 0.05),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fcfbf8 18%,
+      #f8f4ec 45%,
+      #f3ede2 72%,
+      #efe7da 100%
+    );
+}
+
+.solutions-placeholder p {
+  margin: 0;
+  color: #0b3448;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.solutions-placeholder::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 180px;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.6),
+    transparent
+  );
+}

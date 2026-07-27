@@ -1,0 +1,789 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "solutions": "Solutions",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "meeting": "Schedule a meeting",
+    "homeAria": "Go to the home page",
+    "navigationAria": "Main navigation",
+    "languageSelector": "Select language",
+    "languages": {
+      "pt": "Change language to Portuguese",
+      "en": "Change language to English",
+      "es": "Change language to Spanish"
+    }
+  },
+  "hero": {
+    "eyebrow": "Technology • Strategy • Digital Presence",
+    "title": {
+      "firstLine": "I transform ideas",
+      "secondLinePrefix": "into",
+      "highlight": "professional digital",
+      "lastLine": "presences."
+    },
+    "description": "Each project is developed to represent the essence of your brand, build credibility and generate real results.",
+    "actions": {
+      "meeting": "Schedule a meeting",
+      "projects": "View projects",
+      "meetingAria": "Schedule a meeting through WhatsApp"
+    },
+    "imageAlt": "Rafaela Rodrigues, founder of Rodrigues Digital",
+    "founder": {
+      "name": "Rafaela Rodrigues",
+      "role": "Founder of Rodrigues Digital"
+    },
+    "highlights": {
+      "experience": {
+        "title": "years in Technology",
+        "description": "Experience applied to the creation of efficient digital solutions."
+      },
+      "custom": {
+        "title": "custom projects",
+        "description": "Solutions developed according to each business and its goals."
+      },
+      "languages": {
+        "title": "multilingual websites",
+        "description": "Your business prepared to reach people in different languages."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Who is behind Rodrigues Digital",
+    "title": {
+      "first": "Every project starts",
+      "highlight": "long before the code."
+    },
+    "text1": "After more than a decade working in Information Technology, I learned that every good solution starts by understanding the problem. Today, I apply this same mindset to create digital presences that represent companies, professionals and projects with strategy, identity and purpose.",
+    "text2": "Every client has a unique story. That is why no project is built from ready-made templates. My work is to understand the essence of each brand and transform it into a professional digital presence that inspires trust and creates opportunities.",
+    "button": "Discover my story",
+    "imageAlt": "Rafaela Rodrigues, founder of Rodrigues Digital",
+    "quote": "Strategy, technology and attention to detail at every stage.",
+    "pillars": {
+      "technical": {
+        "title": "Technical expertise",
+        "description": "More than 10 years of experience in Information Technology applied to digital solutions."
+      },
+      "strategy": {
+        "title": "Strategic vision",
+        "description": "Every decision is aligned with the brand, its audience and business goals."
+      },
+      "support": {
+        "title": "Close support",
+        "description": "Transparent communication from planning to project launch."
+      }
+    }
+  },
+  "aboutPage": {
+    "seoTitle": "About Rafaela Rodrigues | Rodrigues Digital",
+    "hero": {
+      "eyebrow": "Nice to meet you.",
+      "titlePrefix": "I am",
+      "titleName": "Rafaela Rodrigues",
+      "description1": "I have worked in Information Technology for over 10 years, developing solutions for companies across a wide range of industries.",
+      "description2": "Today, I use this experience to create professional digital presences that combine strategy, technology and identity to",
+      "descriptionHighlight": "strengthen brands.",
+      "quotePrefix": "Because a great website does not start with code.",
+      "quoteHighlight": "It starts with strategy.",
+      "projectsButton": "Explore my projects",
+      "contactButton": "Let's talk",
+      "imageAlt": "Rafaela Rodrigues, founder of Rodrigues Digital",
+      "highlights": [
+        {
+          "title": "10+ years",
+          "text": "in Information Technology"
+        },
+        {
+          "title": "Broad experience",
+          "text": "Infrastructure, Systems and Cloud"
+        },
+        {
+          "title": "Digital solutions",
+          "text": "Websites, Landing Pages and Portfolios"
+        },
+        {
+          "title": "Strategy and results",
+          "text": "Focused on performance and growth"
+        }
+      ]
+    },
+    "story": {
+      "eyebrow": "MY JOURNEY",
+      "title": "My story",
+      "subtitle": "My journey began long before Rodrigues Digital.",
+      "paragraph1": "I have always been driven by curiosity and by the desire to understand how technology can solve real problems.",
+      "paragraph2Prefix": "For more than",
+      "paragraph2Highlight": "10 years",
+      "paragraph2Suffix": ", I have worked across different areas of Information Technology, developing business solutions, managing servers, infrastructure and cloud environments, and participating in projects that demanded strategy, organization and attention to detail.",
+      "paragraph3": "Along the way, I noticed something many companies had in common: they delivered excellent services, but could not communicate that quality online.",
+      "paragraph4Prefix": "That is how",
+      "paragraph5": "Today, I apply all my experience to create websites, landing pages and digital solutions that help companies and professionals convey credibility, authority and trust.",
+      "timeline": [
+        {
+          "number": "01",
+          "title": "Technology",
+          "text": "The beginning of my Information Technology journey, where I developed a solid foundation of technical knowledge."
+        },
+        {
+          "number": "02",
+          "title": "Infrastructure",
+          "text": "Experience with servers, networks, virtualization, security and corporate environments across different industries."
+        },
+        {
+          "number": "03",
+          "title": "Cloud",
+          "text": "Work with Microsoft 365, Azure and cloud solutions, supporting companies through digital transformation."
+        },
+        {
+          "number": "04",
+          "title": "Development",
+          "text": "I realized that many excellent companies could not communicate their credibility in the digital environment."
+        },
+        {
+          "number": "05",
+          "title": "Rodrigues Digital",
+          "text": "Today, I combine technology, strategy and design to build professional digital presences that strengthen brands."
+        }
+      ]
+    },
+    "differentials": {
+      "eyebrow": "WHAT SETS US APART",
+      "titlePrefix": "Why choose",
+      "titleHighlight": "Rodrigues Digital?",
+      "description": "Technology, strategy and close support to build digital presences that inspire trust and create opportunities.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Strategy before code",
+          "text": "Every project begins with planning, analysis and a clear definition of the brand's goals."
+        },
+        {
+          "number": "02",
+          "title": "Technology experience",
+          "text": "Over 10 years working with corporate environments, infrastructure, systems and cloud."
+        },
+        {
+          "number": "03",
+          "title": "Customized solutions",
+          "text": "Every delivery is built around each client's identity, current stage and needs."
+        },
+        {
+          "number": "04",
+          "title": "Commitment to results",
+          "text": "Digital solutions designed to strengthen brands, build credibility and support growth."
+        }
+      ]
+    },
+    "workProcess": {
+      "eyebrow": "Process",
+      "titlePrefix": "How I",
+      "titleHighlight": "work",
+      "description": "A clear, strategic method for turning ideas into digital solutions that generate real results for your business.",
+      "quotePrefix": "Organization, communication and",
+      "quoteHighlight": "focus on results",
+      "quoteSuffix": "at every stage of the project.",
+      "imageAlt": "Rafaela Rodrigues working on a digital project",
+      "steps": [
+        {
+          "number": "01",
+          "title": "We talk",
+          "text": "I learn about your needs, goals and the current context of your business."
+        },
+        {
+          "number": "02",
+          "title": "We plan",
+          "text": "We define the strategy, structure and best path for developing the project."
+        },
+        {
+          "number": "03",
+          "title": "We create",
+          "text": "I develop the design with a focus on brand identity and user experience."
+        },
+        {
+          "number": "04",
+          "title": "We develop",
+          "text": "I turn the plan and design into a functional, fast, secure and responsive solution."
+        },
+        {
+          "number": "05",
+          "title": "We launch",
+          "text": "Your project goes live after testing, optimization and careful final preparation."
+        },
+        {
+          "number": "06",
+          "title": "We support",
+          "text": "I offer support and maintenance to keep everything running smoothly."
+        }
+      ]
+    },
+    "technologies": {
+      "eyebrow": "Technology",
+      "titlePrefix": "Tools that turn strategy into a",
+      "titleHighlight": "digital presence",
+      "description": "I use modern technologies and reliable solutions to develop secure, fast, responsive projects built to grow.",
+      "groups": [
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Development",
+          "items": [
+            "React",
+            "Vite",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Responsive Design"
+          ]
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Infrastructure and Cloud",
+          "items": [
+            "Microsoft 365",
+            "Azure",
+            "Cloud",
+            "Servers",
+            "Networks",
+            "Virtualization"
+          ]
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Performance and Digital Presence",
+          "items": [
+            "Initial SEO",
+            "Git",
+            "GitHub",
+            "Optimization",
+            "Security",
+            "Performance"
+          ]
+        }
+      ],
+      "note": "Each technology is chosen according to the needs, strategy and goals of each project."
+    },
+    "values": {
+      "eyebrow": "Our Essence",
+      "titlePrefix": "More than developing websites,",
+      "titleHighlight": "I build relationships based on trust.",
+      "description": "Every project is developed with dedication, transparency and a focus on results. I believe a strong digital presence is built by combining technology, strategy and a close relationship with each client.",
+      "items": [
+        {
+          "id": "01",
+          "title": "Commitment",
+          "description": "Every project receives individual attention, strategic planning and support throughout every stage."
+        },
+        {
+          "id": "02",
+          "title": "Transparency",
+          "description": "Clear communication, ongoing alignment and decisions made together with each client."
+        },
+        {
+          "id": "03",
+          "title": "Quality",
+          "description": "Every detail is designed to deliver an elegant, efficient solution prepared to represent your brand."
+        },
+        {
+          "id": "04",
+          "title": "Growth",
+          "description": "Technology changes every day. I am committed to continuous improvement so I can always deliver the best solutions."
+        }
+      ]
+    },
+    "cta": {
+      "imageAlt": "Rafaela Rodrigues working on a laptop",
+      "badgeTitle": "Customized projects",
+      "badgeText": "Strategy, technology and results",
+      "eyebrow": "Shall we begin?",
+      "titlePrefix": "Let's build a digital presence that represents the",
+      "titleHighlight": "true value of your company.",
+      "description": "Every project begins with a conversation to understand your company, your goals and the audience you want to reach. Then we turn strategy, technology and design into a professional digital presence.",
+      "meetingButton": "Schedule a meeting",
+      "portfolioButton": "Explore my portfolio",
+      "signature": "Over 10 years turning technology into digital solutions.",
+      "stats": {
+  "experience": "years of experience in Information Technology",
+  "custom": "fully customized digital projects",
+  "languages": "available languages (Portuguese, English and Spanish)"
+}
+    }
+  },
+  "services": {
+    "eyebrow": "Digital solutions",
+    "title": {
+      "first": "Solutions developed to strengthen your",
+      "highlight": "digital presence."
+    },
+    "introduction": {
+      "first": "Every business has different needs. That is why I develop customized solutions that combine strategy, visual identity, technology and experience.",
+      "second": "The goal is to build credibility, create opportunities and represent the quality of your business in every detail."
+    },
+    "cardAria": "Learn more about {{service}}",
+    "items": {
+      "institutional": {
+        "title": "Corporate Website",
+        "text": "Present your company with credibility, strengthen your brand and make it easier for clients to contact you.",
+        "benefit": "Credibility and professional presence"
+      },
+      "landing": {
+        "title": "Landing Page",
+        "text": "Pages developed for campaigns, launches, events and new customer acquisition.",
+        "benefit": "Focused on conversion and results"
+      },
+      "portfolio": {
+        "title": "Professional Portfolio",
+        "text": "Showcase your career, projects and skills through a modern and strategic presentation.",
+        "benefit": "Highlight your experience"
+      },
+      "mediaKit": {
+        "title": "Media Kit",
+        "text": "Present your authority and increase your opportunities for partnerships, sponsorships and business.",
+        "benefit": "More business opportunities"
+      },
+      "seo": {
+        "title": "Initial SEO",
+        "text": "Prepare your website for search engines and increase its chances of being found on Google.",
+        "benefit": "Visibility from the beginning"
+      },
+      "maintenance": {
+        "title": "Website Maintenance",
+        "text": "Updates, backups, monitoring and continuous support to keep your website secure and working properly.",
+        "benefit": "Security and ongoing support"
+      }
+    },
+    "footer": {
+      "title": "Need a customized project?",
+      "description": "Not every need fits a ready-made model. Let us discuss your business goals and develop a digital presence designed to generate results.",
+      "button": "Schedule a meeting",
+      "buttonAria": "Schedule a meeting through WhatsApp"
+    }
+  },
+  "process": {
+    "eyebrow": "How the project works",
+    "title": {
+      "first": "A clear, collaborative and",
+      "highlight": "well-structured process."
+    },
+    "introduction": {
+      "first": "You follow every stage and know exactly how the project is progressing.",
+      "second": "From the first conversation to publication, every decision is made with transparency, strategy and attention to your goals."
+    },
+    "promise": {
+      "title": "Close and consultative service",
+      "description": "Every project begins with listening, understanding and planning."
+    },
+    "imageAlt": "Rafaela Rodrigues assisting a client and following a project on a tablet",
+    "imageCard": "Transparent communication throughout every stage.",
+    "steps": {
+      "meeting": {
+        "title": "Initial meeting",
+        "description": "I learn about your story, goals, needs and the current stage of your business."
+      },
+      "planning": {
+        "title": "Planning",
+        "description": "We define the structure, content, strategy and visual direction that will guide the project."
+      },
+      "development": {
+        "title": "Development",
+        "description": "The solution begins to take shape through technology, identity and attention to every detail."
+      },
+      "adjustments": {
+        "title": "Adjustments",
+        "description": "You follow the project, review the result and request the adjustments included in the planning."
+      },
+      "publication": {
+        "title": "Publication",
+        "description": "I carry out the final tests, required configurations and publication of your digital presence."
+      },
+      "support": {
+        "title": "Support",
+        "description": "After delivery, you receive guidance and assistance to use your new solution."
+      }
+    },
+    "message": {
+      "label": "Support throughout every stage",
+      "title": "You do not simply receive a finished project at the end.",
+      "description": "You participate in decisions, follow the progress and understand how each choice contributes to the result."
+    }
+  },
+  "portfolio": {
+    "eyebrow": "Featured Projects",
+    "title": {
+      "first": "Digital experiences created to",
+      "highlight": "represent, position and connect."
+    },
+    "introduction": {
+      "first": "Every project is born from a different need and developed to reflect the identity, goals and current moment of each client.",
+      "second": "More than visually attractive websites, they are solutions designed to build credibility, organize information and create new opportunities."
+    },
+    "openProject": "Open project {{project}} in a new tab",
+    "accessProject": "Access project {{project}}",
+    "access": "View project",
+    "published": "Published project",
+    "available": "Available online",
+    "online": "Project online",
+    "tags": {
+      "react": "React",
+      "responsive": "Responsive",
+      "strategy": "Strategy",
+      "positioning": "Positioning",
+      "personalBrand": "Personal Brand",
+      "technology": "Technology"
+    },
+    "projects": {
+      "marcela": {
+        "category": "Landing Page",
+        "title": "Marcela Braga — Logistics & Business",
+        "description": "Landing page developed to present Marcela Braga's professional journey, services and positioning, focusing on authority, clarity and new business opportunities.",
+        "imageAlt": "Marcela Braga landing page, specialist in logistics, transportation and business development"
+      },
+      "rafaela": {
+        "category": "Professional Portfolio",
+        "title": "Rafaela Rodrigues — Information Technology",
+        "description": "Professional portfolio developed to showcase experience in support, infrastructure, cloud computing and technology through a modern and strategic presentation.",
+        "imageAlt": "Professional portfolio of Rafaela Rodrigues in Information Technology"
+      }
+    },
+    "footer": {
+      "title": "New projects are already in development.",
+      "description": "Rodrigues Digital continues building digital solutions for companies and professionals who want to strengthen their online presence with strategy, identity and purpose.",
+      "button": "View all projects"
+    }
+  },
+  "cta": {
+    "eyebrow": "Let's talk?",
+    "title": {
+      "first": "Your next digital presence can start",
+      "highlight": "with a good conversation."
+    },
+    "description": "Tell me about your business, your goals and your current moment. Together we can build a professional and strategic solution that creates new opportunities.",
+    "benefits": {
+      "first": "Personalized service",
+      "second": "Strategy before development",
+      "third": "Solutions aligned with your brand"
+    },
+    "buttons": {
+      "meeting": "Schedule a meeting",
+      "meetingAria": "Schedule a meeting through WhatsApp",
+      "solutions": "View solutions"
+    },
+    "brand": {
+      "title": "Strategy, identity and technology to strengthen your brand.",
+      "footer": "Professional digital presence"
+    },
+    "floating": {
+      "title": "Personalized service",
+      "description": "From planning to launch"
+    }
+  },
+  "footer": {
+    "description": "Transforming ideas into professional digital presences.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "backTop": "Back to top",
+    "homeAria": "Go to home page",
+    "whatsappAria": "Talk on WhatsApp",
+    "instagramAria": "Open Instagram",
+    "emailAria": "Send e-mail",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "about": "About",
+      "solutions": "Solutions",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "solutions": {
+      "title": "Solutions",
+      "website": "Corporate Website",
+      "landing": "Landing Page",
+      "portfolio": "Professional Portfolio",
+      "mediaKit": "Media Kit",
+      "seo": "Initial SEO",
+      "maintenance": "Website Maintenance"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "service": "Service"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Rodrigues Digital | Professional digital presence",
+      "description": "Corporate websites, landing pages, professional portfolios and digital solutions developed with strategy, technology and identity to strengthen brands and create opportunities."
+    }
+  },
+  "solutions": {
+    "hero": {
+      "eyebrow": "Strategic digital solutions",
+      "title": "Digital solutions developed to strengthen your brand's presence.",
+      "description": "Each project is built with strategy, technology and attention to detail to transform ideas into professional digital experiences aligned with your goals.",
+      "cta": "Schedule a meeting",
+      "more": "Discover the solutions",
+      "note": "Strategy before code. Solutions before technology.",
+      "imageAlt": "Notebook on a desk in a professional office",
+      "cardTitle": "Custom projects",
+      "cardText": "Strategy, technology and results."
+    },
+    "intro": {
+      "eyebrow": "Digital presence with purpose",
+      "title": "Your digital presence should communicate the value of your work.",
+      "text1": "A brand can provide an excellent service and still lose opportunities when its digital communication fails to convey professionalism, clarity and trust.",
+      "text2": "Rodrigues Digital identifies these gaps and transforms them into strategic digital solutions that present your brand with greater strength, organization and credibility.",
+      "highlight": "The goal is not simply to be online, but to build a presence that creates perceived value."
+    },
+    "help": {
+      "eyebrow": "Solutions for every need",
+      "title": "How can I help your business?",
+      "description": "Every business faces different challenges. Before thinking about technology, I seek to understand your brand's current moment in order to recommend the solution that truly makes sense for your business.",
+      "solutionLabel": "Recommended solution",
+      "imageAlt": "Rafaela Rodrigues analyzing a digital project on her laptop",
+      "imageCard": {
+        "label": "Strategic service",
+        "title": "Every project begins by understanding the problem.",
+        "text": "Strategy, technology and attention to detail to develop the right solution."
+      },
+      "quote": "It is not only about creating a page, but about building a digital presence aligned with your company's goals.",
+      "items": [
+        {
+          "question": "Does your company still need a professional website?",
+          "description": "Present your company with credibility, organize your information and make it easier for customers to contact you.",
+          "solution": "Corporate Website"
+        },
+        {
+          "question": "Do you need a page to promote a campaign, launch or event?",
+          "description": "Direct visitors toward a specific action through a clear, strategic and objective page.",
+          "solution": "Landing Page"
+        },
+        {
+          "question": "Do you want to present your professional journey with greater authority?",
+          "description": "Highlight your experience, projects and skills with a professional presentation.",
+          "solution": "Professional Portfolio"
+        },
+        {
+          "question": "Are you looking for new opportunities, partnerships or sponsorships?",
+          "description": "Present your work, audience and results in an organized and commercially strategic way.",
+          "solution": "Media Kit"
+        },
+        {
+          "question": "Does your company need to be found more easily on Google?",
+          "description": "Prepare your digital presence for search engines and increase your visibility opportunities.",
+          "solution": "Initial SEO"
+        },
+        {
+          "question": "Do you need to keep your website updated, secure and working properly?",
+          "description": "Count on updates, backups, monitoring and ongoing support for your project.",
+          "solution": "Website Maintenance"
+        }
+      ]
+    },
+    "strategy": {
+      "eyebrow": "Decisions guided by strategy",
+      "titlePrefix": "How we define the",
+      "titleHighlight": "right solution",
+      "description": "Before starting any project, I analyze the brand's current stage, the business goals, the audience that needs to be reached and how the company wants to position itself in the digital environment.",
+      "principle": "You receive a recommendation aligned with your real needs, rather than a generic solution or something more complex than your business requires.",
+      "criteria": [
+        {
+          "title": "Current stage of the brand",
+          "description": "We analyze what already exists, what needs to be strengthened and which digital opportunities are not yet being explored."
+        },
+        {
+          "title": "Main objective",
+          "description": "We determine whether the project needs to build authority, present services, capture leads, support sales or strengthen positioning."
+        },
+        {
+          "title": "Audience to be reached",
+          "description": "We organize the communication, structure and experience according to the people your company wants to attract."
+        },
+        {
+          "title": "Growth strategy",
+          "description": "We choose a solution prepared to meet the company's current needs and support its future development."
+        }
+      ],
+      "quotePrefix": "The best solution is not the most complex one. It is the one that solves",
+      "quoteHighlight": "the right problem at the right time",
+      "quoteSuffix": ".",
+      "closing": "Every decision is explained clearly so that you understand how the strategy contributes to the final result."
+    },
+    "projectProcess": {
+      "eyebrow": "From planning to delivery",
+      "titlePrefix": "Every stage is built with",
+      "titleHighlight": "strategy and transparency",
+      "description": "Every project follows an organized process to ensure clarity, quality and a smooth experience throughout development.",
+      "promise": "You follow the progress of the project, participate in important decisions and know exactly what is being developed at every stage.",
+      "steps": [
+        {
+          "label": "Stage 01",
+          "title": "Discovery",
+          "description": "I learn about your company, its story, goals and the challenges that need to be solved."
+        },
+        {
+          "label": "Stage 02",
+          "title": "Planning",
+          "description": "We define the strategy, structure, content and visual direction of the project."
+        },
+        {
+          "label": "Stage 03",
+          "title": "Development",
+          "description": "I transform the plan into a functional, responsive solution aligned with your brand."
+        },
+        {
+          "label": "Stage 04",
+          "title": "Adjustments",
+          "description": "You review the project and request the planned adjustments so we can refine every detail."
+        },
+        {
+          "label": "Stage 05",
+          "title": "Publication",
+          "description": "I complete the final tests, required configurations and publish the project."
+        },
+        {
+          "label": "Stage 06",
+          "title": "Support",
+          "description": "After delivery, you receive guidance and support to use your new digital solution."
+        }
+      ],
+      "closing": {
+        "label": "Communication at every stage",
+        "title": "You do not simply receive a completed project at the end.",
+        "description": "You participate in decisions, follow the progress and understand how each choice contributes to the result."
+      }
+    },
+    "deliverables": {
+      "eyebrow": "A complete delivery",
+      "titlePrefix": "What you receive when working with",
+      "titleHighlight": "Rodrigues Digital",
+      "description": "Every project combines planning, technology and close support so your company receives a professional, organized solution prepared to create new opportunities.",
+      "items": [
+        {
+          "title": "Strategic planning",
+          "description": "A clear definition of the goals, structure and decisions that will guide the entire development process."
+        },
+        {
+          "title": "Custom design",
+          "description": "A visual identity created according to the essence, positioning and current stage of your brand."
+        },
+        {
+          "title": "Responsive development",
+          "description": "A solution prepared to work properly on computers, tablets and smartphones."
+        },
+        {
+          "title": "Organized structure",
+          "description": "Content presented clearly to make navigation and understanding easier for your customers."
+        },
+        {
+          "title": "Performance and initial SEO",
+          "description": "Performance best practices, technical structure and initial preparation for search engines."
+        },
+        {
+          "title": "Launch and support",
+          "description": "Configuration, final testing, project launch and guidance on how to use your new solution."
+        }
+      ],
+      "closing": {
+        "label": "Customized solutions",
+        "title": "Every delivery is developed to represent the true value of your company.",
+        "description": "You receive more than a visually attractive page. You receive a digital presence designed to build trust, strengthen your brand and support your goals.",
+        "button": "Schedule a meeting",
+        "buttonAria": "Schedule a meeting through WhatsApp"
+      }
+    },
+    "faq": {
+  "eyebrow": "Frequently Asked Questions",
+  "titlePrefix": "Everything you need to know",
+  "titleHighlight": "before starting your project.",
+  "description": "Here are the most common questions from businesses and professionals looking to build a strategic, professional digital presence designed to create new opportunities.",
+  "imageAlt": "Rafaela Rodrigues reviewing a digital project in her office",
+  "imageCard": {
+    "label": "Consultative approach",
+    "title": "Clear communication and support throughout every stage."
+  },
+  "questions": [
+    {
+      "question": "How long does it take to develop a project?",
+      "answer": "The timeline depends on the type of solution, the number of pages, the required features and how quickly the project materials are provided. After our initial meeting and project definition, you will receive a clear schedule covering every stage."
+    },
+    {
+      "question": "Can I request changes during development?",
+      "answer": "Yes. Every project includes review stages so you can follow the progress and request the planned adjustments before publication."
+    },
+    {
+      "question": "Do I need to have all the texts and images ready?",
+      "answer": "Not necessarily. During the planning stage, we organize all the content required for your project. You can provide the materials you already have, and I will guide you on what still needs to be prepared."
+    },
+    {
+      "question": "Do you handle domain registration and hosting setup?",
+      "answer": "I can guide you through the domain and hosting purchase process, configure the necessary services and prepare everything for a secure project launch."
+    },
+    {
+      "question": "Will my website work on smartphones and tablets?",
+      "answer": "Yes. Every project is fully responsive and developed to provide an excellent browsing experience on desktops, tablets and mobile devices."
+    },
+    {
+      "question": "Can my project be developed in multiple languages?",
+      "answer": "Yes. Rodrigues Digital develops multilingual projects in Portuguese, English and Spanish. The project scope and investment depend on the number of languages and the amount of content to be adapted."
+    },
+    {
+      "question": "Will my project include initial Google optimization?",
+      "answer": "Yes. Projects can include initial SEO best practices such as page structure, metadata, content organization, performance optimization and technical improvements for search engines."
+    },
+    {
+      "question": "Will I receive support after the project is delivered?",
+      "answer": "Yes. After launch, you receive guidance on how to use your new digital solution as well as the initial support included in the project. You may also choose a monthly maintenance plan for updates, backups, monitoring and minor improvements."
+    }
+  
+  ],
+  "contact": {
+    "label": "Still have questions?",
+    "title": "Let's discuss what your business really needs.",
+    "description": "Every company has different goals, challenges and opportunities. Schedule a meeting so I can understand your project and recommend the most appropriate solution.",
+    "button": "Schedule a meeting",
+    "buttonAria": "Schedule a meeting with Rodrigues Digital via WhatsApp"
+  }
+},
+"cta": {
+  "eyebrow": "Ready to get started?",
+  "titlePrefix": "Let's turn your needs into a",
+  "titleHighlight": "professional digital presence.",
+  "description": "Every project begins with a conversation to understand your business, your goals and your brand's current stage. From there, we create a customized solution designed to strengthen your digital presence and generate new opportunities.",
+  "whatsappMessage": "Hello Rafaela! I'd like to discuss a project to strengthen my digital presence.",
+  "benefits": {
+    "first": "Personalized service",
+    "second": "Strategy before development",
+    "third": "Project built specifically for your business"
+  },
+  "buttons": {
+    "meeting": "Schedule a meeting",
+    "meetingAria": "Schedule a meeting through WhatsApp",
+    "projects": "View projects",
+    "projectsAria": "View completed projects"
+  },
+  "meeting": {
+    "label": "First step",
+    "title": "Strategic meeting",
+    "description": "An initial conversation to understand your business and recommend the digital solution that best fits your current goals.",
+    "items": [
+      "Understanding your business and objectives",
+      "Analyzing your brand's current stage",
+      "Identifying your main needs",
+      "Recommending the ideal solution"
+    ],
+    "durationLabel": "Estimated time",
+    "duration": "30 minutes",
+    "note": "No obligation"
+  },
+  "stats": {
+    "experience": "years of experience in Information Technology",
+    "custom": "fully customized digital projects",
+    "languages": "available languages: Portuguese, English and Spanish"
+  }
+}
+  }
+}

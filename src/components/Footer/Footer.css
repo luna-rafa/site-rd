@@ -1,0 +1,383 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  padding: 82px 0 30px;
+
+  background:
+    radial-gradient(
+      circle at 92% 8%,
+      rgba(212, 175, 55, 0.09),
+      transparent 24%
+    ),
+    linear-gradient(
+      155deg,
+      #051f29 0%,
+      #062b38 52%,
+      #073845 100%
+    );
+
+  color: #ffffff;
+}
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+  right: -170px;
+  bottom: -180px;
+
+  width: 420px;
+  height: 420px;
+
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.footer__container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns:
+    minmax(260px, 1.25fr)
+    minmax(140px, 0.65fr)
+    minmax(190px, 0.8fr)
+    minmax(270px, 1fr);
+
+  gap: 65px;
+}
+
+.footer__brand {
+  max-width: 360px;
+}
+
+.footer__logo-link {
+  display: inline-flex;
+
+  margin-bottom: 22px;
+}
+
+.footer__logo {
+  display: block;
+
+  width: 235px;
+  height: auto;
+
+  object-fit: contain;
+
+  filter: none;
+}
+.footer__location-label {
+  display: block;
+
+  margin: -10px 0 24px;
+
+  color: var(--color-gold);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.footer__description {
+  margin-bottom: 25px;
+
+  color: rgba(255, 255, 255, 0.66);
+
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__social a {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  transition:
+    transform var(--transition),
+    color var(--transition),
+    background var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.footer__social a:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--color-gold);
+
+  background: var(--color-gold);
+  color: var(--color-primary);
+
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.17);
+}
+
+.footer__column h2 {
+  margin: 5px 0 23px;
+
+  color: #ffffff;
+
+  font-family: var(--font-title);
+  font-size: 0.86rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer__column h2::after {
+  content: "";
+
+  display: block;
+
+  width: 30px;
+  height: 2px;
+
+  margin-top: 10px;
+
+  border-radius: var(--radius-pill);
+
+  background: var(--color-gold);
+}
+
+.footer__links {
+  display: grid;
+  gap: 13px;
+}
+
+.footer__links a {
+  width: fit-content;
+
+  color: rgba(255, 255, 255, 0.64);
+
+  font-size: 0.78rem;
+  text-decoration: none;
+
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+
+.footer__links a:hover {
+  color: #f0c957;
+  transform: translateX(4px);
+}
+
+.footer__column--contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 14px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__contact-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  border-radius: 13px;
+
+  background: rgba(212, 175, 55, 0.08);
+  color: #dfb93f;
+
+  font-size: 0.86rem;
+}
+
+.footer__contact-item strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: rgba(255, 255, 255, 0.89);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.footer__contact-item small {
+  display: block;
+
+  overflow-wrap: anywhere;
+
+  color: rgba(255, 255, 255, 0.56);
+
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+a.footer__contact-item:hover small {
+  color: #f0c957;
+}
+
+.footer__divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 58px 0 27px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.13),
+    transparent
+  );
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__bottom p {
+  color: rgba(255, 255, 255, 0.46);
+
+  font-size: 0.68rem;
+}
+
+.footer__legal {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 0.68rem;
+}
+
+.footer__legal a {
+  color: rgba(255, 255, 255, 0.55);
+
+  text-decoration: none;
+
+  transition: color var(--transition);
+}
+
+.footer__legal a:hover {
+  color: #f0c957;
+}
+
+.footer__top-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+
+  font-family: var(--font-primary);
+  font-size: 0.68rem;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+
+.footer__top-button:hover {
+  color: #f0c957;
+  transform: translateY(-2px);
+}
+
+.footer__social a:focus-visible,
+.footer__links a:focus-visible,
+.footer__contact-item:focus-visible,
+.footer__legal a:focus-visible,
+.footer__top-button:focus-visible {
+  outline: 3px solid rgba(212, 175, 55, 0.45);
+  outline-offset: 4px;
+}
+
+@media (max-width: 1100px) {
+  .footer__main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 55px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    padding-top: 67px;
+  }
+
+  .footer__container {
+    width: min(92%, var(--container));
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .footer__brand {
+    max-width: 420px;
+  }
+
+  .footer__logo {
+    width: 210px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__legal {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__social a,
+  .footer__links a,
+  .footer__top-button {
+    transition: none;
+  }
+
+  .footer__social a:hover,
+  .footer__links a:hover,
+  .footer__top-button:hover {
+    transform: none;
+  }
+}
