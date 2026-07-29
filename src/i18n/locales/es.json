@@ -735,6 +735,29 @@
     "custom": "proyectos desarrollados de forma personalizada",
     "languages": "idiomas disponibles: portugués, inglés y español"
   }
-}
+},
+
+  "projects": {
+    "hero": {
+      "badge": "Proyectos desarrollados para profesionales y empresas",
+      "titleStart": "Proyectos que transforman ideas en",
+      "titleHighlight": "experiencias digitales.",
+      "description": "Cada proyecto se desarrolla con estrategia, diseño y tecnología para fortalecer marcas, generar confianza y crear resultados reales.",
+      "primaryButton": "Ver proyectos",
+      "secondaryButton": "Solicitar una reunión",
+      "detailOneValue": "Estrategia",
+      "detailOneLabel": "Antes del desarrollo",
+      "detailTwoValue": "Diseño",
+      "detailTwoLabel": "Experiencias profesionales",
+      "detailThreeValue": "Tecnología",
+      "detailThreeLabel": "Soluciones responsivas",
+      "visualLabel": "Presentación visual de proyectos desarrollados por Rodrigues Digital",
+      "mainImageAlt": "Sitio web de Rodrigues Digital mostrado en un portátil",
+      "secondaryImageAlt": "Proyecto Marcela Braga mostrado en un teléfono móvil",
+      "tertiaryImageAlt": "Landing page NR-1 para Empresas mostrada en un teléfono móvil",
+      "floatingTitle": "Proyecto responsivo",
+      "floatingText": "Una experiencia adaptada a todos los dispositivos"
+  }
+  }
   }
 }

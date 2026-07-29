@@ -130,7 +130,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
-            to={getLocalizedPath("/portfolio")}
+            to={getLocalizedPath("/projetos")}
             className={getLinkClass}
           >
             {t("navbar.projects")}

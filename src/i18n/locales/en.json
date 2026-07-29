@@ -785,5 +785,28 @@
     "languages": "available languages: Portuguese, English and Spanish"
   }
 }
+  },
+  
+  "projects": {
+    "hero": {
+      "badge": "Projects developed for professionals and companies",
+      "titleStart": "Projects that turn ideas into",
+      "titleHighlight": "digital experiences.",
+      "description": "Each project is developed with strategy, design and technology to strengthen brands, build trust and create real results.",
+      "primaryButton": "View projects",
+      "secondaryButton": "Schedule a meeting",
+      "detailOneValue": "Strategy",
+      "detailOneLabel": "Before development",
+      "detailTwoValue": "Design",
+      "detailTwoLabel": "Professional experiences",
+      "detailThreeValue": "Technology",
+      "detailThreeLabel": "Responsive solutions",
+      "visualLabel": "Visual presentation of projects developed by Rodrigues Digital",
+      "mainImageAlt": "Rodrigues Digital website displayed on a laptop",
+      "secondaryImageAlt": "Marcela Braga project displayed on a smartphone",
+      "tertiaryImageAlt": "NR-1 for Companies landing page displayed on a smartphone",
+      "floatingTitle": "Responsive project",
+      "floatingText": "An experience adapted to every device"
+    }
   }
 }

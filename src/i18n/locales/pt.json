@@ -306,12 +306,11 @@
       "portfolioButton": "Conheça meu portfólio",
       "signature": "Mais de 10 anos transformando tecnologia em soluções digitais.",
       "stats": {
-  "experience": "anos de experiência em Tecnologia da Informação",
-  "custom": "projetos desenvolvidos de forma personalizada",
-  "languages": "idiomas disponíveis (Português, Inglês e Espanhol)"
-}
+        "experience": "anos de experiência em Tecnologia da Informação",
+        "custom": "projetos desenvolvidos de forma personalizada",
+        "languages": "idiomas disponíveis (Português, Inglês e Espanhol)"
+      }
     }
-    
   },
   "solutions": {
     "hero": {
@@ -444,144 +443,142 @@
           "description": "Após a entrega, você recebe orientações e acompanhamento para utilizar sua nova solução."
         }
       ],
-          "closing": {
-      "label": "Comunicação em todas as etapas",
-      "title": "Você não recebe apenas um projeto pronto no final.",
-      "description": "Participa das decisões, acompanha a evolução e entende como cada escolha contribui para o resultado."
-    }
-  },
-
-  "deliverables": {
-    "eyebrow": "Uma entrega completa",
-    "titlePrefix": "O que você recebe ao contratar a",
-    "titleHighlight": "Rodrigues Digital",
-    "description": "Cada projeto reúne planejamento, tecnologia e acompanhamento para que sua empresa receba uma solução profissional, organizada e preparada para gerar novas oportunidades.",
-    "items": [
-      {
-        "title": "Planejamento estratégico",
-        "description": "Definição clara dos objetivos, da estrutura e das decisões que orientarão todo o desenvolvimento."
-      },
-      {
-        "title": "Design personalizado",
-        "description": "Uma identidade visual construída de acordo com a essência, o posicionamento e o momento da sua marca."
-      },
-      {
-        "title": "Desenvolvimento responsivo",
-        "description": "Uma solução preparada para funcionar corretamente em computadores, tablets e smartphones."
-      },
-      {
-        "title": "Estrutura organizada",
-        "description": "Conteúdos apresentados com clareza para facilitar a navegação e a compreensão dos seus clientes."
-      },
-      {
-        "title": "Performance e SEO inicial",
-        "description": "Boas práticas de desempenho, estrutura técnica e preparação inicial para os mecanismos de busca."
-      },
-      {
-        "title": "Publicação e suporte",
-        "description": "Configuração, testes finais, publicação do projeto e orientações para utilizar sua nova solução."
+      "closing": {
+        "label": "Comunicação em todas as etapas",
+        "title": "Você não recebe apenas um projeto pronto no final.",
+        "description": "Participa das decisões, acompanha a evolução e entende como cada escolha contribui para o resultado."
       }
-    ],
-    "closing": {
-      "label": "Soluções personalizadas",
-      "title": "Cada entrega é desenvolvida para representar o verdadeiro valor da sua empresa.",
-      "description": "Você recebe mais do que uma página visualmente bonita. Recebe uma presença digital pensada para transmitir confiança, fortalecer sua marca e apoiar seus objetivos.",
-      "button": "Solicitar reunião",
-      "buttonAria": "Solicitar uma reunião pelo WhatsApp"
+    },
+    "deliverables": {
+      "eyebrow": "Uma entrega completa",
+      "titlePrefix": "O que você recebe ao contratar a",
+      "titleHighlight": "Rodrigues Digital",
+      "description": "Cada projeto reúne planejamento, tecnologia e acompanhamento para que sua empresa receba uma solução profissional, organizada e preparada para gerar novas oportunidades.",
+      "items": [
+        {
+          "title": "Planejamento estratégico",
+          "description": "Definição clara dos objetivos, da estrutura e das decisões que orientarão todo o desenvolvimento."
+        },
+        {
+          "title": "Design personalizado",
+          "description": "Uma identidade visual construída de acordo com a essência, o posicionamento e o momento da sua marca."
+        },
+        {
+          "title": "Desenvolvimento responsivo",
+          "description": "Uma solução preparada para funcionar corretamente em computadores, tablets e smartphones."
+        },
+        {
+          "title": "Estrutura organizada",
+          "description": "Conteúdos apresentados com clareza para facilitar a navegação e a compreensão dos seus clientes."
+        },
+        {
+          "title": "Performance e SEO inicial",
+          "description": "Boas práticas de desempenho, estrutura técnica e preparação inicial para os mecanismos de busca."
+        },
+        {
+          "title": "Publicação e suporte",
+          "description": "Configuração, testes finais, publicação do projeto e orientações para utilizar sua nova solução."
+        }
+      ],
+      "closing": {
+        "label": "Soluções personalizadas",
+        "title": "Cada entrega é desenvolvida para representar o verdadeiro valor da sua empresa.",
+        "description": "Você recebe mais do que uma página visualmente bonita. Recebe uma presença digital pensada para transmitir confiança, fortalecer sua marca e apoiar seus objetivos.",
+        "button": "Solicitar reunião",
+        "buttonAria": "Solicitar uma reunião pelo WhatsApp"
+      }
+    },
+    "faq": {
+      "eyebrow": "Dúvidas frequentes",
+      "titlePrefix": "Tudo o que você precisa saber",
+      "titleHighlight": "antes de iniciar seu projeto.",
+      "description": "Reuni aqui as principais dúvidas de quem deseja desenvolver uma presença digital profissional, estratégica e preparada para gerar novas oportunidades.",
+      "imageAlt": "Rafaela Rodrigues analisando um projeto digital em seu ambiente de trabalho",
+      "imageCard": {
+        "label": "Atendimento consultivo",
+        "title": "Clareza e acompanhamento em todas as etapas."
+      },
+      "questions": [
+        {
+          "question": "Quanto tempo leva o desenvolvimento de um projeto?",
+          "answer": "O prazo depende do tipo de solução, da quantidade de páginas, dos recursos necessários e da agilidade no envio das informações. Depois da reunião inicial e da definição do escopo, você recebe um cronograma claro com todas as etapas do projeto."
+        },
+        {
+          "question": "Posso solicitar alterações durante o desenvolvimento?",
+          "answer": "Sim. O projeto inclui etapas de apresentação e revisão para que você acompanhe o desenvolvimento e solicite os ajustes previstos no escopo antes da publicação."
+        },
+        {
+          "question": "Preciso ter todos os textos e imagens prontos?",
+          "answer": "Não necessariamente. Durante o planejamento, organizamos o conteúdo necessário para cada seção. Você pode enviar os materiais que já possui e receber orientação sobre textos, imagens e informações que ainda precisam ser preparados."
+        },
+        {
+          "question": "Vocês registram o domínio e configuram a hospedagem?",
+          "answer": "Posso orientar a contratação do domínio e da hospedagem, realizar as configurações necessárias e preparar o ambiente para que o projeto seja publicado com segurança."
+        },
+        {
+          "question": "O site funcionará em celulares e tablets?",
+          "answer": "Sim. Todos os projetos são desenvolvidos com estrutura responsiva para oferecer uma boa experiência de navegação em computadores, tablets e smartphones."
+        },
+        {
+          "question": "Meu projeto pode ser desenvolvido em mais de um idioma?",
+          "answer": "Sim. A Rodrigues Digital desenvolve projetos multilíngues em português, inglês e espanhol. A estrutura e o investimento são definidos de acordo com a quantidade de idiomas e de conteúdos que precisam ser adaptados."
+        },
+        {
+          "question": "O projeto terá preparação inicial para o Google?",
+          "answer": "Sim. Os projetos podem receber configurações técnicas iniciais de SEO, incluindo estrutura de títulos, descrições, organização do conteúdo, desempenho e boas práticas para mecanismos de busca."
+        },
+        {
+          "question": "Depois da entrega, receberei suporte?",
+          "answer": "Sim. Após a publicação, você recebe orientações para utilizar sua nova solução e o suporte inicial previsto no projeto. Também é possível contratar um plano mensal de manutenção para atualizações, backups, monitoramento e pequenos ajustes."
+        }
+      ],
+      "contact": {
+        "label": "Ainda ficou alguma dúvida?",
+        "title": "Vamos conversar sobre o que sua empresa realmente precisa.",
+        "description": "Cada negócio possui um momento, um objetivo e uma necessidade diferente. Agende uma conversa para que eu possa compreender seu projeto e indicar a solução mais adequada.",
+        "button": "Solicitar reunião",
+        "buttonAria": "Solicitar uma reunião com a Rodrigues Digital pelo WhatsApp"
+      }
+    },
+    "cta": {
+      "eyebrow": "Pronta para começar?",
+      "titlePrefix": "Vamos transformar sua necessidade em uma",
+      "titleHighlight": "presença digital profissional.",
+      "description": "Cada projeto começa com uma conversa para entender sua empresa, seus objetivos e o momento atual da sua marca. A partir disso, desenvolvemos uma solução personalizada para fortalecer sua presença digital e gerar novas oportunidades.",
+      "whatsappMessage": "Olá, Rafaela! Gostaria de conversar sobre um projeto para fortalecer minha presença digital.",
+      "benefits": {
+        "first": "Atendimento personalizado",
+        "second": "Estratégia antes do desenvolvimento",
+        "third": "Projeto desenvolvido sob medida"
+      },
+      "buttons": {
+        "meeting": "Solicitar reunião",
+        "meetingAria": "Solicitar uma reunião pelo WhatsApp",
+        "projects": "Conhecer projetos",
+        "projectsAria": "Conhecer os projetos desenvolvidos"
+      },
+      "meeting": {
+        "label": "Primeiro passo",
+        "title": "Reunião estratégica",
+        "description": "Uma conversa inicial para compreender seu negócio e indicar a solução digital mais adequada para o seu momento.",
+        "items": [
+          "Entendimento da empresa e dos objetivos",
+          "Análise do momento atual da marca",
+          "Identificação das principais necessidades",
+          "Indicação da solução mais adequada"
+        ],
+        "durationLabel": "Tempo estimado",
+        "duration": "30 minutos",
+        "note": "Sem compromisso"
+      },
+      "stats": {
+        "experience": "anos de experiência em Tecnologia da Informação",
+        "custom": "projetos desenvolvidos de forma personalizada",
+        "languages": "idiomas disponíveis: português, inglês e espanhol"
+      }
     }
   },
-  "faq": {
-  "eyebrow": "Dúvidas frequentes",
-  "titlePrefix": "Tudo o que você precisa saber",
-  "titleHighlight": "antes de iniciar seu projeto.",
-  "description": "Reuni aqui as principais dúvidas de quem deseja desenvolver uma presença digital profissional, estratégica e preparada para gerar novas oportunidades.",
-  "imageAlt": "Rafaela Rodrigues analisando um projeto digital em seu ambiente de trabalho",
-  "imageCard": {
-    "label": "Atendimento consultivo",
-    "title": "Clareza e acompanhamento em todas as etapas."
-  },
-  "questions": [
-    {
-      "question": "Quanto tempo leva o desenvolvimento de um projeto?",
-      "answer": "O prazo depende do tipo de solução, da quantidade de páginas, dos recursos necessários e da agilidade no envio das informações. Depois da reunião inicial e da definição do escopo, você recebe um cronograma claro com todas as etapas do projeto."
-    },
-    {
-      "question": "Posso solicitar alterações durante o desenvolvimento?",
-      "answer": "Sim. O projeto inclui etapas de apresentação e revisão para que você acompanhe o desenvolvimento e solicite os ajustes previstos no escopo antes da publicação."
-    },
-    {
-      "question": "Preciso ter todos os textos e imagens prontos?",
-      "answer": "Não necessariamente. Durante o planejamento, organizamos o conteúdo necessário para cada seção. Você pode enviar os materiais que já possui e receber orientação sobre textos, imagens e informações que ainda precisam ser preparados."
-    },
-    {
-      "question": "Vocês registram o domínio e configuram a hospedagem?",
-      "answer": "Posso orientar a contratação do domínio e da hospedagem, realizar as configurações necessárias e preparar o ambiente para que o projeto seja publicado com segurança."
-    },
-    {
-      "question": "O site funcionará em celulares e tablets?",
-      "answer": "Sim. Todos os projetos são desenvolvidos com estrutura responsiva para oferecer uma boa experiência de navegação em computadores, tablets e smartphones."
-    },
-    {
-      "question": "Meu projeto pode ser desenvolvido em mais de um idioma?",
-      "answer": "Sim. A Rodrigues Digital desenvolve projetos multilíngues em português, inglês e espanhol. A estrutura e o investimento são definidos de acordo com a quantidade de idiomas e de conteúdos que precisam ser adaptados."
-    },
-    {
-      "question": "O projeto terá preparação inicial para o Google?",
-      "answer": "Sim. Os projetos podem receber configurações técnicas iniciais de SEO, incluindo estrutura de títulos, descrições, organização do conteúdo, desempenho e boas práticas para mecanismos de busca."
-    },
-    {
-      "question": "Depois da entrega, receberei suporte?",
-      "answer": "Sim. Após a publicação, você recebe orientações para utilizar sua nova solução e o suporte inicial previsto no projeto. Também é possível contratar um plano mensal de manutenção para atualizações, backups, monitoramento e pequenos ajustes."
-    }
-  ],
-  "contact": {
-    "label": "Ainda ficou alguma dúvida?",
-    "title": "Vamos conversar sobre o que sua empresa realmente precisa.",
-    "description": "Cada negócio possui um momento, um objetivo e uma necessidade diferente. Agende uma conversa para que eu possa compreender seu projeto e indicar a solução mais adequada.",
-    "button": "Solicitar reunião",
-    "buttonAria": "Solicitar uma reunião com a Rodrigues Digital pelo WhatsApp"
-  }
-},
-
-"cta": {
-  "eyebrow": "Pronta para começar?",
-  "titlePrefix": "Vamos transformar sua necessidade em uma",
-  "titleHighlight": "presença digital profissional.",
-  "description": "Cada projeto começa com uma conversa para entender sua empresa, seus objetivos e o momento atual da sua marca. A partir disso, desenvolvemos uma solução personalizada para fortalecer sua presença digital e gerar novas oportunidades.",
-  "whatsappMessage": "Olá, Rafaela! Gostaria de conversar sobre um projeto para fortalecer minha presença digital.",
-  "benefits": {
-    "first": "Atendimento personalizado",
-    "second": "Estratégia antes do desenvolvimento",
-    "third": "Projeto desenvolvido sob medida"
-  },
-  "buttons": {
-    "meeting": "Solicitar reunião",
-    "meetingAria": "Solicitar uma reunião pelo WhatsApp",
-    "projects": "Conhecer projetos",
-    "projectsAria": "Conhecer os projetos desenvolvidos"
-  },
-  "meeting": {
-    "label": "Primeiro passo",
-    "title": "Reunião estratégica",
-    "description": "Uma conversa inicial para compreender seu negócio e indicar a solução digital mais adequada para o seu momento.",
-    "items": [
-      "Entendimento da empresa e dos objetivos",
-      "Análise do momento atual da marca",
-      "Identificação das principais necessidades",
-      "Indicação da solução mais adequada"
-    ],
-    "durationLabel": "Tempo estimado",
-    "duration": "30 minutos",
-    "note": "Sem compromisso"
-  },
-  "stats": {
-    "experience": "anos de experiência em Tecnologia da Informação",
-    "custom": "projetos desenvolvidos de forma personalizada",
-    "languages": "idiomas disponíveis: português, inglês e espanhol"
-  }
-}
-},
-"services": {
+  "services": {
     "eyebrow": "Soluções digitais",
     "title": {
       "first": "Soluções desenvolvidas para fortalecer sua",
@@ -787,5 +784,76 @@
       "title": "Rodrigues Digital | Presenças digitais profissionais",
       "description": "Sites institucionais, landing pages, portfólios e soluções digitais desenvolvidos com estratégia, tecnologia e identidade para fortalecer marcas e gerar oportunidades."
     }
+  },
+  "projects": {
+  "hero": {
+    "badge": "Projetos desenvolvidos para profissionais e empresas",
+    "titleStart": "Projetos que transformam ideias em",
+    "titleHighlight": "experiências digitais.",
+    "description": "Cada projeto é desenvolvido com estratégia, design e tecnologia para fortalecer marcas, gerar confiança e criar resultados reais.",
+    "primaryButton": "Ver projetos",
+    "secondaryButton": "Solicitar reunião",
+    "detailOneValue": "Estratégia",
+    "detailOneLabel": "Antes do desenvolvimento",
+    "detailTwoValue": "Design",
+    "detailTwoLabel": "Experiências profissionais",
+    "detailThreeValue": "Tecnologia",
+    "detailThreeLabel": "Soluções responsivas",
+    "visualLabel": "Apresentação visual de projetos desenvolvidos pela Rodrigues Digital",
+    "mainImageAlt": "Site da Rodrigues Digital apresentado em um notebook",
+    "secondaryImageAlt": "Projeto Marcela Braga apresentado em um celular",
+    "tertiaryImageAlt": "Landing page NR-1 para Empresas apresentada em um celular",
+    "floatingTitle": "Projeto responsivo",
+    "floatingText": "Experiência adaptada para todos os dispositivos"
+  },
+  "showcase": {
+  "eyebrow": "Projetos em destaque",
+  "titlePrefix": "Mais do que desenvolver sites, criamos",
+  "titleHighlight": "experiências digitais.",
+  "description": "Cada projeto nasce de uma necessidade diferente e é desenvolvido para fortalecer marcas, organizar informações e gerar novas oportunidades.",
+  "button": "Explorar projeto",
+  "buttonUnavailable": "Projeto no portfólio",
+  "accessProject": "Acessar o projeto",
+
+  "status": {
+    "online": "Site online",
+    "published": "Projeto publicado",
+    "completed": "Projeto concluído",
+    "portfolio": "Disponível no portfólio"
+  },
+
+  "technologies": {
+    "responsive": "Design responsivo",
+    "landingPage": "Landing page",
+    "positioning": "Posicionamento profissional",
+    "multilingual": "Projeto multilíngue"
+  },
+
+  "result": {
+    "label": "Resultado"
+  },
+
+  "items": {
+    "rodrigues": {
+      "category": "Site institucional",
+      "title": "Rodrigues Digital",
+      "description": "Site institucional desenvolvido para apresentar os serviços da empresa, fortalecer sua autoridade e construir uma presença digital profissional, multilíngue e preparada para evoluir.",
+      "imageAlt": "Versão desktop do site institucional da Rodrigues Digital",
+      "mobileImageAlt": "Versão mobile do site institucional da Rodrigues Digital",
+      "resultTitle": "Presença digital completa e profissional",
+      "resultDescription": "Uma estrutura responsiva, multilíngue e preparada para apresentar serviços, projetos e diferenciais da marca."
+    },
+
+    "marcela": {
+      "category": "Landing page profissional",
+      "title": "Marcela Braga",
+      "description": "Landing page desenvolvida para apresentar a trajetória, os serviços e o posicionamento profissional de Marcela Braga nas áreas de logística, transporte e desenvolvimento de negócios.",
+      "imageAlt": "Versão desktop da landing page profissional de Marcela Braga",
+      "mobileImageAlt": "Versão mobile da landing page profissional de Marcela Braga",
+      "resultTitle": "Posicionamento profissional com presença internacional",
+      "resultDescription": "Uma apresentação estratégica, elegante e responsiva, criada para transmitir autoridade, experiência e gerar novas oportunidades de negócio."
+    }
+  }
+}
   }
 }

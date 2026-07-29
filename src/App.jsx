@@ -8,6 +8,7 @@ import Contato from "./pages/Contato";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Solucoes from "./pages/Solucoes";
+import Projetos from "./pages/Projetos/Projetos";
 
 function App() {
   return (
@@ -55,6 +56,17 @@ function App() {
         {/* Espanhol */}
         <Route path="/es/contato" element={<Contato />} />
         <Route path="/es/contacto" element={<Contato />} />
+
+        {/* Projetos */}
+<Route path="/projetos" element={<Projetos />} />
+
+{/* Inglês */}
+<Route path="/en/projects" element={<Projetos />} />
+<Route path="/en/projetos" element={<Projetos />} />
+
+{/* Espanhol */}
+<Route path="/es/proyectos" element={<Projetos />} />
+<Route path="/es/projetos" element={<Projetos />} />
 
         {/* Página não encontrada */}
         <Route path="*" element={<NotFound />} />
