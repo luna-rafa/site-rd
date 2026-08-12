@@ -1,0 +1,707 @@
+/* =========================================================
+   JAQUELINE LEAL — CASE 03
+========================================================= */
+
+.jaqueline-case {
+  position: relative;
+  overflow: hidden;
+
+  padding:
+    clamp(105px, 9vw, 150px)
+    0;
+
+  background:
+    radial-gradient(
+      circle at 88% 38%,
+      rgba(0, 82, 61, 0.07),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #fbfcfa 52%,
+      #f7f5ed 100%
+    );
+
+  border-top: 1px solid rgba(15, 23, 42, 0.055);
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.jaqueline-case__container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.jaqueline-case__header {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 45px;
+
+  margin-bottom: clamp(70px, 7vw, 95px);
+}
+
+.jaqueline-case__eyebrow {
+  padding-top: 12px;
+
+  color: #b68b2e;
+
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.jaqueline-case__category {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #08745c;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.jaqueline-case__header h2 {
+  margin: 0;
+
+  color: #071b18;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 780;
+
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.jaqueline-case__header p {
+  max-width: 620px;
+
+  margin: 24px 0 0;
+
+  color: #687874;
+
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.jaqueline-case__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(340px, 0.88fr)
+    minmax(520px, 1.12fr);
+
+  align-items: center;
+
+  gap: clamp(60px, 7vw, 100px);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.jaqueline-case__content {
+  position: relative;
+  z-index: 4;
+}
+
+.jaqueline-case__block + .jaqueline-case__block {
+  margin-top: 40px;
+}
+
+.jaqueline-case__label {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  color: #078267;
+
+  font-size: 0.65rem;
+  font-weight: 850;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.jaqueline-case__block h3 {
+  max-width: 470px;
+
+  margin: 0;
+
+  color: #09231e;
+
+  font-size: clamp(1.55rem, 2.3vw, 2.18rem);
+
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.jaqueline-case__block p {
+  max-width: 470px;
+
+  margin: 17px 0 0;
+
+  color: #6c7976;
+
+  font-size: 0.91rem;
+  line-height: 1.68;
+}
+
+/* =========================================================
+   PILARES
+========================================================= */
+
+.jaqueline-case__pillars {
+  margin-top: 34px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 9px;
+}
+
+.jaqueline-case__pillars > div {
+  min-height: 104px;
+
+  padding: 15px 13px;
+
+  border: 1px solid rgba(0, 91, 69, 0.11);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 10px 26px
+    rgba(4, 46, 36, 0.05);
+}
+
+.jaqueline-case__pillars svg {
+  width: 20px;
+  height: 20px;
+
+  color: #078267;
+}
+
+.jaqueline-case__pillars span {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  color: #71807c;
+
+  font-size: 0.62rem;
+  line-height: 1.4;
+}
+
+.jaqueline-case__pillars strong {
+  color: #0b3028;
+  font-size: 0.75rem;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.jaqueline-case__features {
+  margin-top: 28px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 9px;
+}
+
+.jaqueline-case__features > div {
+  min-height: 42px;
+
+  padding: 9px 11px;
+
+  border: 1px solid rgba(0, 91, 69, 0.1);
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  background: #ffffff;
+}
+
+.jaqueline-case__features svg {
+  width: 15px;
+  height: 15px;
+
+  color: #078267;
+}
+
+.jaqueline-case__features span {
+  color: #52635f;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+/* =========================================================
+   RESULTADO
+========================================================= */
+
+.jaqueline-case__result {
+  margin-top: 31px;
+
+  padding: 19px 20px;
+
+  border: 1px solid rgba(190, 145, 46, 0.18);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fbf8ef
+    );
+
+  box-shadow:
+    0 14px 32px
+    rgba(4, 46, 36, 0.05);
+}
+
+.jaqueline-case__result .jaqueline-case__label {
+  margin-bottom: 8px;
+
+  color: #a67b1f;
+}
+
+.jaqueline-case__result strong {
+  display: block;
+
+  color: #102d27;
+
+  font-size: 0.9rem;
+  line-height: 1.48;
+}
+
+.jaqueline-case__result p {
+  margin: 8px 0 0;
+
+  color: #74807d;
+
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BOTÃO
+========================================================= */
+
+.jaqueline-case__button {
+  width: fit-content;
+  min-height: 50px;
+
+  margin-top: 27px;
+
+  padding: 0 21px;
+
+  border-radius: 13px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #075f4d,
+      #003d31
+    );
+
+  box-shadow:
+    0 15px 32px
+    rgba(0, 75, 57, 0.2);
+
+  font-size: 0.8rem;
+  font-weight: 760;
+
+  text-decoration: none;
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    background 220ms ease;
+}
+
+.jaqueline-case__button svg {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 220ms ease;
+}
+
+.jaqueline-case__button:hover {
+  transform: translateY(-3px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #08745c,
+      #004737
+    );
+
+  box-shadow:
+    0 21px 40px
+    rgba(0, 75, 57, 0.26);
+}
+
+.jaqueline-case__button:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.jaqueline-case__visual {
+  position: relative;
+
+  min-width: 0;
+
+  padding: 58px 10px 65px 35px;
+}
+
+/* área verde que diferencia o case */
+
+.jaqueline-case__visual::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0 0 15px 70px;
+
+  border-radius: 38px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #073c31,
+      #002d25
+    );
+
+  opacity: 0.97;
+
+  box-shadow:
+    0 35px 80px
+    rgba(0, 55, 43, 0.16);
+}
+
+.jaqueline-case__glow {
+  position: absolute;
+
+  width: 75%;
+  aspect-ratio: 1;
+
+  top: 4%;
+  right: -8%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(205, 165, 69, 0.18),
+      transparent 68%
+    );
+
+  filter: blur(45px);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CABEÇALHO VISUAL
+========================================================= */
+
+.jaqueline-case__visual-header {
+  position: absolute;
+
+  z-index: 8;
+
+  top: 26px;
+  left: 92px;
+  right: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.jaqueline-case__status,
+.jaqueline-case__type {
+  min-height: 31px;
+
+  padding: 0 11px;
+
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 26px
+    rgba(0, 30, 24, 0.13);
+
+  font-size: 0.56rem;
+  font-weight: 850;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.jaqueline-case__status {
+  gap: 7px;
+
+  color: #08624f;
+}
+
+.jaqueline-case__status > span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #12b886;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(18, 184, 134, 0.12);
+}
+
+.jaqueline-case__type {
+  color: #99711c;
+}
+
+/* =========================================================
+   IMAGEM
+========================================================= */
+
+.jaqueline-case__image-frame {
+  position: relative;
+  z-index: 5;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(211, 172, 76, 0.42);
+
+  border-radius: 25px;
+
+  background: #071711;
+
+  box-shadow:
+    0 35px 70px
+      rgba(0, 25, 20, 0.3),
+    0 0 0 5px
+      rgba(255, 255, 255, 0.025);
+}
+
+.jaqueline-case__image-frame img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   FLOATING CARD
+========================================================= */
+
+.jaqueline-case__floating-card {
+  position: absolute;
+
+  z-index: 8;
+
+  left: 5px;
+  bottom: 20px;
+
+  width: 235px;
+
+  padding: 15px 17px;
+
+  border:
+    1px solid
+    rgba(190, 145, 46, 0.17);
+
+  border-radius: 17px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 48px
+    rgba(0, 35, 27, 0.15);
+}
+
+.jaqueline-case__floating-card > span {
+  color: #a57b20;
+
+  font-size: 0.56rem;
+  font-weight: 850;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.jaqueline-case__floating-card strong {
+  color: #0b3028;
+
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.jaqueline-case__floating-card small {
+  color: #7b8582;
+
+  font-size: 0.59rem;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 960px) {
+  .jaqueline-case__header {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .jaqueline-case__layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .jaqueline-case__content {
+    max-width: 680px;
+  }
+
+  .jaqueline-case__block h3,
+  .jaqueline-case__block p {
+    max-width: 620px;
+  }
+
+  .jaqueline-case__visual {
+    width: min(100%, 720px);
+
+    margin: 0 auto;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+  .jaqueline-case {
+    padding: 80px 0;
+  }
+
+  .jaqueline-case__container {
+    width: min(calc(100% - 28px), 540px);
+  }
+
+  .jaqueline-case__header {
+    margin-bottom: 45px;
+  }
+
+  .jaqueline-case__header h2 {
+    font-size: clamp(2.6rem, 12vw, 3.6rem);
+  }
+
+  .jaqueline-case__header p {
+    margin-top: 18px;
+
+    font-size: 0.91rem;
+  }
+
+  .jaqueline-case__layout {
+    gap: 50px;
+  }
+
+  .jaqueline-case__pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .jaqueline-case__pillars > div {
+    min-height: 78px;
+
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .jaqueline-case__features {
+    grid-template-columns: 1fr;
+  }
+
+  .jaqueline-case__button {
+    width: 100%;
+  }
+
+  .jaqueline-case__visual {
+    padding: 50px 0 60px 15px;
+  }
+
+  .jaqueline-case__visual::before {
+    inset: 10px 0 20px 35px;
+
+    border-radius: 25px;
+  }
+
+  .jaqueline-case__visual-header {
+    top: 20px;
+    left: 48px;
+    right: 10px;
+  }
+
+  .jaqueline-case__image-frame {
+    border-radius: 18px;
+  }
+
+  .jaqueline-case__floating-card {
+    left: 0;
+
+    width: min(225px, 72%);
+  }
+}

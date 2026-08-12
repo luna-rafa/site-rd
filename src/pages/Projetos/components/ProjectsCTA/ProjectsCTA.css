@@ -1,0 +1,823 @@
+/* =========================================================
+   PROJECTS CTA
+========================================================= */
+
+.projects-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  padding:
+    clamp(100px, 10vw, 150px)
+    0;
+
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 78% 28%,
+      rgba(32, 98, 116, 0.34),
+      transparent 31%
+    ),
+    radial-gradient(
+      circle at 15% 90%,
+      rgba(199, 155, 54, 0.1),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #021f2a 0%,
+      #032d3a 52%,
+      #073d48 100%
+    );
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.projects-cta__container {
+  position: relative;
+  z-index: 5;
+
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(360px, 0.75fr);
+
+  align-items: center;
+
+  gap:
+    clamp(
+      70px,
+      8vw,
+      120px
+    );
+}
+
+/* =========================================================
+   BACKGROUND DECORATION
+========================================================= */
+
+.projects-cta__glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(80px);
+}
+
+.projects-cta__glow--one {
+  width: 460px;
+  height: 460px;
+
+  right: -100px;
+  top: -150px;
+
+  background:
+    rgba(
+      35,
+      120,
+      142,
+      0.18
+    );
+}
+
+.projects-cta__glow--two {
+  width: 380px;
+  height: 380px;
+
+  left: -170px;
+  bottom: -200px;
+
+  background:
+    rgba(
+      211,
+      165,
+      58,
+      0.08
+    );
+}
+
+.projects-cta__circle {
+  position: absolute;
+
+  border:
+    1px solid
+    rgba(212, 175, 55, 0.12);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.projects-cta__circle--one {
+  width: 460px;
+  height: 460px;
+
+  right: -170px;
+  bottom: -220px;
+}
+
+.projects-cta__circle--two {
+  width: 260px;
+  height: 260px;
+
+  right: -70px;
+  bottom: -120px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.projects-cta__content {
+  position: relative;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.projects-cta__eyebrow {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+  color: #e4b94e;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+.projects-cta__eyebrow > span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #e4b94e;
+
+  box-shadow:
+    0 0 0 5px
+    rgba(228, 185, 78, 0.1);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.projects-cta h2 {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      3.1rem,
+      5.7vw,
+      5.8rem
+    );
+
+  font-weight: 780;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.065em;
+}
+
+.projects-cta h2 span {
+  display: block;
+
+  color: #e1b348;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.projects-cta__description {
+  max-width: 590px;
+
+  margin:
+    28px
+    0
+    0;
+
+  color:
+    rgba(
+      235,
+      244,
+      246,
+      0.74
+    );
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.projects-cta__benefits {
+  margin-top: 31px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.projects-cta__benefits > div {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.projects-cta__benefits svg {
+  flex: 0 0 auto;
+
+  width: 17px;
+  height: 17px;
+
+  padding: 3px;
+
+  border-radius: 50%;
+
+  color: #062a35;
+
+  background: #dfb449;
+}
+
+.projects-cta__benefits span {
+  color:
+    rgba(
+      245,
+      249,
+      250,
+      0.88
+    );
+
+  font-size: 0.82rem;
+  font-weight: 620;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.projects-cta__actions {
+  margin-top: 38px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.projects-cta__button {
+  min-height: 53px;
+
+  padding:
+    0
+    21px;
+
+  border-radius: 13px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 0.78rem;
+  font-weight: 760;
+
+  text-decoration: none;
+
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.projects-cta__button svg {
+  width: 17px;
+  height: 17px;
+
+  transition:
+    transform 220ms ease;
+}
+
+/* PRIMARY */
+
+.projects-cta__button--primary {
+  color: #062834;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 38px
+    rgba(0, 0, 0, 0.15);
+}
+
+.projects-cta__button--primary
+svg:first-child {
+  color: #14735f;
+}
+
+.projects-cta__button--primary
+svg:last-child {
+  color: #c49427;
+}
+
+.projects-cta__button--primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 23px 46px
+    rgba(0, 0, 0, 0.2);
+}
+
+/* SECONDARY */
+
+.projects-cta__button--secondary {
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.23);
+
+  color: #ffffff;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.055
+    );
+
+  backdrop-filter: blur(10px);
+}
+
+.projects-cta__button--secondary:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(
+      228,
+      185,
+      78,
+      0.5
+    );
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.09
+    );
+}
+
+.projects-cta__button:hover
+svg:last-child {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.projects-cta__panel {
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    27px
+    27px
+    24px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.035)
+    );
+
+  box-shadow:
+    0 32px 80px
+    rgba(0, 13, 20, 0.28);
+
+  backdrop-filter: blur(16px);
+}
+
+.projects-cta__panel::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -120px;
+  right: -90px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(228, 185, 78, 0.14),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   PANEL TOP
+========================================================= */
+
+.projects-cta__panel-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.55
+    );
+
+  font-size: 0.6rem;
+  font-weight: 760;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.projects-cta__panel-status {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.projects-cta__panel-status i {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #48d1a5;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(72, 209, 165, 0.1);
+}
+
+/* =========================================================
+   PANEL MAIN
+========================================================= */
+
+.projects-cta__panel-main {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns:
+    auto
+    1fr;
+
+  align-items: center;
+
+  gap: 23px;
+}
+
+.projects-cta__number {
+  color: #e4b94e;
+
+  font-size:
+    clamp(
+      4.2rem,
+      7vw,
+      6rem
+    );
+
+  font-weight: 780;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.07em;
+}
+
+.projects-cta__panel-main strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 1.05rem;
+
+  line-height: 1.25;
+}
+
+.projects-cta__panel-main p {
+  max-width: 230px;
+
+  margin:
+    8px
+    0
+    0;
+
+  color:
+    rgba(
+      230,
+      241,
+      243,
+      0.6
+    );
+
+  font-size: 0.69rem;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.projects-cta__panel-divider {
+  height: 1px;
+
+  margin:
+    30px
+    0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(228, 185, 78, 0.35),
+      rgba(255, 255, 255, 0.08)
+    );
+}
+
+/* =========================================================
+   PILLARS
+========================================================= */
+
+.projects-cta__pillars {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 10px;
+}
+
+.projects-cta__pillars > div {
+  min-height: 88px;
+
+  padding:
+    15px
+    13px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 13px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.035
+    );
+}
+
+.projects-cta__pillars span {
+  color: #e0b347;
+
+  font-size: 0.58rem;
+  font-weight: 800;
+}
+
+.projects-cta__pillars strong {
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.9
+    );
+
+  font-size: 0.68rem;
+}
+
+/* =========================================================
+   PANEL FOOTER
+========================================================= */
+
+.projects-cta__panel-footer {
+  margin-top: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.projects-cta__panel-footer span {
+  max-width: 260px;
+
+  color:
+    rgba(
+      230,
+      241,
+      243,
+      0.52
+    );
+
+  font-size: 0.62rem;
+
+  line-height: 1.55;
+}
+
+.projects-cta__panel-footer svg {
+  width: 18px;
+  height: 18px;
+
+  color: #e4b94e;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 960px) {
+  .projects-cta__container {
+    grid-template-columns: 1fr;
+
+    gap: 65px;
+  }
+
+  .projects-cta__content {
+    max-width: 720px;
+  }
+
+  .projects-cta__panel {
+    width: min(
+      100%,
+      650px
+    );
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+  .projects-cta {
+    padding:
+      80px
+      0;
+  }
+
+  .projects-cta__container {
+    width:
+      min(
+        calc(100% - 28px),
+        540px
+      );
+
+    gap: 50px;
+  }
+
+  .projects-cta h2 {
+    font-size:
+      clamp(
+        2.8rem,
+        13vw,
+        4rem
+      );
+  }
+
+  .projects-cta__description {
+    margin-top: 22px;
+
+    font-size: 0.9rem;
+  }
+
+  .projects-cta__benefits {
+    margin-top: 26px;
+  }
+
+  .projects-cta__actions {
+    flex-direction: column;
+
+    margin-top: 32px;
+  }
+
+  .projects-cta__button {
+    width: 100%;
+  }
+
+  .projects-cta__panel {
+    padding:
+      22px
+      18px;
+  }
+
+  .projects-cta__panel-main {
+    margin-top: 40px;
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .projects-cta__number {
+    font-size: 4.5rem;
+  }
+
+  .projects-cta__pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-cta__pillars > div {
+    min-height: 64px;
+
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .projects-cta__circle--one,
+  .projects-cta__circle--two {
+    opacity: 0.5;
+  }
+}
+
+/* =========================================================
+   ACESSIBILIDADE
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-cta__button,
+  .projects-cta__button svg {
+    transition: none;
+  }
+}

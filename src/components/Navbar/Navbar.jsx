@@ -130,7 +130,11 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+<<<<<<< HEAD
             to={getLocalizedPath("/projetos")}
+=======
+            to={getLocalizedPath("/Projetos")}
+>>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
             className={getLinkClass}
           >
             {t("navbar.projects")}

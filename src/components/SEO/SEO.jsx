@@ -1,198 +1,221 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
-const SITE_URL = "https://rodriguesdigital.tec.br";
+function SEO({
+  title,
+  description,
+  image = "https://rodriguesdigital.tec.br/og/rodrigues-digital.jpg",
+  type = "website",
+  canonical,
+  alternates,
+}) {
+  const location = useLocation();
 
-const languageConfig = {
-  pt: {
-    htmlLang: "pt-BR",
-    pathPrefix: "",
-    locale: "pt_BR",
-  },
-  en: {
-    htmlLang: "en",
-    pathPrefix: "/en",
-    locale: "en_US",
-  },
-  es: {
-    htmlLang: "es",
-    pathPrefix: "/es",
-    locale: "es_ES",
-  },
-};
+  useEffect(() => {
+    const currentUrl =
+      canonical ||
+      `https://rodriguesdigital.tec.br${location.pathname}`;
 
-function updateMetaTag(selector, attribute, value) {
-  let element = document.head.querySelector(selector);
+    /* =====================================================
+       TITLE
+    ===================================================== */
 
-  if (!element) {
-    element = document.createElement("meta");
+    document.title = title;
 
-    if (attribute === "name") {
-      element.setAttribute("name", selector.replace('[name="', "").replace('"]', ""));
+    /* =====================================================
+       META DESCRIPTION
+    ===================================================== */
+
+    let metaDescription = document.querySelector(
+      'meta[name="description"]'
+    );
+
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      document.head.appendChild(metaDescription);
     }
 
-    if (attribute === "property") {
-      element.setAttribute(
-        "property",
-        selector.replace('[property="', "").replace('"]', ""),
+    metaDescription.setAttribute(
+      "content",
+      description
+    );
+
+    /* =====================================================
+       CANONICAL
+    ===================================================== */
+
+    let canonicalLink = document.querySelector(
+      'link[rel="canonical"]'
+    );
+
+    if (!canonicalLink) {
+      canonicalLink = document.createElement("link");
+      canonicalLink.setAttribute("rel", "canonical");
+      document.head.appendChild(canonicalLink);
+    }
+
+    canonicalLink.setAttribute(
+      "href",
+      currentUrl
+    );
+
+    /* =====================================================
+       REMOVE HREFLANG ANTIGOS
+    ===================================================== */
+
+    document
+      .querySelectorAll(
+        'link[rel="alternate"][hreflang]'
+      )
+      .forEach((link) => link.remove());
+
+    /* =====================================================
+       HREFLANG
+    ===================================================== */
+
+    if (alternates) {
+      Object.entries(alternates).forEach(
+        ([language, url]) => {
+          const alternate = document.createElement(
+            "link"
+          );
+
+          alternate.setAttribute(
+            "rel",
+            "alternate"
+          );
+
+          alternate.setAttribute(
+            "hreflang",
+            language
+          );
+
+          alternate.setAttribute(
+            "href",
+            url
+          );
+
+          document.head.appendChild(alternate);
+        }
       );
     }
 
-    document.head.appendChild(element);
-  }
+    /* =====================================================
+       OPEN GRAPH
+    ===================================================== */
 
-  element.setAttribute("content", value);
-}
+    const setMetaProperty = (
+      property,
+      content
+    ) => {
+      let meta = document.querySelector(
+        `meta[property="${property}"]`
+      );
 
-function updateLinkTag(rel, href, hreflang = null) {
-  const selector = hreflang
-    ? `link[rel="${rel}"][hreflang="${hreflang}"]`
-    : `link[rel="${rel}"]:not([hreflang])`;
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute(
+          "property",
+          property
+        );
 
-  let element = document.head.querySelector(selector);
+        document.head.appendChild(meta);
+      }
 
-  if (!element) {
-    element = document.createElement("link");
-    element.setAttribute("rel", rel);
+      meta.setAttribute(
+        "content",
+        content
+      );
+    };
 
-    if (hreflang) {
-      element.setAttribute("hreflang", hreflang);
-    }
-
-    document.head.appendChild(element);
-  }
-
-  element.setAttribute("href", href);
-}
-
-function removeLanguagePrefix(pathname) {
-  return pathname
-    .replace(/^\/en(?=\/|$)/, "")
-    .replace(/^\/es(?=\/|$)/, "") || "/";
-}
-
-function buildLocalizedUrl(language, pathname) {
-  const basePath = removeLanguagePrefix(pathname);
-  const prefix = languageConfig[language].pathPrefix;
-
-  if (basePath === "/") {
-    return `${SITE_URL}${prefix || "/"}`;
-  }
-
-  return `${SITE_URL}${prefix}${basePath}`;
-}
-
-function SEO() {
-  const { t, i18n } = useTranslation();
-  const location = useLocation();
-
-  const currentLanguage = (
-    i18n.resolvedLanguage ||
-    i18n.language ||
-    "pt"
-  ).slice(0, 2);
-
-  useEffect(() => {
-    const language =
-      languageConfig[currentLanguage] ? currentLanguage : "pt";
-
-    const config = languageConfig[language];
-
-    const currentUrl = buildLocalizedUrl(language, location.pathname);
-
-    const title = t("seo.home.title");
-    const description = t("seo.home.description");
-
-    document.documentElement.lang = config.htmlLang;
-    document.title = title;
-
-    updateMetaTag(
-      'meta[name="description"]',
-      "name",
-      description,
+    setMetaProperty(
+      "og:title",
+      title
     );
 
-    updateMetaTag(
-      'meta[name="author"]',
-      "name",
-      "Rodrigues Digital",
+    setMetaProperty(
+      "og:description",
+      description
     );
 
-    updateMetaTag(
-      'meta[property="og:title"]',
-      "property",
-      title,
+    setMetaProperty(
+      "og:type",
+      type
     );
 
-    updateMetaTag(
-      'meta[property="og:description"]',
-      "property",
-      description,
+    setMetaProperty(
+      "og:url",
+      currentUrl
     );
 
-    updateMetaTag(
-      'meta[property="og:url"]',
-      "property",
-      currentUrl,
+    setMetaProperty(
+      "og:image",
+      image
     );
 
-    updateMetaTag(
-      'meta[property="og:locale"]',
-      "property",
-      config.locale,
+    setMetaProperty(
+      "og:site_name",
+      "Rodrigues Digital"
     );
 
-    updateMetaTag(
-      'meta[property="og:image"]',
-      "property",
-      `${SITE_URL}/og-image.png`,
+    /* =====================================================
+       TWITTER / SOCIAL PREVIEW
+    ===================================================== */
+
+    const setMetaName = (
+      name,
+      content
+    ) => {
+      let meta = document.querySelector(
+        `meta[name="${name}"]`
+      );
+
+      if (!meta) {
+        meta = document.createElement("meta");
+
+        meta.setAttribute(
+          "name",
+          name
+        );
+
+        document.head.appendChild(meta);
+      }
+
+      meta.setAttribute(
+        "content",
+        content
+      );
+    };
+
+    setMetaName(
+      "twitter:card",
+      "summary_large_image"
     );
 
-    updateMetaTag(
-      'meta[name="twitter:title"]',
-      "name",
-      title,
+    setMetaName(
+      "twitter:title",
+      title
     );
 
-    updateMetaTag(
-      'meta[name="twitter:description"]',
-      "name",
-      description,
+    setMetaName(
+      "twitter:description",
+      description
     );
 
-    updateMetaTag(
-      'meta[name="twitter:image"]',
-      "name",
-      `${SITE_URL}/og-image.png`,
+    setMetaName(
+      "twitter:image",
+      image
     );
-
-    updateLinkTag("canonical", currentUrl);
-
-    updateLinkTag(
-      "alternate",
-      buildLocalizedUrl("pt", location.pathname),
-      "pt-BR",
-    );
-
-    updateLinkTag(
-      "alternate",
-      buildLocalizedUrl("en", location.pathname),
-      "en",
-    );
-
-    updateLinkTag(
-      "alternate",
-      buildLocalizedUrl("es", location.pathname),
-      "es",
-    );
-
-    updateLinkTag(
-      "alternate",
-      buildLocalizedUrl("pt", location.pathname),
-      "x-default",
-    );
-  }, [currentLanguage, location.pathname, t]);
+  }, [
+    title,
+    description,
+    image,
+    type,
+    canonical,
+    alternates,
+    location.pathname,
+  ]);
 
   return null;
 }

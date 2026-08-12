@@ -1,0 +1,792 @@
+/* =========================================================
+   MARCELA BRAGA — CASE 02
+========================================================= */
+
+.marcela-case {
+  position: relative;
+
+  padding:
+    clamp(105px, 9vw, 150px)
+    0;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8f8f6 0%,
+      #ffffff 48%,
+      #faf7ef 100%
+    );
+
+  border-top:
+    1px solid
+    rgba(15, 23, 42, 0.055);
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.marcela-case__container {
+  width:
+    min(
+      1180px,
+      calc(100% - 48px)
+    );
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marcela-case__header {
+  display: grid;
+
+  grid-template-columns:
+    150px
+    minmax(0, 1fr);
+
+  gap: 45px;
+
+  margin-bottom:
+    clamp(70px, 7vw, 95px);
+}
+
+.marcela-case__eyebrow {
+  padding-top: 12px;
+
+  color: #b68b2e;
+
+  font-size: 0.68rem;
+  font-weight: 850;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.marcela-case__category {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #9b7727;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.marcela-case__header h2 {
+  margin: 0;
+
+  color: #171717;
+
+  font-size:
+    clamp(
+      3rem,
+      5vw,
+      5rem
+    );
+
+  font-weight: 780;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.06em;
+}
+
+.marcela-case__header p {
+  max-width: 620px;
+
+  margin: 24px 0 0;
+
+  color: #737373;
+
+  font-size: 1rem;
+
+  line-height: 1.72;
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.marcela-case__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(520px, 1.12fr)
+    minmax(330px, 0.88fr);
+
+  align-items: center;
+
+  gap:
+    clamp(
+      60px,
+      7vw,
+      100px
+    );
+}
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.marcela-case__visual {
+  position: relative;
+
+  min-width: 0;
+
+  padding:
+    45px
+    25px
+    55px
+    0;
+}
+
+.marcela-case__visual-glow {
+  position: absolute;
+
+  inset:
+    18%
+    4%
+    5%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(183, 137, 31, 0.16),
+      rgba(183, 137, 31, 0.04) 50%,
+      transparent 74%
+    );
+
+  filter: blur(60px);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   IMAGEM
+========================================================= */
+
+.marcela-case__image-frame {
+  position: relative;
+
+  z-index: 3;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(183, 137, 31, 0.17);
+
+  border-radius: 26px;
+
+  background: #111111;
+
+  box-shadow:
+    0 36px 85px
+      rgba(15, 15, 15, 0.2),
+    0 12px 32px
+      rgba(183, 137, 31, 0.09);
+}
+
+.marcela-case__image-frame img {
+  width: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.marcela-case__status {
+  position: absolute;
+
+  top: 15px;
+  left: 6px;
+
+  z-index: 7;
+
+  padding:
+    8px
+    12px;
+
+  border:
+    1px solid
+    rgba(183, 137, 31, 0.18);
+
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #765a1c;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 26px
+    rgba(15, 15, 15, 0.08);
+
+  font-size: 0.58rem;
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+.marcela-case__status > span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #b7891f;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(183, 137, 31, 0.1);
+}
+
+/* =========================================================
+   FLOATING CARD
+========================================================= */
+
+.marcela-case__floating-card {
+  position: absolute;
+
+  right: -10px;
+  bottom: 15px;
+
+  z-index: 7;
+
+  width: 235px;
+
+  padding:
+    15px
+    16px;
+
+  border:
+    1px solid
+    rgba(183, 137, 31, 0.16);
+
+  border-radius: 17px;
+
+  display: grid;
+
+  grid-template-columns:
+    36px
+    minmax(0, 1fr);
+
+  gap: 11px;
+
+  align-items: center;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 48px
+    rgba(15, 15, 15, 0.14);
+}
+
+.marcela-case__floating-card svg {
+  width: 34px;
+  height: 34px;
+
+  padding: 8px;
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c69a38,
+      #8d671b
+    );
+}
+
+.marcela-case__floating-card > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.marcela-case__floating-card span {
+  color: #9b7727;
+
+  font-size: 0.56rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  font-weight: 800;
+}
+
+.marcela-case__floating-card strong {
+  color: #292929;
+
+  font-size: 0.71rem;
+
+  line-height: 1.35;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.marcela-case__content {
+  position: relative;
+
+  z-index: 4;
+}
+
+.marcela-case__section +
+.marcela-case__section {
+  margin-top: 40px;
+}
+
+.marcela-case__label {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  color: #a27b24;
+
+  font-size: 0.65rem;
+  font-weight: 850;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.marcela-case__section h3 {
+  max-width: 470px;
+
+  margin: 0;
+
+  color: #222222;
+
+  font-size:
+    clamp(
+      1.55rem,
+      2.3vw,
+      2.18rem
+    );
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+.marcela-case__section p {
+  max-width: 470px;
+
+  margin: 17px 0 0;
+
+  color: #737373;
+
+  font-size: 0.91rem;
+
+  line-height: 1.68;
+}
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.marcela-case__highlights {
+  margin-top: 34px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 9px;
+}
+
+.marcela-case__highlights > div {
+  min-height: 100px;
+
+  padding:
+    14px
+    12px;
+
+  border:
+    1px solid
+    rgba(183, 137, 31, 0.14);
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 24px
+    rgba(15, 15, 15, 0.045);
+}
+
+.marcela-case__highlights svg {
+  width: 19px;
+  height: 19px;
+
+  color: #a67d23;
+}
+
+.marcela-case__highlights span {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  color: #7b7b7b;
+
+  font-size: 0.62rem;
+
+  line-height: 1.4;
+}
+
+.marcela-case__highlights strong {
+  color: #292929;
+
+  font-size: 0.75rem;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.marcela-case__features {
+  margin-top: 28px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 9px;
+}
+
+.marcela-case__features > div {
+  min-height: 42px;
+
+  padding:
+    9px
+    11px;
+
+  border:
+    1px solid
+    rgba(183, 137, 31, 0.12);
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  background: #ffffff;
+}
+
+.marcela-case__features svg {
+  width: 15px;
+  height: 15px;
+
+  color: #a67d23;
+}
+
+.marcela-case__features span {
+  color: #555555;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+}
+
+/* =========================================================
+   RESULTADO
+========================================================= */
+
+.marcela-case__result {
+  margin-top: 31px;
+
+  padding:
+    19px
+    20px;
+
+  border:
+    1px solid
+    rgba(183, 137, 31, 0.16);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fcf9f0
+    );
+
+  box-shadow:
+    0 14px 32px
+    rgba(15, 15, 15, 0.055);
+}
+
+.marcela-case__result
+  .marcela-case__label {
+  margin-bottom: 8px;
+}
+
+.marcela-case__result strong {
+  display: block;
+
+  color: #292929;
+
+  font-size: 0.9rem;
+
+  line-height: 1.48;
+}
+
+.marcela-case__result p {
+  margin: 8px 0 0;
+
+  color: #7b7b7b;
+
+  font-size: 0.72rem;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BOTÃO
+========================================================= */
+
+.marcela-case__button {
+  width: fit-content;
+
+  min-height: 50px;
+
+  margin-top: 27px;
+
+  padding:
+    0
+    21px;
+
+  border-radius: 13px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c89b37,
+      #98701d
+    );
+
+  box-shadow:
+    0 15px 32px
+    rgba(183, 137, 31, 0.23);
+
+  font-size: 0.8rem;
+  font-weight: 760;
+
+  text-decoration: none;
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.marcela-case__button svg {
+  width: 17px;
+  height: 17px;
+
+  transition:
+    transform 220ms ease;
+}
+
+.marcela-case__button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 21px 40px
+    rgba(183, 137, 31, 0.3);
+}
+
+.marcela-case__button:hover svg {
+  transform:
+    translate(
+      3px,
+      -3px
+    );
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 960px) {
+
+  .marcela-case__header {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .marcela-case__layout {
+    grid-template-columns: 1fr;
+
+    gap: 58px;
+  }
+
+  .marcela-case__content {
+    max-width: 680px;
+  }
+
+  .marcela-case__section h3,
+  .marcela-case__section p {
+    max-width: 620px;
+  }
+
+  .marcela-case__visual {
+    width:
+      min(
+        100%,
+        700px
+      );
+
+    margin: 0 auto;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+
+  .marcela-case {
+    padding:
+      80px
+      0;
+  }
+
+  .marcela-case__container {
+    width:
+      min(
+        calc(100% - 28px),
+        540px
+      );
+  }
+
+  .marcela-case__header {
+    margin-bottom: 48px;
+  }
+
+  .marcela-case__header h2 {
+    font-size:
+      clamp(
+        2.6rem,
+        12vw,
+        3.6rem
+      );
+  }
+
+  .marcela-case__header p {
+    margin-top: 18px;
+
+    font-size: 0.91rem;
+  }
+
+  .marcela-case__visual {
+    padding:
+      30px
+      0
+      52px;
+  }
+
+  .marcela-case__image-frame {
+    border-radius: 19px;
+  }
+
+  .marcela-case__status {
+    top: 2px;
+    left: 8px;
+  }
+
+  .marcela-case__floating-card {
+    right: 10px;
+
+    width:
+      min(
+        220px,
+        70%
+      );
+  }
+
+  .marcela-case__section +
+  .marcela-case__section {
+    margin-top: 34px;
+  }
+
+  .marcela-case__section h3 {
+    font-size: 1.65rem;
+  }
+
+  .marcela-case__highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .marcela-case__highlights > div {
+    min-height: 80px;
+
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  .marcela-case__features {
+    grid-template-columns: 1fr;
+  }
+
+  .marcela-case__button {
+    width: 100%;
+  }
+}
