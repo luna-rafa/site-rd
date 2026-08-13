@@ -29,6 +29,9 @@ function Navbar() {
     "pt"
   ).slice(0, 2);
 
+  // =========================================================
+  // REMOVE PREFIXO DE IDIOMA
+  // =========================================================
   function removeLanguagePrefix(pathname) {
     const cleanPath = pathname
       .replace(/^\/en(?=\/|$)/, "")
@@ -37,24 +40,37 @@ function Navbar() {
     return cleanPath || "/";
   }
 
+  // =========================================================
+  // GERA ROTA DE ACORDO COM O IDIOMA ATUAL
+  // =========================================================
   function getLocalizedPath(path) {
     const cleanPath = removeLanguagePrefix(path);
 
     if (currentLanguage === "en") {
-      return cleanPath === "/" ? "/en" : `/en${cleanPath}`;
+      return cleanPath === "/"
+        ? "/en"
+        : `/en${cleanPath}`;
     }
 
     if (currentLanguage === "es") {
-      return cleanPath === "/" ? "/es" : `/es${cleanPath}`;
+      return cleanPath === "/"
+        ? "/es"
+        : `/es${cleanPath}`;
     }
 
     return cleanPath;
   }
 
+  // =========================================================
+  // ALTERAÇÃO DE IDIOMA
+  // =========================================================
   async function handleLanguageChange(language) {
     await i18n.changeLanguage(language);
 
-    localStorage.setItem("rd-language", language);
+    localStorage.setItem(
+      "rd-language",
+      language
+    );
 
     document.documentElement.lang =
       language === "pt"
@@ -63,32 +79,49 @@ function Navbar() {
           ? "en"
           : "es";
 
-    const cleanPath = removeLanguagePrefix(location.pathname);
+    const cleanPath = removeLanguagePrefix(
+      location.pathname
+    );
 
     let localizedPath = cleanPath;
 
     if (language === "en") {
       localizedPath =
-        cleanPath === "/" ? "/en" : `/en${cleanPath}`;
+        cleanPath === "/"
+          ? "/en"
+          : `/en${cleanPath}`;
     }
 
     if (language === "es") {
       localizedPath =
-        cleanPath === "/" ? "/es" : `/es${cleanPath}`;
+        cleanPath === "/"
+          ? "/es"
+          : `/es${cleanPath}`;
     }
 
-    navigate(`${localizedPath}${location.search}${location.hash}`);
+    navigate(
+      `${localizedPath}${location.search}${location.hash}`
+    );
   }
 
+  // =========================================================
+  // CLASSE DOS LINKS
+  // =========================================================
   function getLinkClass({ isActive }) {
     return `navbar__link ${
-      isActive ? "navbar__link--active" : ""
+      isActive
+        ? "navbar__link--active"
+        : ""
     }`;
   }
 
   return (
     <header className="navbar">
       <div className="container navbar__container">
+
+        {/* ================================================
+            LOGO
+        ================================================= */}
         <NavLink
           to={getLocalizedPath("/")}
           end
@@ -102,10 +135,16 @@ function Navbar() {
           />
         </NavLink>
 
+        {/* ================================================
+            MENU
+        ================================================= */}
         <nav
           className="navbar__menu"
-          aria-label={t("navbar.navigationAria")}
+          aria-label={t(
+            "navbar.navigationAria"
+          )}
         >
+          {/* HOME */}
           <NavLink
             to={getLocalizedPath("/")}
             end
@@ -114,14 +153,15 @@ function Navbar() {
             {t("navbar.home")}
           </NavLink>
 
+          {/* SOBRE */}
           <NavLink
             to={getLocalizedPath("/sobre")}
             className={getLinkClass}
           >
             {t("navbar.about")}
-              
           </NavLink>
 
+          {/* SOLUÇÕES */}
           <NavLink
             to={getLocalizedPath("/solucoes")}
             className={getLinkClass}
@@ -129,17 +169,15 @@ function Navbar() {
             {t("navbar.solutions")}
           </NavLink>
 
+          {/* PROJETOS */}
           <NavLink
-<<<<<<< HEAD
             to={getLocalizedPath("/projetos")}
-=======
-            to={getLocalizedPath("/Projetos")}
->>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
             className={getLinkClass}
           >
             {t("navbar.projects")}
           </NavLink>
 
+          {/* BLOG */}
           <NavLink
             to={getLocalizedPath("/blog")}
             className={getLinkClass}
@@ -147,6 +185,7 @@ function Navbar() {
             {t("navbar.blog")}
           </NavLink>
 
+          {/* CONTATO */}
           <NavLink
             to={getLocalizedPath("/contato")}
             className={getLinkClass}
@@ -155,46 +194,62 @@ function Navbar() {
           </NavLink>
         </nav>
 
+        {/* ================================================
+            AÇÕES
+        ================================================= */}
         <div className="navbar__actions">
+
+          {/* IDIOMAS */}
           <div
             className="navbar__languages"
-            aria-label={t("navbar.languageSelector")}
+            aria-label={t(
+              "navbar.languageSelector"
+            )}
           >
-            {languages.map((language, index) => {
-              const isActive =
-                currentLanguage === language.code;
+            {languages.map(
+              (language, index) => {
+                const isActive =
+                  currentLanguage ===
+                  language.code;
 
-              return (
-                <div
-                  key={language.code}
-                  className="navbar__language-group"
-                >
-                  <button
-                    type="button"
-                    className={`navbar__language ${
-                      isActive
-                        ? "navbar__language--active"
-                        : ""
-                    }`}
-                    onClick={() =>
-                      handleLanguageChange(language.code)
-                    }
-                    aria-pressed={isActive}
-                    aria-label={t(
-                      `navbar.languages.${language.code}`,
-                    )}
+                return (
+                  <div
+                    key={language.code}
+                    className="navbar__language-group"
                   >
-                    {language.label}
-                  </button>
+                    <button
+                      type="button"
+                      className={`navbar__language ${
+                        isActive
+                          ? "navbar__language--active"
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleLanguageChange(
+                          language.code
+                        )
+                      }
+                      aria-pressed={isActive}
+                      aria-label={t(
+                        `navbar.languages.${language.code}`
+                      )}
+                    >
+                      {language.label}
+                    </button>
 
-                  {index < languages.length - 1 && (
-                    <span aria-hidden="true">/</span>
-                  )}
-                </div>
-              );
-            })}
+                    {index <
+                      languages.length - 1 && (
+                      <span aria-hidden="true">
+                        /
+                      </span>
+                    )}
+                  </div>
+                );
+              }
+            )}
           </div>
 
+          {/* CTA */}
           <a
             href={siteConfig.whatsapp}
             target="_blank"

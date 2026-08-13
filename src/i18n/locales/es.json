@@ -306,10 +306,10 @@
       "portfolioButton": "Conoce mi portafolio",
       "signature": "Más de 10 años transformando tecnología en soluciones digitales.",
       "stats": {
-  "experience": "años de experiencia en Tecnología de la Información",
-  "custom": "proyectos desarrollados de forma personalizada",
-  "languages": "idiomas disponibles (Portugués, Inglés y Español)"
-}
+        "experience": "años de experiencia en Tecnología de la Información",
+        "custom": "proyectos desarrollados de forma personalizada",
+        "languages": "idiomas disponibles (Portugués, Inglés y Español)"
+      }
     }
   },
   "services": {
@@ -367,7 +367,6 @@
     "title": {
       "first": "Presencias digitales creadas para",
       "highlight": "representar, posicionar y conectar."
-<<<<<<< HEAD
     },
     "introduction": {
       "first": "Cada proyecto nace de una necesidad diferente y se desarrolla para reflejar la identidad, los objetivos y el momento de cada cliente.",
@@ -470,6 +469,10 @@
     "home": {
       "title": "Rodrigues Digital | Presencias digitales profesionales",
       "description": "Sitios institucionales, landing pages, portafolios profesionales y soluciones digitales desarrollados con estrategia, tecnología e identidad para fortalecer marcas y generar oportunidades."
+    },
+    "projects": {
+      "title": "Proyectos | Rodrigues Digital",
+      "description": "Conozca proyectos desarrollados por Rodrigues Digital para marcas, profesionales y empresas. Sitios web, landing pages y presencias digitales creadas con estrategia, identidad y tecnología."
     }
   },
   "solutions": {
@@ -649,562 +652,411 @@
       }
     },
     "faq": {
-  "eyebrow": "Preguntas frecuentes",
-  "titlePrefix": "Todo lo que necesita saber",
-  "titleHighlight": "antes de comenzar su proyecto.",
-  "description": "Aquí encontrará las preguntas más comunes de empresas y profesionales que desean desarrollar una presencia digital estratégica, profesional y preparada para generar nuevas oportunidades.",
-  "imageAlt": "Rafaela Rodrigues analizando un proyecto digital en su oficina",
-  "imageCard": {
-    "label": "Atención consultiva",
-    "title": "Claridad y acompañamiento durante todas las etapas."
-  },
-  "questions": [
-    {
-      "question": "¿Cuánto tiempo tarda el desarrollo de un proyecto?",
-      "answer": "El plazo depende del tipo de solución, de la cantidad de páginas, de las funcionalidades necesarias y de la rapidez con la que se entregue el contenido. Después de la reunión inicial y de definir el alcance, recibirá un cronograma claro con todas las etapas del proyecto."
-    },
-    {
-      "question": "¿Puedo solicitar cambios durante el desarrollo?",
-      "answer": "Sí. Cada proyecto incluye etapas de revisión para que pueda seguir el desarrollo y solicitar los ajustes previstos antes de la publicación."
-    },
-    {
-      "question": "¿Necesito tener todos los textos e imágenes preparados?",
-      "answer": "No necesariamente. Durante la planificación organizamos todo el contenido necesario para el proyecto. Puede enviar el material que ya tenga y recibir orientación sobre lo que aún debe prepararse."
-    },
-    {
-      "question": "¿También gestionan el dominio y la configuración del alojamiento?",
-      "answer": "Puedo orientarle en la contratación del dominio y del alojamiento, realizar las configuraciones necesarias y preparar todo para que el proyecto se publique de forma segura."
-    },
-    {
-      "question": "¿Mi sitio web funcionará en teléfonos móviles y tabletas?",
-      "answer": "Sí. Todos los proyectos se desarrollan con diseño responsivo para ofrecer una excelente experiencia en computadoras, tabletas y teléfonos móviles."
-    },
-    {
-      "question": "¿Es posible desarrollar el proyecto en varios idiomas?",
-      "answer": "Sí. Rodrigues Digital desarrolla proyectos multilingües en portugués, inglés y español. El alcance y la inversión dependen de la cantidad de idiomas y del contenido que deba adaptarse."
-    },
-    {
-      "question": "¿El proyecto incluirá una preparación inicial para Google?",
-      "answer": "Sí. Los proyectos pueden incluir una configuración inicial de SEO con buenas prácticas de estructura, metadatos, organización del contenido, rendimiento y optimización técnica para los motores de búsqueda."
-    },
-    {
-      "question": "¿Recibiré soporte después de la entrega del proyecto?",
-      "answer": "Sí. Después de la publicación recibirá orientación para utilizar su nueva solución digital, además del soporte inicial incluido en el proyecto. También podrá contratar un plan mensual de mantenimiento para actualizaciones, copias de seguridad, monitoreo y pequeños ajustes."
-    }
-  ],
-  "contact": {
-    "label": "¿Todavía tiene alguna duda?",
-    "title": "Conversemos sobre lo que realmente necesita su empresa.",
-    "description": "Cada empresa tiene objetivos, desafíos y necesidades diferentes. Agende una reunión para que pueda comprender su proyecto y recomendar la solución más adecuada.",
-    "button": "Solicitar reunión",
-    "buttonAria": "Solicitar una reunión con Rodrigues Digital por WhatsApp"
-=======
-    },
-    "introduction": {
-      "first": "Cada proyecto nace de una necesidad diferente y se desarrolla para reflejar la identidad, los objetivos y el momento de cada cliente.",
-      "second": "Más que páginas visualmente atractivas, son soluciones pensadas para transmitir credibilidad, organizar información y generar nuevas oportunidades."
-    },
-    "openProject": "Abrir el proyecto {{project}} en una nueva pestaña",
-    "accessProject": "Acceder al proyecto {{project}}",
-    "access": "Acceder al proyecto",
-    "published": "Proyecto publicado",
-    "available": "Disponible para acceso",
-    "online": "Proyecto en línea",
-    "tags": {
-      "react": "React",
-      "responsive": "Responsivo",
-      "strategy": "Estrategia",
-      "positioning": "Posicionamiento",
-      "personalBrand": "Marca personal",
-      "technology": "Tecnología"
-    },
-    "projects": {
-      "marcela": {
-        "category": "Landing Page",
-        "title": "Marcela Braga — Logística y Negocios",
-        "description": "Landing page desarrollada para presentar la trayectoria, los servicios y el posicionamiento profesional de Marcela Braga, enfocándose en autoridad, claridad y nuevas oportunidades de negocio.",
-        "imageAlt": "Landing page de Marcela Braga, especialista en logística, transporte y desarrollo de negocios"
+      "eyebrow": "Preguntas frecuentes",
+      "titlePrefix": "Todo lo que necesita saber",
+      "titleHighlight": "antes de comenzar su proyecto.",
+      "description": "Aquí encontrará las preguntas más comunes de empresas y profesionales que desean desarrollar una presencia digital estratégica, profesional y preparada para generar nuevas oportunidades.",
+      "imageAlt": "Rafaela Rodrigues analizando un proyecto digital en su oficina",
+      "imageCard": {
+        "label": "Atención consultiva",
+        "title": "Claridad y acompañamiento durante todas las etapas."
       },
-      "rafaela": {
-        "category": "Portafolio Profesional",
-        "title": "Rafaela Rodrigues — Tecnología de la Información",
-        "description": "Portafolio profesional desarrollado para destacar la experiencia en soporte, infraestructura, nube y tecnología mediante una presentación moderna y estratégica.",
-        "imageAlt": "Portafolio profesional de Rafaela Rodrigues en Tecnología de la Información"
+      "questions": [
+        {
+          "question": "¿Cuánto tiempo tarda el desarrollo de un proyecto?",
+          "answer": "El plazo depende del tipo de solución, de la cantidad de páginas, de las funcionalidades necesarias y de la rapidez con la que se entregue el contenido. Después de la reunión inicial y de definir el alcance, recibirá un cronograma claro con todas las etapas del proyecto."
+        },
+        {
+          "question": "¿Puedo solicitar cambios durante el desarrollo?",
+          "answer": "Sí. Cada proyecto incluye etapas de revisión para que pueda seguir el desarrollo y solicitar los ajustes previstos antes de la publicación."
+        },
+        {
+          "question": "¿Necesito tener todos los textos e imágenes preparados?",
+          "answer": "No necesariamente. Durante la planificación organizamos todo el contenido necesario para el proyecto. Puede enviar el material que ya tenga y recibir orientación sobre lo que aún debe prepararse."
+        },
+        {
+          "question": "¿También gestionan el dominio y la configuración del alojamiento?",
+          "answer": "Puedo orientarle en la contratación del dominio y del alojamiento, realizar las configuraciones necesarias y preparar todo para que el proyecto se publique de forma segura."
+        },
+        {
+          "question": "¿Mi sitio web funcionará en teléfonos móviles y tabletas?",
+          "answer": "Sí. Todos los proyectos se desarrollan con diseño responsivo para ofrecer una excelente experiencia en computadoras, tabletas y teléfonos móviles."
+        },
+        {
+          "question": "¿Es posible desarrollar el proyecto en varios idiomas?",
+          "answer": "Sí. Rodrigues Digital desarrolla proyectos multilingües en portugués, inglés y español. El alcance y la inversión dependen de la cantidad de idiomas y del contenido que deba adaptarse."
+        },
+        {
+          "question": "¿El proyecto incluirá una preparación inicial para Google?",
+          "answer": "Sí. Los proyectos pueden incluir una configuración inicial de SEO con buenas prácticas de estructura, metadatos, organización del contenido, rendimiento y optimización técnica para los motores de búsqueda."
+        },
+        {
+          "question": "¿Recibiré soporte después de la entrega del proyecto?",
+          "answer": "Sí. Después de la publicación recibirá orientación para utilizar su nueva solución digital, además del soporte inicial incluido en el proyecto. También podrá contratar un plan mensual de mantenimiento para actualizaciones, copias de seguridad, monitoreo y pequeños ajustes."
+        }
+      ],
+      "contact": {
+        "label": "¿Todavía tiene alguna duda?",
+        "title": "Conversemos sobre lo que realmente necesita su empresa.",
+        "description": "Cada empresa tiene objetivos, desafíos y necesidades diferentes. Agende una reunión para que pueda comprender su proyecto y recomendar la solución más adecuada.",
+        "button": "Solicitar reunión",
+        "buttonAria": "Solicitar una reunión con Rodrigues Digital por WhatsApp"
       }
     },
-    "footer": {
-      "title": "Nuevos proyectos ya están en desarrollo.",
-      "description": "Rodrigues Digital continúa desarrollando soluciones digitales para empresas y profesionales que desean fortalecer su presencia digital con estrategia, identidad y propósito.",
-      "button": "Conocer todos los proyectos"
+    "cta": {
+      "eyebrow": "¿Listo para comenzar?",
+      "titlePrefix": "Transformemos sus necesidades en una",
+      "titleHighlight": "presencia digital profesional.",
+      "description": "Cada proyecto comienza con una conversación para comprender su empresa, sus objetivos y el momento actual de su marca. A partir de ahí, desarrollamos una solución personalizada para fortalecer su presencia digital y generar nuevas oportunidades.",
+      "whatsappMessage": "Hola Rafaela. Me gustaría conversar sobre un proyecto para fortalecer mi presencia digital.",
+      "benefits": {
+        "first": "Atención personalizada",
+        "second": "Estrategia antes del desarrollo",
+        "third": "Proyecto desarrollado a medida"
+      },
+      "buttons": {
+        "meeting": "Solicitar una reunión",
+        "meetingAria": "Solicitar una reunión por WhatsApp",
+        "projects": "Conocer proyectos",
+        "projectsAria": "Conocer los proyectos desarrollados"
+      },
+      "meeting": {
+        "label": "Primer paso",
+        "title": "Reunión estratégica",
+        "description": "Una conversación inicial para comprender su negocio y recomendar la solución digital más adecuada para su momento actual.",
+        "items": [
+          "Comprender la empresa y sus objetivos",
+          "Analizar el momento actual de la marca",
+          "Identificar las principales necesidades",
+          "Recomendar la solución ideal"
+        ],
+        "durationLabel": "Tiempo estimado",
+        "duration": "30 minutos",
+        "note": "Sin compromiso"
+      },
+      "stats": {
+        "experience": "años de experiencia en Tecnología de la Información",
+        "custom": "proyectos desarrollados de forma personalizada",
+        "languages": "idiomas disponibles: portugués, inglés y español"
+      }
     }
-  },
-  "cta": {
-    "eyebrow": "¿Hablamos?",
-    "title": {
-      "first": "Su próxima presencia digital puede comenzar",
-      "highlight": "con una buena conversación."
-    },
-    "description": "Cuénteme sobre su negocio, sus objetivos y el momento actual de su marca. Juntos podemos desarrollar una solución profesional y estratégica capaz de generar nuevas oportunidades.",
-    "benefits": {
-      "first": "Atención cercana y personalizada",
-      "second": "Estrategia antes del desarrollo",
-      "third": "Soluciones alineadas con la identidad de la marca"
-    },
-    "buttons": {
-      "meeting": "Solicitar reunión",
-      "meetingAria": "Solicitar una reunión por WhatsApp",
-      "solutions": "Conocer soluciones"
-    },
-    "brand": {
-      "title": "Estrategia, identidad y tecnología para fortalecer su marca.",
-      "footer": "Presencia digital profesional"
-    },
-    "floating": {
-      "title": "Atención personalizada",
-      "description": "Desde la planificación hasta la publicación"
-    }
-  },
-  "footer": {
-    "description": "Transformando ideas en presencias digitales profesionales.",
-    "rights": "Todos los derechos reservados.",
-    "privacy": "Política de Privacidad",
-    "backTop": "Volver arriba",
-    "homeAria": "Ir a la página inicial",
-    "whatsappAria": "Hablar por WhatsApp",
-    "instagramAria": "Abrir Instagram",
-    "emailAria": "Enviar correo",
-    "navigation": {
-      "title": "Navegación",
-      "home": "Inicio",
-      "about": "Sobre",
-      "solutions": "Soluciones",
-      "projects": "Proyectos",
-      "blog": "Blog",
-      "contact": "Contacto"
-    },
-    "solutions": {
-      "title": "Soluciones",
-      "website": "Sitio Institucional",
-      "landing": "Landing Page",
-      "portfolio": "Portafolio Profesional",
-      "mediaKit": "Media Kit",
-      "seo": "SEO Inicial",
-      "maintenance": "Mantenimiento de Sitios"
-    },
-    "contact": {
-      "title": "Contacto",
-      "email": "Correo",
-      "service": "Atención"
-    }
-  },
-  "seo": {
-    "home": {
-      "title": "Rodrigues Digital | Presencias digitales profesionales",
-      "description": "Sitios institucionales, landing pages, portafolios profesionales y soluciones digitales desarrollados con estrategia, tecnología e identidad para fortalecer marcas y generar oportunidades."
-    },
-    "projects": {
-  "title": "Proyectos | Rodrigues Digital",
-  "description": "Conozca proyectos desarrollados por Rodrigues Digital para marcas, profesionales y empresas. Sitios web, landing pages y presencias digitales creadas con estrategia, identidad y tecnología."
-}
   },
   "projectsPage": {
-  "hero": {
-    "eyebrow": "Proyectos seleccionados",
-
-    "title": {
-      "first": "Ideas que toman forma.",
-      "highlight": "Marcas que construyen presencia."
+    "hero": {
+      "eyebrow": "Proyectos seleccionados",
+      "title": {
+        "first": "Ideas que toman forma.",
+        "highlight": "Marcas que construyen presencia."
+      },
+      "description": "Estrategia, diseño y tecnología transformados en experiencias digitales desarrolladas para representar la esencia de cada marca y generar nuevas oportunidades.",
+      "buttons": {
+        "projects": "Explorar proyectos",
+        "meeting": "Solicitar una reunión",
+        "meetingAria": "Solicitar una reunión con Rodrigues Digital por WhatsApp"
+      },
+      "pillars": {
+        "strategy": "Estrategia",
+        "design": "Diseño",
+        "technology": "Tecnología"
+      },
+      "projects": {
+        "rodrigues": {
+          "type": "Sitio Web Corporativo"
+        },
+        "marcela": {
+          "type": "Sitio Web Profesional"
+        },
+        "luezes": {
+          "type": "Presencia Digital"
+        },
+        "jaqueline": {
+          "type": "Landing Page"
+        },
+        "eslayne": {
+          "type": "Marca Personal"
+        }
+      },
+      "visualAria": "Proyectos desarrollados por Rodrigues Digital",
+      "counter": {
+        "title": "Casos seleccionados",
+        "text": "Proyectos con diferentes identidades y objetivos."
+      },
+      "floatingTag": "Estrategia • Diseño • Tecnología",
+      "scroll": "Descubre",
+      "scrollAria": "Ir a los proyectos"
     },
-
-    "description": "Estrategia, diseño y tecnología transformados en experiencias digitales desarrolladas para representar la esencia de cada marca y generar nuevas oportunidades.",
-
-    "buttons": {
-      "projects": "Explorar proyectos",
-      "meeting": "Solicitar una reunión",
-      "meetingAria": "Solicitar una reunión con Rodrigues Digital por WhatsApp"
-    },
-
-    "pillars": {
-      "strategy": "Estrategia",
-      "design": "Diseño",
-      "technology": "Tecnología"
-    },
-
-    "projects": {
-      "rodrigues": {
-        "type": "Sitio Web Corporativo"
+    "rodrigues": {
+      "case": "Caso 01",
+      "introduction": "Una presencia digital desarrollada para representar la marca, organizar sus servicios y crear una base profesional para su crecimiento.",
+      "challenge": {
+        "label": "01 · Desafío",
+        "title": "Transformar experiencia en una presencia digital que transmita autoridad.",
+        "description": "Rodrigues Digital necesitaba una estructura capaz de presentar sus servicios con claridad, fortalecer su identidad y transmitir el nivel profesional de los proyectos desarrollados."
       },
-      "marcela": {
-        "type": "Sitio Web Profesional"
+      "solution": {
+        "label": "02 · Solución",
+        "title": "Estrategia, identidad y tecnología en una sola experiencia.",
+        "description": "El proyecto fue desarrollado con enfoque en la organización del contenido, diseño responsivo, arquitectura multilingüe y una experiencia preparada para crecer junto con la empresa."
       },
-      "luezes": {
-        "type": "Presencia Digital"
+      "features": {
+        "website": "Sitio web corporativo",
+        "responsive": "Diseño responsivo",
+        "multilingual": "Estructura multilingüe",
+        "seo": "SEO inicial",
+        "scalable": "Arquitectura escalable",
+        "custom": "Experiencia personalizada"
       },
-      "jaqueline": {
-        "type": "Landing Page"
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Una presencia digital profesional preparada para representar la marca y generar nuevas oportunidades."
       },
-      "eslayne": {
-        "type": "Marca Personal"
+      "button": "Ver proyecto online",
+      "buttonAria": "Abrir el proyecto Rodrigues Digital en una nueva pestaña",
+      "status": "Proyecto publicado",
+      "imageAlt": "Proyecto Rodrigues Digital presentado en una computadora portátil",
+      "floating": {
+        "label": "Resultado",
+        "title": "Presencia digital completa",
+        "description": "Estrategia · Diseño · Tecnología"
       }
     },
-
-    "visualAria": "Proyectos desarrollados por Rodrigues Digital",
-
-    "counter": {
-      "title": "Casos seleccionados",
-      "text": "Proyectos con diferentes identidades y objetivos."
+    "marcela": {
+      "case": "Caso 02",
+      "category": "Presencia profesional",
+      "introduction": "Una presencia digital creada para transformar experiencia profesional en posicionamiento, autoridad y nuevas oportunidades de negocio.",
+      "challenge": {
+        "label": "01 · Desafío",
+        "title": "Presentar una trayectoria sólida sin transformar el sitio en un currículum digital.",
+        "description": "Marcela Braga posee más de dos décadas de experiencia en logística, transporte y desarrollo de negocios. El desafío era organizar esta trayectoria en una presencia elegante, estratégica y fácil de comprender."
+      },
+      "solution": {
+        "label": "02 · Solución",
+        "title": "Construir una narrativa profesional basada en autoridad, experiencia y posicionamiento.",
+        "description": "Desarrollamos una estructura que presenta experiencia, áreas de actuación, competencias y oportunidades de negocio de forma clara, moderna y responsiva."
+      },
+      "highlights": {
+        "experience": {
+          "value": "+20 años",
+          "label": "Experiencia profesional"
+        },
+        "international": {
+          "value": "Internacional",
+          "label": "Posicionamiento profesional"
+        },
+        "business": {
+          "value": "B2B & B2C",
+          "label": "Desarrollo de negocios"
+        }
+      },
+      "features": {
+        "professionalSite": "Sitio web profesional",
+        "responsive": "Diseño responsivo",
+        "positioning": "Posicionamiento estratégico",
+        "journey": "Presentación de trayectoria",
+        "commercial": "Estructura comercial",
+        "customIdentity": "Identidad personalizada"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Una presencia digital capaz de transformar experiencia profesional en autoridad de marca.",
+        "description": "El proyecto posiciona a Marcela de manera profesional y estratégica, fortaleciendo su presentación ante empresas, socios y nuevas oportunidades."
+      },
+      "status": "Proyecto publicado",
+      "button": "Ver proyecto online",
+      "buttonAria": "Abrir el proyecto Marcela Braga en una nueva pestaña",
+      "imageAlt": "Proyecto profesional de Marcela Braga presentado en una computadora portátil y un celular",
+      "floating": {
+        "label": "Posicionamiento",
+        "title": "Presencia con alcance internacional"
+      }
     },
-
-    "floatingTag": "Estrategia • Diseño • Tecnología",
-
-    "scroll": "Descubre",
-    "scrollAria": "Ir a los proyectos"
-  },
-
-  "rodrigues": {
-    "case": "Caso 01",
-
-    "introduction": "Una presencia digital desarrollada para representar la marca, organizar sus servicios y crear una base profesional para su crecimiento.",
-
-    "challenge": {
-      "label": "01 · Desafío",
-      "title": "Transformar experiencia en una presencia digital que transmita autoridad.",
-      "description": "Rodrigues Digital necesitaba una estructura capaz de presentar sus servicios con claridad, fortalecer su identidad y transmitir el nivel profesional de los proyectos desarrollados."
+    "jaqueline": {
+      "case": "Caso 03",
+      "category": "Landing Page · Marca Personal",
+      "introduction": "Una presencia digital construida para transformar acogimiento, experiencia y propósito en una comunicación profesional, humana y estratégica.",
+      "challenge": {
+        "label": "01 · Desafío",
+        "title": "Organizar diferentes áreas de actuación sin perder la esencia humana de la profesional.",
+        "description": "El proyecto necesitaba presentar a Jaqueline, su trayectoria y sus servicios de forma clara, conectando su actuación profesional con una comunicación basada en escucha, propósito y acogimiento."
+      },
+      "solution": {
+        "label": "02 · Solución",
+        "title": "Una experiencia digital que genera cercanía incluso antes del primer contacto.",
+        "description": "La estructura fue desarrollada para conducir al visitante por las principales áreas de actuación, organizar la información y facilitar el acceso a los servicios, manteniendo una identidad visual acogedora y profesional."
+      },
+      "pillars": {
+        "personalBrand": {
+          "title": "Marca personal",
+          "description": "Posicionamiento profesional"
+        },
+        "welcoming": {
+          "title": "Acogimiento",
+          "description": "Comunicación humanizada"
+        },
+        "companies": {
+          "title": "Empresas",
+          "description": "Soluciones profesionales NR-1"
+        }
+      },
+      "features": {
+        "landingPage": "Landing Page",
+        "responsive": "Diseño responsivo",
+        "personalBrand": "Marca personal",
+        "visitorJourney": "Recorrido del visitante",
+        "services": "Presentación de servicios",
+        "customIdentity": "Identidad personalizada"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Una presencia digital que une profesionalismo, acogimiento y claridad.",
+        "description": "Una estructura preparada para presentar a la profesional, orientar diferentes públicos y transformar el interés en contacto."
+      },
+      "status": "Proyecto publicado",
+      "type": "Landing Page",
+      "button": "Ver proyecto online",
+      "buttonAria": "Abrir el proyecto Jaqueline Leal en una nueva pestaña",
+      "imageAlt": "Landing Page de Jaqueline Leal presentada en una computadora portátil y un celular",
+      "floating": {
+        "label": "Experiencia",
+        "title": "Presencia humana y profesional",
+        "description": "Estrategia · Identidad · Responsividad"
+      }
     },
-
-    "solution": {
-      "label": "02 · Solución",
-      "title": "Estrategia, identidad y tecnología en una sola experiencia.",
-      "description": "El proyecto fue desarrollado con enfoque en la organización del contenido, diseño responsivo, arquitectura multilingüe y una experiencia preparada para crecer junto con la empresa."
+    "eslayne": {
+      "case": "Caso 04",
+      "category": "Marca Personal · Presencia Digital",
+      "introduction": "Una presencia digital creada para organizar diferentes áreas de actuación en una marca personal fuerte, elegante y estratégicamente posicionada.",
+      "challenge": {
+        "label": "01 · Desafío",
+        "title": "Transformar diferentes áreas de actuación en una comunicación única y coherente.",
+        "description": "El desafío era construir una presencia digital capaz de presentar a Eslayne de forma profesional, conectando su trayectoria, actuación empresarial, comunicación y posicionamiento personal sin fragmentar su identidad."
+      },
+      "solution": {
+        "label": "02 · Solución",
+        "title": "Una narrativa digital que coloca a la persona en el centro de la marca.",
+        "description": "La estructura fue desarrollada para presentar primero la esencia y el posicionamiento de la profesional y, a partir de ellos, conducir al visitante por sus áreas de actuación, proyectos y canales de relación."
+      },
+      "highlights": {
+        "businesswoman": {
+          "title": "Empresaria",
+          "description": "Posicionamiento profesional"
+        },
+        "connection": {
+          "title": "Conexión",
+          "description": "Comunicación con personas"
+        },
+        "personalBrand": {
+          "title": "Marca personal",
+          "description": "Identidad y presencia"
+        }
+      },
+      "features": {
+        "landingPage": "Landing Page",
+        "responsive": "Diseño responsivo",
+        "personalBrand": "Marca personal",
+        "positioning": "Posicionamiento estratégico",
+        "customIdentity": "Identidad personalizada",
+        "presentationJourney": "Recorrido de presentación"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Una presencia digital elegante y estratégica para fortalecer su autoridad personal.",
+        "description": "El proyecto centraliza su comunicación y crea una base profesional para presentar su trayectoria, actuación y nuevos proyectos."
+      },
+      "status": "Proyecto publicado",
+      "type": "Marca Personal",
+      "button": "Ver proyecto online",
+      "buttonAria": "Abrir el proyecto Eslayne Lima en una nueva pestaña",
+      "imageAlt": "Proyecto digital de Eslayne Lima presentado en una computadora portátil y un celular",
+      "floating": {
+        "label": "Posicionamiento",
+        "title": "Una marca personal con identidad y dirección.",
+        "description": "Estrategia · Autoridad · Presencia"
+      }
     },
-
-    "features": {
-      "website": "Sitio web corporativo",
-      "responsive": "Diseño responsivo",
-      "multilingual": "Estructura multilingüe",
-      "seo": "SEO inicial",
-      "scalable": "Arquitectura escalable",
-      "custom": "Experiencia personalizada"
+    "luezes": {
+      "case": "Caso 05",
+      "category": "Comunicación · Marca Personal · Presencia Digital",
+      "introduction": "Una presencia digital creada para transformar trayectoria, comunicación y posicionamiento en una marca fuerte, expresiva y preparada para nuevas oportunidades.",
+      "challenge": {
+        "label": "01 · Desafío",
+        "title": "Organizar una trayectoria multifacética en una presencia digital clara y estratégica.",
+        "description": "Luezes reúne diferentes áreas de actuación, incluyendo comunicación, emprendimiento, presentaciones, contenido y proyectos profesionales. El desafío era crear una estructura capaz de conectar estas áreas sin perder fuerza, personalidad ni claridad."
+      },
+      "solution": {
+        "label": "02 · Solución",
+        "title": "Una experiencia visual que transforma historia en posicionamiento.",
+        "description": "Desarrollamos una presencia digital que presenta primero la esencia de la marca personal y conduce al visitante por su historia, actuación, proyectos y oportunidades de relación de forma estructurada y envolvente."
+      },
+      "pillars": {
+        "communication": {
+          "title": "Comunicación",
+          "description": "Contenido y presencia"
+        },
+        "personalBrand": {
+          "title": "Marca personal",
+          "description": "Identidad y posicionamiento"
+        },
+        "connection": {
+          "title": "Conexión",
+          "description": "Personas y oportunidades"
+        }
+      },
+      "features": {
+        "landingPage": "Landing Page",
+        "responsive": "Diseño responsivo",
+        "personalBrand": "Marca personal",
+        "positioning": "Posicionamiento estratégico",
+        "presentationJourney": "Recorrido de presentación",
+        "customIdentity": "Identidad personalizada"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Una presencia digital capaz de transformar trayectoria en autoridad y comunicación en oportunidades.",
+        "description": "El proyecto crea una base profesional para presentar la marca Luezes Venturin, fortalecer su posicionamiento y conectar diferentes áreas de actuación en una única experiencia."
+      },
+      "status": "Proyecto desarrollado",
+      "type": "Marca Personal",
+      "button": "Ver proyecto online",
+      "buttonAria": "Abrir el proyecto Luezes Venturin en una nueva pestaña",
+      "imageAlt": "Proyecto digital de Luezes Venturin presentado en una computadora portátil y un celular",
+      "floating": {
+        "label": "Posicionamiento",
+        "title": "Toda historia tiene el poder de provocar un cambio.",
+        "description": "Comunicación · Identidad · Estrategia"
+      }
     },
-
-    "result": {
-      "label": "03 · Resultado",
-      "title": "Una presencia digital profesional preparada para representar la marca y generar nuevas oportunidades."
-    },
-
-    "button": "Ver proyecto online",
-    "buttonAria": "Abrir el proyecto Rodrigues Digital en una nueva pestaña",
-
-    "status": "Proyecto publicado",
-
-    "imageAlt": "Proyecto Rodrigues Digital presentado en una computadora portátil",
-
-    "floating": {
-      "label": "Resultado",
-      "title": "Presencia digital completa",
-      "description": "Estrategia · Diseño · Tecnología"
+    "cta": {
+      "eyebrow": "Su próximo proyecto",
+      "title": {
+        "first": "Su proyecto puede ser",
+        "highlight": "nuestro próximo caso."
+      },
+      "description": "Estrategia, identidad y tecnología para construir una presencia digital profesional que represente el verdadero valor de su marca y genere nuevas oportunidades.",
+      "benefits": {
+        "strategy": "Estrategia antes del desarrollo",
+        "identity": "Proyecto alineado con la identidad de la marca",
+        "responsive": "Experiencia responsiva y profesional"
+      },
+      "buttons": {
+        "meeting": "Solicitar una reunión",
+        "meetingAria": "Solicitar una reunión por WhatsApp",
+        "solutions": "Conocer soluciones"
+      },
+      "panel": {
+        "aria": "Diferenciales de los proyectos",
+        "status": "Nuevos proyectos",
+        "selected": "casos seleccionados",
+        "description": "Proyectos desarrollados con estrategia, identidad y tecnología.",
+        "pillars": {
+          "strategy": "Estrategia",
+          "design": "Diseño",
+          "technology": "Tecnología"
+        },
+        "footer": "Transformando ideas en presencias digitales profesionales."
+      }
     }
   },
-
-  "marcela": {
-  "case": "Caso 02",
-  "category": "Presencia profesional",
-  "introduction": "Una presencia digital creada para transformar experiencia profesional en posicionamiento, autoridad y nuevas oportunidades de negocio.",
-
-  "challenge": {
-    "label": "01 · Desafío",
-    "title": "Presentar una trayectoria sólida sin transformar el sitio en un currículum digital.",
-    "description": "Marcela Braga posee más de dos décadas de experiencia en logística, transporte y desarrollo de negocios. El desafío era organizar esta trayectoria en una presencia elegante, estratégica y fácil de comprender."
-  },
-
-  "solution": {
-    "label": "02 · Solución",
-    "title": "Construir una narrativa profesional basada en autoridad, experiencia y posicionamiento.",
-    "description": "Desarrollamos una estructura que presenta experiencia, áreas de actuación, competencias y oportunidades de negocio de forma clara, moderna y responsiva."
-  },
-
-  "highlights": {
-    "experience": {
-      "value": "+20 años",
-      "label": "Experiencia profesional"
-    },
-    "international": {
-      "value": "Internacional",
-      "label": "Posicionamiento profesional"
-    },
-    "business": {
-      "value": "B2B & B2C",
-      "label": "Desarrollo de negocios"
-    }
-  },
-
-  "features": {
-    "professionalSite": "Sitio web profesional",
-    "responsive": "Diseño responsivo",
-    "positioning": "Posicionamiento estratégico",
-    "journey": "Presentación de trayectoria",
-    "commercial": "Estructura comercial",
-    "customIdentity": "Identidad personalizada"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Una presencia digital capaz de transformar experiencia profesional en autoridad de marca.",
-    "description": "El proyecto posiciona a Marcela de manera profesional y estratégica, fortaleciendo su presentación ante empresas, socios y nuevas oportunidades."
-  },
-
-  "status": "Proyecto publicado",
-  "button": "Ver proyecto online",
-  "buttonAria": "Abrir el proyecto Marcela Braga en una nueva pestaña",
-
-  "imageAlt": "Proyecto profesional de Marcela Braga presentado en una computadora portátil y un celular",
-
-  "floating": {
-    "label": "Posicionamiento",
-    "title": "Presencia con alcance internacional"
-  }
-},
-
-"jaqueline": {
-  "case": "Caso 03",
-  "category": "Landing Page · Marca Personal",
-  "introduction": "Una presencia digital construida para transformar acogimiento, experiencia y propósito en una comunicación profesional, humana y estratégica.",
-
-  "challenge": {
-    "label": "01 · Desafío",
-    "title": "Organizar diferentes áreas de actuación sin perder la esencia humana de la profesional.",
-    "description": "El proyecto necesitaba presentar a Jaqueline, su trayectoria y sus servicios de forma clara, conectando su actuación profesional con una comunicación basada en escucha, propósito y acogimiento."
-  },
-
-  "solution": {
-    "label": "02 · Solución",
-    "title": "Una experiencia digital que genera cercanía incluso antes del primer contacto.",
-    "description": "La estructura fue desarrollada para conducir al visitante por las principales áreas de actuación, organizar la información y facilitar el acceso a los servicios, manteniendo una identidad visual acogedora y profesional."
-  },
-
-  "pillars": {
-    "personalBrand": {
-      "title": "Marca personal",
-      "description": "Posicionamiento profesional"
-    },
-    "welcoming": {
-      "title": "Acogimiento",
-      "description": "Comunicación humanizada"
-    },
-    "companies": {
-      "title": "Empresas",
-      "description": "Soluciones profesionales NR-1"
-    }
-  },
-
-  "features": {
-    "landingPage": "Landing Page",
-    "responsive": "Diseño responsivo",
-    "personalBrand": "Marca personal",
-    "visitorJourney": "Recorrido del visitante",
-    "services": "Presentación de servicios",
-    "customIdentity": "Identidad personalizada"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Una presencia digital que une profesionalismo, acogimiento y claridad.",
-    "description": "Una estructura preparada para presentar a la profesional, orientar diferentes públicos y transformar el interés en contacto."
-  },
-
-  "status": "Proyecto publicado",
-  "type": "Landing Page",
-
-  "button": "Ver proyecto online",
-  "buttonAria": "Abrir el proyecto Jaqueline Leal en una nueva pestaña",
-
-  "imageAlt": "Landing Page de Jaqueline Leal presentada en una computadora portátil y un celular",
-
-  "floating": {
-    "label": "Experiencia",
-    "title": "Presencia humana y profesional",
-    "description": "Estrategia · Identidad · Responsividad"
-  }
-},
-"eslayne": {
-  "case": "Caso 04",
-  "category": "Marca Personal · Presencia Digital",
-  "introduction": "Una presencia digital creada para organizar diferentes áreas de actuación en una marca personal fuerte, elegante y estratégicamente posicionada.",
-
-  "challenge": {
-    "label": "01 · Desafío",
-    "title": "Transformar diferentes áreas de actuación en una comunicación única y coherente.",
-    "description": "El desafío era construir una presencia digital capaz de presentar a Eslayne de forma profesional, conectando su trayectoria, actuación empresarial, comunicación y posicionamiento personal sin fragmentar su identidad."
-  },
-
-  "solution": {
-    "label": "02 · Solución",
-    "title": "Una narrativa digital que coloca a la persona en el centro de la marca.",
-    "description": "La estructura fue desarrollada para presentar primero la esencia y el posicionamiento de la profesional y, a partir de ellos, conducir al visitante por sus áreas de actuación, proyectos y canales de relación."
-  },
-
-  "highlights": {
-    "businesswoman": {
-      "title": "Empresaria",
-      "description": "Posicionamiento profesional"
-    },
-    "connection": {
-      "title": "Conexión",
-      "description": "Comunicación con personas"
-    },
-    "personalBrand": {
-      "title": "Marca personal",
-      "description": "Identidad y presencia"
-    }
-  },
-
-  "features": {
-    "landingPage": "Landing Page",
-    "responsive": "Diseño responsivo",
-    "personalBrand": "Marca personal",
-    "positioning": "Posicionamiento estratégico",
-    "customIdentity": "Identidad personalizada",
-    "presentationJourney": "Recorrido de presentación"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Una presencia digital elegante y estratégica para fortalecer su autoridad personal.",
-    "description": "El proyecto centraliza su comunicación y crea una base profesional para presentar su trayectoria, actuación y nuevos proyectos."
-  },
-
-  "status": "Proyecto publicado",
-  "type": "Marca Personal",
-
-  "button": "Ver proyecto online",
-  "buttonAria": "Abrir el proyecto Eslayne Lima en una nueva pestaña",
-
-  "imageAlt": "Proyecto digital de Eslayne Lima presentado en una computadora portátil y un celular",
-
-  "floating": {
-    "label": "Posicionamiento",
-    "title": "Una marca personal con identidad y dirección.",
-    "description": "Estrategia · Autoridad · Presencia"
-  }
-},
-
-"luezes": {
-  "case": "Caso 05",
-  "category": "Comunicación · Marca Personal · Presencia Digital",
-  "introduction": "Una presencia digital creada para transformar trayectoria, comunicación y posicionamiento en una marca fuerte, expresiva y preparada para nuevas oportunidades.",
-
-  "challenge": {
-    "label": "01 · Desafío",
-    "title": "Organizar una trayectoria multifacética en una presencia digital clara y estratégica.",
-    "description": "Luezes reúne diferentes áreas de actuación, incluyendo comunicación, emprendimiento, presentaciones, contenido y proyectos profesionales. El desafío era crear una estructura capaz de conectar estas áreas sin perder fuerza, personalidad ni claridad."
-  },
-
-  "solution": {
-    "label": "02 · Solución",
-    "title": "Una experiencia visual que transforma historia en posicionamiento.",
-    "description": "Desarrollamos una presencia digital que presenta primero la esencia de la marca personal y conduce al visitante por su historia, actuación, proyectos y oportunidades de relación de forma estructurada y envolvente."
-  },
-
-  "pillars": {
-    "communication": {
-      "title": "Comunicación",
-      "description": "Contenido y presencia"
-    },
-    "personalBrand": {
-      "title": "Marca personal",
-      "description": "Identidad y posicionamiento"
-    },
-    "connection": {
-      "title": "Conexión",
-      "description": "Personas y oportunidades"
-    }
-  },
-
-  "features": {
-    "landingPage": "Landing Page",
-    "responsive": "Diseño responsivo",
-    "personalBrand": "Marca personal",
-    "positioning": "Posicionamiento estratégico",
-    "presentationJourney": "Recorrido de presentación",
-    "customIdentity": "Identidad personalizada"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Una presencia digital capaz de transformar trayectoria en autoridad y comunicación en oportunidades.",
-    "description": "El proyecto crea una base profesional para presentar la marca Luezes Venturin, fortalecer su posicionamiento y conectar diferentes áreas de actuación en una única experiencia."
-  },
-
-  "status": "Proyecto desarrollado",
-  "type": "Marca Personal",
-
-  "button": "Ver proyecto online",
-  "buttonAria": "Abrir el proyecto Luezes Venturin en una nueva pestaña",
-
-  "imageAlt": "Proyecto digital de Luezes Venturin presentado en una computadora portátil y un celular",
-
-  "floating": {
-    "label": "Posicionamiento",
-    "title": "Toda historia tiene el poder de provocar un cambio.",
-    "description": "Comunicación · Identidad · Estrategia"
->>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
-  }
-},
-"cta": {
-<<<<<<< HEAD
-  "eyebrow": "¿Listo para comenzar?",
-  "titlePrefix": "Transformemos sus necesidades en una",
-  "titleHighlight": "presencia digital profesional.",
-  "description": "Cada proyecto comienza con una conversación para comprender su empresa, sus objetivos y el momento actual de su marca. A partir de ahí, desarrollamos una solución personalizada para fortalecer su presencia digital y generar nuevas oportunidades.",
-  "whatsappMessage": "Hola Rafaela. Me gustaría conversar sobre un proyecto para fortalecer mi presencia digital.",
-  "benefits": {
-    "first": "Atención personalizada",
-    "second": "Estrategia antes del desarrollo",
-    "third": "Proyecto desarrollado a medida"
-=======
-  "eyebrow": "Su próximo proyecto",
-
-  "title": {
-    "first": "Su proyecto puede ser",
-    "highlight": "nuestro próximo caso."
-  },
-
-  "description": "Estrategia, identidad y tecnología para construir una presencia digital profesional que represente el verdadero valor de su marca y genere nuevas oportunidades.",
-
-  "benefits": {
-    "strategy": "Estrategia antes del desarrollo",
-    "identity": "Proyecto alineado con la identidad de la marca",
-    "responsive": "Experiencia responsiva y profesional"
->>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
-  },
-  "buttons": {
-    "meeting": "Solicitar una reunión",
-    "meetingAria": "Solicitar una reunión por WhatsApp",
-    "projects": "Conocer proyectos",
-    "projectsAria": "Conocer los proyectos desarrollados"
-  },
-<<<<<<< HEAD
-  "meeting": {
-    "label": "Primer paso",
-    "title": "Reunión estratégica",
-    "description": "Una conversación inicial para comprender su negocio y recomendar la solución digital más adecuada para su momento actual.",
-    "items": [
-      "Comprender la empresa y sus objetivos",
-      "Analizar el momento actual de la marca",
-      "Identificar las principales necesidades",
-      "Recomendar la solución ideal"
-    ],
-    "durationLabel": "Tiempo estimado",
-    "duration": "30 minutos",
-    "note": "Sin compromiso"
-  },
-  "stats": {
-    "experience": "años de experiencia en Tecnología de la Información",
-    "custom": "proyectos desarrollados de forma personalizada",
-    "languages": "idiomas disponibles: portugués, inglés y español"
-  }
-},
-
   "projects": {
     "hero": {
       "badge": "Proyectos desarrollados para profesionales y empresas",
@@ -1225,26 +1077,6 @@
       "tertiaryImageAlt": "Landing page NR-1 para Empresas mostrada en un teléfono móvil",
       "floatingTitle": "Proyecto responsivo",
       "floatingText": "Una experiencia adaptada a todos los dispositivos"
+    }
   }
-  }
-  }
-=======
-
-  "panel": {
-    "aria": "Diferenciales de los proyectos",
-    "status": "Nuevos proyectos",
-    "selected": "casos seleccionados",
-    "description": "Proyectos desarrollados con estrategia, identidad y tecnología.",
-
-    "pillars": {
-      "strategy": "Estrategia",
-      "design": "Diseño",
-      "technology": "Tecnología"
-    },
-
-    "footer": "Transformando ideas en presencias digitales profesionales."
-  }
-}
-}
->>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
 }

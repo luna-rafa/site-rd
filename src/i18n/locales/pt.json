@@ -614,7 +614,6 @@
         "title": "SEO Inicial",
         "text": "Prepare seu site para os mecanismos de busca e aumente as chances de ser encontrado no Google.",
         "benefit": "Visibilidade desde o início"
-      
       },
       "maintenance": {
         "title": "Manutenção de Sites",
@@ -784,57 +783,11 @@
     "home": {
       "title": "Rodrigues Digital | Presenças digitais profissionais",
       "description": "Sites institucionais, landing pages, portfólios e soluções digitais desenvolvidos com estratégia, tecnologia e identidade para fortalecer marcas e gerar oportunidades."
-<<<<<<< HEAD
-    }
-  },
-  "projects": {
-  "hero": {
-    "badge": "Projetos desenvolvidos para profissionais e empresas",
-    "titleStart": "Projetos que transformam ideias em",
-    "titleHighlight": "experiências digitais.",
-    "description": "Cada projeto é desenvolvido com estratégia, design e tecnologia para fortalecer marcas, gerar confiança e criar resultados reais.",
-    "primaryButton": "Ver projetos",
-    "secondaryButton": "Solicitar reunião",
-    "detailOneValue": "Estratégia",
-    "detailOneLabel": "Antes do desenvolvimento",
-    "detailTwoValue": "Design",
-    "detailTwoLabel": "Experiências profissionais",
-    "detailThreeValue": "Tecnologia",
-    "detailThreeLabel": "Soluções responsivas",
-    "visualLabel": "Apresentação visual de projetos desenvolvidos pela Rodrigues Digital",
-    "mainImageAlt": "Site da Rodrigues Digital apresentado em um notebook",
-    "secondaryImageAlt": "Projeto Marcela Braga apresentado em um celular",
-    "tertiaryImageAlt": "Landing page NR-1 para Empresas apresentada em um celular",
-    "floatingTitle": "Projeto responsivo",
-    "floatingText": "Experiência adaptada para todos os dispositivos"
-  },
-  "showcase": {
-  "eyebrow": "Projetos em destaque",
-  "titlePrefix": "Mais do que desenvolver sites, criamos",
-  "titleHighlight": "experiências digitais.",
-  "description": "Cada projeto nasce de uma necessidade diferente e é desenvolvido para fortalecer marcas, organizar informações e gerar novas oportunidades.",
-  "button": "Explorar projeto",
-  "buttonUnavailable": "Projeto no portfólio",
-  "accessProject": "Acessar o projeto",
-
-  "status": {
-    "online": "Site online",
-    "published": "Projeto publicado",
-    "completed": "Projeto concluído",
-    "portfolio": "Disponível no portfólio"
-  },
-
-  "technologies": {
-    "responsive": "Design responsivo",
-    "landingPage": "Landing page",
-    "positioning": "Posicionamento profissional",
-    "multilingual": "Projeto multilíngue"
-=======
     },
-     "projects": {
-    "title": "Projetos | Rodrigues Digital",
-    "description": "Conheça projetos desenvolvidos pela Rodrigues Digital para marcas, profissionais e empresas. Sites, landing pages e presenças digitais criadas com estratégia, identidade e tecnologia."
-  }
+    "projects": {
+      "title": "Projetos | Rodrigues Digital",
+      "description": "Conheça projetos desenvolvidos pela Rodrigues Digital para marcas, profissionais e empresas. Sites, landing pages e presenças digitais criadas com estratégia, identidade e tecnologia."
+    }
   },
   "projectsPage": {
     "hero": {
@@ -915,309 +868,263 @@
         "description": "Estratégia · Design · Tecnologia"
       }
     },
-    
     "marcela": {
-  "case": "Case 02",
-  "category": "Presença profissional",
-  "introduction": "Uma presença digital criada para transformar experiência profissional em posicionamento, autoridade e novas oportunidades de negócio.",
-
-  "challenge": {
-    "label": "01 · Desafio",
-    "title": "Apresentar uma trajetória sólida sem transformar o site em um currículo digital.",
-    "description": "Marcela Braga possui mais de duas décadas de experiência em logística, transporte e desenvolvimento de negócios. O desafio era organizar essa trajetória em uma presença elegante, estratégica e fácil de compreender."
-  },
-
-  "solution": {
-    "label": "02 · Solução",
-    "title": "Construir uma narrativa profissional baseada em autoridade, experiência e posicionamento.",
-    "description": "Desenvolvemos uma estrutura que apresenta experiência, áreas de atuação, competências e oportunidades de negócio de forma clara, moderna e responsiva."
-  },
-
-  "highlights": {
-    "experience": {
-      "value": "+20 anos",
-      "label": "Experiência profissional"
+      "case": "Case 02",
+      "category": "Presença profissional",
+      "introduction": "Uma presença digital criada para transformar experiência profissional em posicionamento, autoridade e novas oportunidades de negócio.",
+      "challenge": {
+        "label": "01 · Desafio",
+        "title": "Apresentar uma trajetória sólida sem transformar o site em um currículo digital.",
+        "description": "Marcela Braga possui mais de duas décadas de experiência em logística, transporte e desenvolvimento de negócios. O desafio era organizar essa trajetória em uma presença elegante, estratégica e fácil de compreender."
+      },
+      "solution": {
+        "label": "02 · Solução",
+        "title": "Construir uma narrativa profissional baseada em autoridade, experiência e posicionamento.",
+        "description": "Desenvolvemos uma estrutura que apresenta experiência, áreas de atuação, competências e oportunidades de negócio de forma clara, moderna e responsiva."
+      },
+      "highlights": {
+        "experience": {
+          "value": "+20 anos",
+          "label": "Experiência profissional"
+        },
+        "international": {
+          "value": "Internacional",
+          "label": "Posicionamento profissional"
+        },
+        "business": {
+          "value": "B2B & B2C",
+          "label": "Desenvolvimento de negócios"
+        }
+      },
+      "features": {
+        "professionalSite": "Site profissional",
+        "responsive": "Design responsivo",
+        "positioning": "Posicionamento estratégico",
+        "journey": "Apresentação de trajetória",
+        "commercial": "Estrutura comercial",
+        "customIdentity": "Identidade personalizada"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Uma presença digital capaz de transformar experiência profissional em autoridade de marca.",
+        "description": "O projeto posiciona Marcela de forma profissional e estratégica, fortalecendo sua apresentação para empresas, parceiros e novas oportunidades."
+      },
+      "status": "Projeto publicado",
+      "button": "Ver projeto online",
+      "buttonAria": "Abrir o projeto Marcela Braga em uma nova aba",
+      "imageAlt": "Projeto profissional de Marcela Braga apresentado em notebook e celular",
+      "floating": {
+        "label": "Posicionamento",
+        "title": "Presença com alcance internacional"
+      }
     },
-    "international": {
-      "value": "Internacional",
-      "label": "Posicionamento profissional"
+    "jaqueline": {
+      "case": "Case 03",
+      "category": "Landing Page · Marca Pessoal",
+      "introduction": "Uma presença digital construída para transformar acolhimento, experiência e propósito em uma comunicação profissional, humana e estratégica.",
+      "challenge": {
+        "label": "01 · Desafio",
+        "title": "Organizar diferentes frentes de atuação sem perder a essência humana da profissional.",
+        "description": "O projeto precisava apresentar Jaqueline, sua trajetória e seus serviços de forma clara, conectando sua atuação profissional a uma comunicação baseada em escuta, propósito e acolhimento."
+      },
+      "solution": {
+        "label": "02 · Solução",
+        "title": "Uma experiência digital que aproxima antes mesmo do primeiro contato.",
+        "description": "A estrutura foi desenvolvida para conduzir o visitante pelas principais áreas de atuação, organizar informações e facilitar o acesso aos serviços, mantendo uma identidade visual acolhedora e profissional."
+      },
+      "pillars": {
+        "personalBrand": {
+          "title": "Marca pessoal",
+          "description": "Posicionamento profissional"
+        },
+        "welcoming": {
+          "title": "Acolhimento",
+          "description": "Comunicação humanizada"
+        },
+        "companies": {
+          "title": "Empresas",
+          "description": "Frente profissional NR-1"
+        }
+      },
+      "features": {
+        "landingPage": "Landing Page",
+        "responsive": "Design responsivo",
+        "personalBrand": "Marca pessoal",
+        "visitorJourney": "Jornada do visitante",
+        "services": "Apresentação de serviços",
+        "customIdentity": "Identidade personalizada"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Uma presença digital que une profissionalismo, acolhimento e clareza.",
+        "description": "Uma estrutura preparada para apresentar a profissional, direcionar diferentes públicos e transformar interesse em contato."
+      },
+      "status": "Projeto publicado",
+      "type": "Landing Page",
+      "button": "Ver projeto online",
+      "buttonAria": "Abrir o projeto Jaqueline Leal em uma nova aba",
+      "imageAlt": "Landing Page de Jaqueline Leal apresentada em notebook e celular",
+      "floating": {
+        "label": "Experiência",
+        "title": "Presença humana e profissional",
+        "description": "Estratégia · Identidade · Responsividade"
+      }
     },
-    "business": {
-      "value": "B2B & B2C",
-      "label": "Desenvolvimento de negócios"
+    "eslayne": {
+      "case": "Case 04",
+      "category": "Marca Pessoal · Presença Digital",
+      "introduction": "Uma presença digital criada para organizar diferentes frentes de atuação em uma marca pessoal forte, elegante e estrategicamente posicionada.",
+      "challenge": {
+        "label": "01 · Desafio",
+        "title": "Transformar diferentes frentes de atuação em uma comunicação única e coerente.",
+        "description": "O desafio era construir uma presença digital capaz de apresentar Eslayne de forma profissional, conectando sua trajetória, atuação empresarial, comunicação e posicionamento pessoal sem fragmentar sua identidade."
+      },
+      "solution": {
+        "label": "02 · Solução",
+        "title": "Uma narrativa digital que coloca a pessoa no centro da marca.",
+        "description": "A estrutura foi desenvolvida para apresentar primeiro a essência e o posicionamento da profissional e, a partir deles, conduzir o visitante por suas áreas de atuação, projetos e canais de relacionamento."
+      },
+      "highlights": {
+        "businesswoman": {
+          "title": "Empresária",
+          "description": "Posicionamento profissional"
+        },
+        "connection": {
+          "title": "Conexão",
+          "description": "Comunicação com pessoas"
+        },
+        "personalBrand": {
+          "title": "Marca pessoal",
+          "description": "Identidade e presença"
+        }
+      },
+      "features": {
+        "landingPage": "Landing Page",
+        "responsive": "Design responsivo",
+        "personalBrand": "Marca pessoal",
+        "positioning": "Posicionamento estratégico",
+        "customIdentity": "Identidade personalizada",
+        "presentationJourney": "Jornada de apresentação"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Uma presença digital elegante e estratégica para fortalecer sua autoridade pessoal.",
+        "description": "O projeto centraliza sua comunicação e cria uma base profissional para apresentar sua trajetória, atuação e novos projetos."
+      },
+      "status": "Projeto publicado",
+      "type": "Marca Pessoal",
+      "button": "Ver projeto online",
+      "buttonAria": "Abrir o projeto Eslayne Lima em uma nova aba",
+      "imageAlt": "Projeto digital de Eslayne Lima apresentado em notebook e celular",
+      "floating": {
+        "label": "Posicionamento",
+        "title": "Uma marca pessoal com identidade e direção.",
+        "description": "Estratégia · Autoridade · Presença"
+      }
+    },
+    "luezes": {
+      "case": "Case 05",
+      "category": "Comunicação · Marca Pessoal · Presença Digital",
+      "introduction": "Uma presença digital criada para transformar trajetória, comunicação e posicionamento em uma marca forte, expressiva e preparada para novas oportunidades.",
+      "challenge": {
+        "label": "01 · Desafio",
+        "title": "Organizar uma trajetória multifacetada em uma presença digital clara e estratégica.",
+        "description": "Luezes reúne diferentes frentes de atuação, incluindo comunicação, empreendedorismo, apresentações, conteúdo e projetos profissionais. O desafio era criar uma estrutura capaz de conectar essas áreas sem perder força, personalidade ou clareza."
+      },
+      "solution": {
+        "label": "02 · Solução",
+        "title": "Uma experiência visual que transforma história em posicionamento.",
+        "description": "Desenvolvemos uma presença digital que apresenta primeiro a essência da marca pessoal e conduz o visitante por sua história, atuação, projetos e oportunidades de relacionamento de forma estruturada e envolvente."
+      },
+      "pillars": {
+        "communication": {
+          "title": "Comunicação",
+          "description": "Conteúdo e presença"
+        },
+        "personalBrand": {
+          "title": "Marca pessoal",
+          "description": "Identidade e posicionamento"
+        },
+        "connection": {
+          "title": "Conexão",
+          "description": "Pessoas e oportunidades"
+        }
+      },
+      "features": {
+        "landingPage": "Landing Page",
+        "responsive": "Design responsivo",
+        "personalBrand": "Marca pessoal",
+        "positioning": "Posicionamento estratégico",
+        "presentationJourney": "Jornada de apresentação",
+        "customIdentity": "Identidade personalizada"
+      },
+      "result": {
+        "label": "03 · Resultado",
+        "title": "Uma presença digital capaz de transformar trajetória em autoridade e comunicação em oportunidades.",
+        "description": "O projeto cria uma base profissional para apresentar a marca Luezes Venturin, fortalecer seu posicionamento e conectar diferentes frentes de atuação em uma única experiência."
+      },
+      "status": "Projeto desenvolvido",
+      "type": "Marca Pessoal",
+      "button": "Ver projeto online",
+      "buttonAria": "Abrir o projeto Luezes Venturin em uma nova aba",
+      "imageAlt": "Projeto digital de Luezes Venturin apresentado em notebook e celular",
+      "floating": {
+        "label": "Posicionamento",
+        "title": "Toda história tem o poder de provocar uma virada.",
+        "description": "Comunicação · Identidade · Estratégia"
+      }
+    },
+    "cta": {
+      "eyebrow": "Seu próximo projeto",
+      "title": {
+        "first": "Seu projeto pode ser",
+        "highlight": "o próximo case."
+      },
+      "description": "Estratégia, identidade e tecnologia para construir uma presença digital profissional que represente o verdadeiro valor da sua marca e gere novas oportunidades.",
+      "benefits": {
+        "strategy": "Estratégia antes do desenvolvimento",
+        "identity": "Projeto alinhado à identidade da marca",
+        "responsive": "Experiência responsiva e profissional"
+      },
+      "buttons": {
+        "meeting": "Solicitar reunião",
+        "meetingAria": "Solicitar reunião pelo WhatsApp",
+        "solutions": "Conhecer soluções"
+      },
+      "panel": {
+        "aria": "Diferenciais dos projetos",
+        "status": "Novos projetos",
+        "selected": "cases selecionados",
+        "description": "Projetos desenvolvidos com estratégia, identidade e tecnologia.",
+        "pillars": {
+          "strategy": "Estratégia",
+          "design": "Design",
+          "technology": "Tecnologia"
+        },
+        "footer": "Transformando ideias em presenças digitais profissionais."
+      }
     }
   },
-
-  "features": {
-    "professionalSite": "Site profissional",
-    "responsive": "Design responsivo",
-    "positioning": "Posicionamento estratégico",
-    "journey": "Apresentação de trajetória",
-    "commercial": "Estrutura comercial",
-    "customIdentity": "Identidade personalizada"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Uma presença digital capaz de transformar experiência profissional em autoridade de marca.",
-    "description": "O projeto posiciona Marcela de forma profissional e estratégica, fortalecendo sua apresentação para empresas, parceiros e novas oportunidades."
-  },
-
-  "status": "Projeto publicado",
-  "button": "Ver projeto online",
-  "buttonAria": "Abrir o projeto Marcela Braga em uma nova aba",
-
-  "imageAlt": "Projeto profissional de Marcela Braga apresentado em notebook e celular",
-
-  "floating": {
-    "label": "Posicionamento",
-    "title": "Presença com alcance internacional"
-  }
-},
-
-"jaqueline": {
-  "case": "Case 03",
-  "category": "Landing Page · Marca Pessoal",
-  "introduction": "Uma presença digital construída para transformar acolhimento, experiência e propósito em uma comunicação profissional, humana e estratégica.",
-
-  "challenge": {
-    "label": "01 · Desafio",
-    "title": "Organizar diferentes frentes de atuação sem perder a essência humana da profissional.",
-    "description": "O projeto precisava apresentar Jaqueline, sua trajetória e seus serviços de forma clara, conectando sua atuação profissional a uma comunicação baseada em escuta, propósito e acolhimento."
-  },
-
-  "solution": {
-    "label": "02 · Solução",
-    "title": "Uma experiência digital que aproxima antes mesmo do primeiro contato.",
-    "description": "A estrutura foi desenvolvida para conduzir o visitante pelas principais áreas de atuação, organizar informações e facilitar o acesso aos serviços, mantendo uma identidade visual acolhedora e profissional."
-  },
-
-  "pillars": {
-    "personalBrand": {
-      "title": "Marca pessoal",
-      "description": "Posicionamento profissional"
-    },
-    "welcoming": {
-      "title": "Acolhimento",
-      "description": "Comunicação humanizada"
-    },
-    "companies": {
-      "title": "Empresas",
-      "description": "Frente profissional NR-1"
+  "projects": {
+    "hero": {
+      "badge": "Projetos desenvolvidos para profissionais e empresas",
+      "titleStart": "Projetos que transformam ideias em",
+      "titleHighlight": "experiências digitais.",
+      "description": "Cada projeto é desenvolvido com estratégia, design e tecnologia para fortalecer marcas, gerar confiança e criar resultados reais.",
+      "primaryButton": "Ver projetos",
+      "secondaryButton": "Solicitar reunião",
+      "detailOneValue": "Estratégia",
+      "detailOneLabel": "Antes do desenvolvimento",
+      "detailTwoValue": "Design",
+      "detailTwoLabel": "Experiências profissionais",
+      "detailThreeValue": "Tecnologia",
+      "detailThreeLabel": "Soluções responsivas",
+      "visualLabel": "Apresentação visual de projetos desenvolvidos pela Rodrigues Digital",
+      "mainImageAlt": "Site da Rodrigues Digital apresentado em um notebook",
+      "secondaryImageAlt": "Projeto Marcela Braga apresentado em um celular",
+      "tertiaryImageAlt": "Landing page NR-1 para Empresas apresentada em um celular",
+      "floatingTitle": "Projeto responsivo",
+      "floatingText": "Experiência adaptada para todos os dispositivos"
     }
-  },
-
-  "features": {
-    "landingPage": "Landing Page",
-    "responsive": "Design responsivo",
-    "personalBrand": "Marca pessoal",
-    "visitorJourney": "Jornada do visitante",
-    "services": "Apresentação de serviços",
-    "customIdentity": "Identidade personalizada"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Uma presença digital que une profissionalismo, acolhimento e clareza.",
-    "description": "Uma estrutura preparada para apresentar a profissional, direcionar diferentes públicos e transformar interesse em contato."
-  },
-
-  "status": "Projeto publicado",
-  "type": "Landing Page",
-
-  "button": "Ver projeto online",
-  "buttonAria": "Abrir o projeto Jaqueline Leal em uma nova aba",
-
-  "imageAlt": "Landing Page de Jaqueline Leal apresentada em notebook e celular",
-
-  "floating": {
-    "label": "Experiência",
-    "title": "Presença humana e profissional",
-    "description": "Estratégia · Identidade · Responsividade"
-  }
-},
-
-"eslayne": {
-  "case": "Case 04",
-  "category": "Marca Pessoal · Presença Digital",
-  "introduction": "Uma presença digital criada para organizar diferentes frentes de atuação em uma marca pessoal forte, elegante e estrategicamente posicionada.",
-
-  "challenge": {
-    "label": "01 · Desafio",
-    "title": "Transformar diferentes frentes de atuação em uma comunicação única e coerente.",
-    "description": "O desafio era construir uma presença digital capaz de apresentar Eslayne de forma profissional, conectando sua trajetória, atuação empresarial, comunicação e posicionamento pessoal sem fragmentar sua identidade."
-  },
-
-  "solution": {
-    "label": "02 · Solução",
-    "title": "Uma narrativa digital que coloca a pessoa no centro da marca.",
-    "description": "A estrutura foi desenvolvida para apresentar primeiro a essência e o posicionamento da profissional e, a partir deles, conduzir o visitante por suas áreas de atuação, projetos e canais de relacionamento."
-  },
-
-  "highlights": {
-    "businesswoman": {
-      "title": "Empresária",
-      "description": "Posicionamento profissional"
-    },
-    "connection": {
-      "title": "Conexão",
-      "description": "Comunicação com pessoas"
-    },
-    "personalBrand": {
-      "title": "Marca pessoal",
-      "description": "Identidade e presença"
-    }
-  },
-
-  "features": {
-    "landingPage": "Landing Page",
-    "responsive": "Design responsivo",
-    "personalBrand": "Marca pessoal",
-    "positioning": "Posicionamento estratégico",
-    "customIdentity": "Identidade personalizada",
-    "presentationJourney": "Jornada de apresentação"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Uma presença digital elegante e estratégica para fortalecer sua autoridade pessoal.",
-    "description": "O projeto centraliza sua comunicação e cria uma base profissional para apresentar sua trajetória, atuação e novos projetos."
-  },
-
-  "status": "Projeto publicado",
-  "type": "Marca Pessoal",
-
-  "button": "Ver projeto online",
-  "buttonAria": "Abrir o projeto Eslayne Lima em uma nova aba",
-
-  "imageAlt": "Projeto digital de Eslayne Lima apresentado em notebook e celular",
-
-  "floating": {
-    "label": "Posicionamento",
-    "title": "Uma marca pessoal com identidade e direção.",
-    "description": "Estratégia · Autoridade · Presença"
-  }
-},
-
-"luezes": {
-  "case": "Case 05",
-  "category": "Comunicação · Marca Pessoal · Presença Digital",
-  "introduction": "Uma presença digital criada para transformar trajetória, comunicação e posicionamento em uma marca forte, expressiva e preparada para novas oportunidades.",
-
-  "challenge": {
-    "label": "01 · Desafio",
-    "title": "Organizar uma trajetória multifacetada em uma presença digital clara e estratégica.",
-    "description": "Luezes reúne diferentes frentes de atuação, incluindo comunicação, empreendedorismo, apresentações, conteúdo e projetos profissionais. O desafio era criar uma estrutura capaz de conectar essas áreas sem perder força, personalidade ou clareza."
-  },
-
-  "solution": {
-    "label": "02 · Solução",
-    "title": "Uma experiência visual que transforma história em posicionamento.",
-    "description": "Desenvolvemos uma presença digital que apresenta primeiro a essência da marca pessoal e conduz o visitante por sua história, atuação, projetos e oportunidades de relacionamento de forma estruturada e envolvente."
-  },
-
-  "pillars": {
-    "communication": {
-      "title": "Comunicação",
-      "description": "Conteúdo e presença"
-    },
-    "personalBrand": {
-      "title": "Marca pessoal",
-      "description": "Identidade e posicionamento"
-    },
-    "connection": {
-      "title": "Conexão",
-      "description": "Pessoas e oportunidades"
-    }
-  },
-
-  "features": {
-    "landingPage": "Landing Page",
-    "responsive": "Design responsivo",
-    "personalBrand": "Marca pessoal",
-    "positioning": "Posicionamento estratégico",
-    "presentationJourney": "Jornada de apresentação",
-    "customIdentity": "Identidade personalizada"
-  },
-
-  "result": {
-    "label": "03 · Resultado",
-    "title": "Uma presença digital capaz de transformar trajetória em autoridade e comunicação em oportunidades.",
-    "description": "O projeto cria uma base profissional para apresentar a marca Luezes Venturin, fortalecer seu posicionamento e conectar diferentes frentes de atuação em uma única experiência."
-  },
-
-  "status": "Projeto desenvolvido",
-  "type": "Marca Pessoal",
-
-  "button": "Ver projeto online",
-  "buttonAria": "Abrir o projeto Luezes Venturin em uma nova aba",
-
-  "imageAlt": "Projeto digital de Luezes Venturin apresentado em notebook e celular",
-
-  "floating": {
-    "label": "Posicionamento",
-    "title": "Toda história tem o poder de provocar uma virada.",
-    "description": "Comunicação · Identidade · Estratégia"
-  }
-},
-"cta": {
-  "eyebrow": "Seu próximo projeto",
-
-  "title": {
-    "first": "Seu projeto pode ser",
-    "highlight": "o próximo case."
-  },
-
-  "description": "Estratégia, identidade e tecnologia para construir uma presença digital profissional que represente o verdadeiro valor da sua marca e gere novas oportunidades.",
-
-  "benefits": {
-    "strategy": "Estratégia antes do desenvolvimento",
-    "identity": "Projeto alinhado à identidade da marca",
-    "responsive": "Experiência responsiva e profissional"
->>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
-  },
-
-  "result": {
-    "label": "Resultado"
-  },
-
-<<<<<<< HEAD
-  "items": {
-    "rodrigues": {
-      "category": "Site institucional",
-      "title": "Rodrigues Digital",
-      "description": "Site institucional desenvolvido para apresentar os serviços da empresa, fortalecer sua autoridade e construir uma presença digital profissional, multilíngue e preparada para evoluir.",
-      "imageAlt": "Versão desktop do site institucional da Rodrigues Digital",
-      "mobileImageAlt": "Versão mobile do site institucional da Rodrigues Digital",
-      "resultTitle": "Presença digital completa e profissional",
-      "resultDescription": "Uma estrutura responsiva, multilíngue e preparada para apresentar serviços, projetos e diferenciais da marca."
-    },
-
-    "marcela": {
-      "category": "Landing page profissional",
-      "title": "Marcela Braga",
-      "description": "Landing page desenvolvida para apresentar a trajetória, os serviços e o posicionamento profissional de Marcela Braga nas áreas de logística, transporte e desenvolvimento de negócios.",
-      "imageAlt": "Versão desktop da landing page profissional de Marcela Braga",
-      "mobileImageAlt": "Versão mobile da landing page profissional de Marcela Braga",
-      "resultTitle": "Posicionamento profissional com presença internacional",
-      "resultDescription": "Uma apresentação estratégica, elegante e responsiva, criada para transmitir autoridade, experiência e gerar novas oportunidades de negócio."
-    }
-=======
-  "panel": {
-    "aria": "Diferenciais dos projetos",
-    "status": "Novos projetos",
-    "selected": "cases selecionados",
-    "description": "Projetos desenvolvidos com estratégia, identidade e tecnologia.",
-
-    "pillars": {
-      "strategy": "Estratégia",
-      "design": "Design",
-      "technology": "Tecnologia"
-    },
-
-    "footer": "Transformando ideias em presenças digitais profissionais."
->>>>>>> 73b80bd (feat: adiciona pagina de projetos multilíngue e melhorias de SEO)
-  }
-}
   }
 }
