@@ -521,7 +521,11 @@
     "projects": {
       "title": "Projects | Rodrigues Digital",
       "description": "Explore projects developed by Rodrigues Digital for brands, professionals and businesses. Websites, landing pages and digital presences created with strategy, identity and technology."
-    }
+    },
+    "contact": {
+  "title": "Contact | Rodrigues Digital",
+  "description": "Contact Rodrigues Digital to discuss websites, landing pages, professional portfolios, media kits and customized digital solutions."
+}
   },
   "solutions": {
     "hero": {
@@ -1126,5 +1130,90 @@
       "floatingTitle": "Responsive project",
       "floatingText": "An experience adapted to every device"
     }
+  },
+  "contactPage": {
+    "hero": {
+    "eyebrow": "Let's talk",
+    "title": {
+      "first": "A strong digital presence starts with",
+      "highlight": "a good conversation."
+    },
+    "description": "Tell me a little about your business, your goals and the current stage of your brand. From there, I can understand your needs and recommend the most suitable solution for your project.",
+    "channels": {
+      "whatsapp": "Chat on WhatsApp",
+      "whatsappAria": "Chat with Rodrigues Digital on WhatsApp",
+      "email": "Send an email",
+      "emailAria": "Send an email to Rodrigues Digital"
+    },
+    "social": {
+      "label": "Follow us on Instagram",
+      "instagramAria": "Open Rodrigues Digital on Instagram"
+    },
+    "panel": {
+      "eyebrow": "Contact channels",
+      "title": "Choose the most comfortable way to get started.",
+      "description": "You can contact me directly through WhatsApp, send an email with more details or follow projects and content on Instagram."
+    }
+    },
+   "form": {
+  "eyebrow": "Tell me about your project",
+  "title": {
+    "first": "Let's understand your needs",
+    "highlight": "before thinking about the solution."
+  },
+  "description": "Fill in the information below so I can better understand your brand's current stage, your goals and the type of project you would like to develop.",
+  "steps": {
+    "context": {
+      "title": "Understand the context",
+      "description": "I learn about your brand, your current stage and what needs to be solved."
+    },
+    "analysis": {
+      "title": "Analyze the need",
+      "description": "I assess your goals, audience, timeline and the most suitable solution."
+    },
+    "direction": {
+      "title": "Recommend the best path",
+      "description": "Based on the information provided, I recommend the most strategic direction."
+    }
+  },
+  "card": {
+    "eyebrow": "Initial briefing",
+    "title": "Tell me a little about what you need.",
+    "description": "This information helps make our first conversation more objective and productive."
+  },
+  "fields": {
+    "name": "Name",
+    "company": "Company or brand",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "service": "Solution of interest",
+    "timeline": "When would you like to start?",
+    "message": "Tell me about your project"
+  },
+  "placeholders": {
+    "name": "Your name",
+    "company": "Company or brand name",
+    "service": "Select a solution",
+    "timeline": "Select an option",
+    "message": "Tell me about your needs, goals, audience and what you would like to develop."
+  },
+  "services": {
+    "website": "Corporate Website",
+    "landing": "Landing Page",
+    "portfolio": "Professional Portfolio",
+    "mediaKit": "Media Kit",
+    "seo": "Initial SEO",
+    "maintenance": "Website Maintenance",
+    "other": "Other"
+  },
+  "timeline": {
+    "now": "As soon as possible",
+    "month": "Within the next 30 days",
+    "quarter": "Within the next 3 months",
+    "research": "I'm still researching"
+  },
+  "privacy": "By submitting, your information will only be used to contact you about your project.",
+  "button": "Send request"
+}
   }
 }

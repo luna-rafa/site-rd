@@ -4,7 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 
 import About from "./pages/About/About";
 import Blog from "./pages/Blog";
-import Contato from "./pages/Contato";
+import Contato from "./pages/Contato/Contato";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Projetos from "./pages/Projetos/Projetos";
