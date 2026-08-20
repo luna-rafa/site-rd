@@ -53,7 +53,7 @@ function App() {
         <Route path="/projetos" element={<Projetos />} />
 
         {/* Inglês */}
-        <Route path="/en/projects" element={<Projetos />} />
+        <Route path="/en/projetos" element={<Projetos />} />
         <Route path="/en/projetos" element={<Projetos />} />
 
         {/* Espanhol */}
