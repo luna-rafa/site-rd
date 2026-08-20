@@ -23,7 +23,7 @@ function Footer() {
     { label: t("footer.navigation.home"), to: "/" },
     { label: t("footer.navigation.about"), to: "/sobre" },
     { label: t("footer.navigation.solutions"), to: "/solucoes" },
-    { label: t("footer.navigation.projects"), to: "/portfolio" },
+    { label: t("footer.navigation.projects"), to: "/projetos" },
     { label: t("footer.navigation.blog"), to: "/blog" },
     { label: t("footer.navigation.contact"), to: "/contato" },
   ];

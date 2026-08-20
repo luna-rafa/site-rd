@@ -104,7 +104,7 @@ function AboutCTA() {
             </Link>
 
             <Link
-              to={localizedPath("/portfolio")}
+              to={localizedPath("/projetos")}
               className="about-cta-secondary"
             >
               <span>{t("aboutPage.cta.portfolioButton")}</span>

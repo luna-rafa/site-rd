@@ -315,7 +315,7 @@ function About() {
 
             <div className="about-actions">
               <Link
-                to={localizedPath("/portfolio")}
+                to={localizedPath("/projetos")}
                 className="about-button about-button-primary"
               >
                 <span className="about-button-icon">
