@@ -96,7 +96,7 @@ function Hero() {
             </a>
 
             <Link
-              to="projects"
+              to="projetos"
               className="hero__button hero__button--secondary"
             >
               <span>{t("hero.actions.projects")}</span>
