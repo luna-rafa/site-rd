@@ -17,26 +17,53 @@ import siteConfig from "../../config/site";
 import "./Hero.css";
 
 function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const currentLanguage = (
+    i18n.resolvedLanguage ||
+    i18n.language ||
+    "pt"
+  ).slice(0, 2);
+
+  // =========================================================
+  // ROTA DA PÁGINA DE PROJETOS
+  // =========================================================
+  function getProjectsPath() {
+    if (currentLanguage === "en") {
+      return "/en/projects";
+    }
+
+    if (currentLanguage === "es") {
+      return "/es/proyectos";
+    }
+
+    return "/projetos";
+  }
 
   const highlights = [
     {
       icon: <FaBriefcase />,
       value: "10+",
       title: t("hero.highlights.experience.title"),
-      description: t("hero.highlights.experience.description"),
+      description: t(
+        "hero.highlights.experience.description"
+      ),
     },
     {
       icon: <FaRegStar />,
       value: "100%",
       title: t("hero.highlights.custom.title"),
-      description: t("hero.highlights.custom.description"),
+      description: t(
+        "hero.highlights.custom.description"
+      ),
     },
     {
       icon: <FaGlobe />,
       value: "PT • EN • ES",
       title: t("hero.highlights.languages.title"),
-      description: t("hero.highlights.languages.description"),
+      description: t(
+        "hero.highlights.languages.description"
+      ),
     },
   ];
 
@@ -83,11 +110,15 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="hero__button hero__button--primary"
-              aria-label={t("hero.actions.meetingAria")}
+              aria-label={t(
+                "hero.actions.meetingAria"
+              )}
             >
               <FaWhatsapp aria-hidden="true" />
 
-              <span>{t("hero.actions.meeting")}</span>
+              <span>
+                {t("hero.actions.meeting")}
+              </span>
 
               <FaArrowRight
                 className="hero__button-arrow"
@@ -96,10 +127,12 @@ function Hero() {
             </a>
 
             <Link
-              to="projetos"
+              to={getProjectsPath()}
               className="hero__button hero__button--secondary"
             >
-              <span>{t("hero.actions.projects")}</span>
+              <span>
+                {t("hero.actions.projects")}
+              </span>
 
               <FaArrowRight aria-hidden="true" />
             </Link>
@@ -134,9 +167,13 @@ function Hero() {
             </div>
 
             <div className="hero__founder-content">
-              <strong>{t("hero.founder.name")}</strong>
+              <strong>
+                {t("hero.founder.name")}
+              </strong>
 
-              <span>{t("hero.founder.role")}</span>
+              <span>
+                {t("hero.founder.role")}
+              </span>
             </div>
           </div>
         </div>
@@ -166,9 +203,13 @@ function Hero() {
                   {item.value}
                 </strong>
 
-                <h2>{item.title}</h2>
+                <h2>
+                  {item.title}
+                </h2>
 
-                <p>{item.description}</p>
+                <p>
+                  {item.description}
+                </p>
               </div>
             </article>
           ))}
@@ -177,6 +218,5 @@ function Hero() {
     </section>
   );
 }
- 
 
 export default Hero;
