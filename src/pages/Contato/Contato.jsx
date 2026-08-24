@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 
 import SEO from "../../components/SEO/SEO";
-import ContactHero from "./components/ContactHero/ContactHero";
-import ContactForm from "./components/ContactForm/ContactForm";
 
+
+import ContactForm from "./components/ContactForm/ContactForm";
+import ContactHero from "./components/ContactHero/ContactHero";
 
 function Contato() {
   const { t, i18n } = useTranslation();
@@ -21,7 +22,8 @@ function Contato() {
   };
 
   const canonical =
-    canonicalMap[language] || canonicalMap.pt;
+    canonicalMap[language] ||
+    canonicalMap.pt;
 
   return (
     <>
@@ -44,10 +46,11 @@ function Contato() {
             "https://rodriguesdigital.tec.br/contato",
         }}
       />
-<main className="contact-page">
-  <ContactHero />
-  <ContactForm />
-</main>
+
+      <main className="contact-page">
+        <ContactHero />
+        <ContactForm />
+          </main>
     </>
   );
 }
